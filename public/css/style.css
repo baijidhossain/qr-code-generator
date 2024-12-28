@@ -1,0 +1,27 @@
+.collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height .35s ease;
+}
+
+.qr-code-loading {
+    animation: opacity-loading 2s infinite ease-in-out;
+}
+
+@keyframes opacity-loading {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.title-bottom-style {
+    background-image: linear-gradient(180deg, #FFFFFF00 80%, #e1d0ff 0%);
+}
