@@ -1,113 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <!-- Mirrored from freeqrcodes.link/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Dec 2024 09:30:49 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Generator | FreeQRCodes.link</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator | FreeQRCodes.link</title>
 
-    <!-- favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Generate free QR codes instantly for URLs, text, email, and more. No sign-up required. Create custom QR codes with our easy-to-use online tool.">
-    <meta name="keywords" content="QR code generator, free QR codes, custom QR codes, URL to QR, text to QR, email QR code">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="index.html">
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Generate free QR codes instantly for URLs, text, email, and more. No sign-up required. Create custom QR codes with our easy-to-use online tool.">
+  <meta name="keywords"
+    content="QR code generator, free QR codes, custom QR codes, URL to QR, text to QR, email QR code">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="index.html">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="index.html">
-    <meta property="og:title" content="FreeQRCode.link - Generate QR Codes Instantly | Free & Easy">
-    <meta property="og:description" content="Create custom QR codes for free. No sign-up needed. Generate QR codes for URLs, text, email, and more with our user-friendly online tool.">
-    <meta property="og:image" content="public/images/freeqrcode.html">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="index.html">
+  <meta property="og:title" content="FreeQRCode.link - Generate QR Codes Instantly | Free & Easy">
+  <meta property="og:description"
+    content="Create custom QR codes for free. No sign-up needed. Generate QR codes for URLs, text, email, and more with our user-friendly online tool.">
+  <meta property="og:image" content="public/images/freeqrcode.html">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="index.html">
-    <meta property="twitter:title" content="FreeQRCode.link - Generate QR Codes Instantly | Free & Easy">
-    <meta property="twitter:description" content="Create custom QR codes for free. No sign-up needed. Generate QR codes for URLs, text, email, and more with our user-friendly online tool.">
-    <meta property="twitter:image" content="public/images/freeqrcode.html">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="index.html">
+  <meta property="twitter:title" content="FreeQRCode.link - Generate QR Codes Instantly | Free & Easy">
+  <meta property="twitter:description"
+    content="Create custom QR codes for free. No sign-up needed. Generate QR codes for URLs, text, email, and more with our user-friendly online tool.">
+  <meta property="twitter:image" content="public/images/freeqrcode.html">
 
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "FreeQRCode.link",
-            "url": "https://freeqrcodes.link/",
-            "description": "Generate free QR codes instantly for URLs, text, email, and more. No sign-up required. Create custom QR codes with our easy-to-use online tool."
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "FreeQRCode.link",
+      "url": "https://freeqrcodes.link/",
+      "description": "Generate free QR codes instantly for URLs, text, email, and more. No sign-up required. Create custom QR codes with our easy-to-use online tool."
+    }
+  </script>
+
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="public/css/style.css">
+  <script src="https://cdn.tailwindcss.com/?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
         }
-    </script>
-
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link rel="stylesheet" href="public/css/style.css">
-    <script src="https://cdn.tailwindcss.com/?plugins=forms"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet">
-    <script src="../code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
+    rel="stylesheet">
+  <script src="../code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
 </head>
 
 <body class="flex flex-col min-h-screen ">
 
-    <!-- Header -->
-    <header class="bg-white border-b">
-    <nav class="lg:px-6 lg:py-0 px-4 py-2 top-0 w-full xl:px-20 z-10">
-        <div class="flex justify-between items-center">
+  <!-- Header -->
+  <!-- Header -->
+  <header class="bg-white border-b">
+    <nav class="lg:py-0 max-w-7xl mx-auto py-2 w-full z-10">
+      <div class="flex justify-between items-center">
 
-            <a href="index.html" class="flex items-center">
-                <img src="public/images/freeqrcodes.png" fetchpriority="high" width="210" height="30" alt="Free QR Codes" class="mr-2" decoding="async" alt="Free QR Codes brand logo">
-            </a>
+        <a href="index.html" class="flex items-center">
+          <img src="public/images/freeqrcodes.png" fetchpriority="high" width="210" height="30" alt="Free QR Codes"
+            class="mr-2" decoding="async">
+        </a>
 
-            <ul class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
-                md:relative md:flex md:p-0 md:bg-transparent md:flex-row font-semibold" id="menu">
-                <li class="md:hidden z-90 fixed top-4 right-6">
-                    <a href="javascript:void(0)" class="text-right text-white text-4xl"
-                        onclick="toggleMenu()">&times;</a>
-                </li>
-                <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="index.html" class="text-white md:text-gray-700 hover:text-violet-600">Home1</a></li>
-                <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="about.html" class="text-white md:text-gray-700 hover:text-violet-600">About</a></li>
-                <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="contact.html" class="text-white md:text-gray-700 hover:text-violet-600">Contact Us</a></li>
-            </ul>
+        <ul class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
+                    md:relative md:flex md:p-0 md:bg-transparent md:flex-row font-semibold" id="menu">
+          <li class="md:hidden z-90 fixed top-4 right-6">
+            <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">×</a>
+          </li>
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="index.html"
+              class="text-white md:text-gray-700 hover:text-violet-600">Home</a></li>
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="about.html"
+              class="text-white md:text-gray-700 hover:text-violet-600">About</a></li>
 
-            <div class="flex items-center gap-4 min-w-52 justify-end">
-                <a href="contact.html" class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">Contact Us<i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="brands.html"
+              class="text-white md:text-gray-700 hover:text-violet-600">Brands</a></li>
 
-                <!-- This is used to open the menu on mobile devices -->
-                <div class="flex items-center md:hidden">
-                    <button class="text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
-                        onclick="toggleMenu()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
-                            <line x1="4" x2="20" y1="12" y2="12"></line>
-                            <line x1="4" x2="20" y1="6" y2="6"></line>
-                            <line x1="4" x2="20" y1="18" y2="18"></line>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="about.html"
+              class="text-white md:text-gray-700 hover:text-violet-600">FAQ</a></li>
 
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="contact.html"
+              class="text-white md:text-gray-700 hover:text-violet-600">Contact</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4 min-w-52 justify-end">
+          <a href="contact.html"
+            class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">Contact Us<i
+              class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+
+          <!-- This is used to open the menu on mobile devices -->
+          <div class="flex items-center md:hidden">
+            <button class="text-4xl font-bold opacity-70 hover:opacity-100 duration-300" aria-label="Open Menu"
+              onclick="toggleMenu()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu">
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
         </div>
-    </nav>
-</header>
-    <!-- Main Content -->
-    <main class="flex-grow mx-auto w-full overflow-x-hidden">
 
-        <div class="relative 
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow mx-auto w-full overflow-x-hidden">
+
+    <div class="relative 
             before:absolute before:content-[''] before:top-[-7%] before:left-[-200px] before:w-[300px] before:h-[300px] before:bg-[radial-gradient(circle,rgba(124,58,237,0.2)_0%,hsla(0,0%,100%,0)_70%)] before:z-[-1] 
   after:absolute after:content-[''] after:top-[-2%] after:right-[-200px] after:w-[300px] after:h-[300px] after:bg-[radial-gradient(circle,rgba(124,58,237,0.5)_0%,hsla(0,0%,100%,0)_70%,rgba(37,99,235,0.3)_0%,hsla(0,0%,100%,0)_70%)] after:z-[-1]
   
@@ -115,726 +139,787 @@
   sm:after:top-[-5%] sm:after:right-[-300px] sm:after:w-[500px] sm:after:h-[500px]
   lg:before:top-[-20%] lg:before:left-[-400px] lg:before:w-[900px] lg:before:h-[900px]
   lg:after:top-[-5%] lg:after:right-[-400px] lg:after:w-[900px] lg:after:h-[900px]">
-  
-            <header class="container mx-auto px-4 py-20">
-                <div class="text-center max-w-3xl mx-auto">
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl leading-[35px] sm:leading-[45px] lg:leading-[58px] font-bold text-gray-900 mb-6 ">Create Professional <br> QR Codes <span class="text-violet-600 title-bottom-style">Completely Free</span></h1>
-                    <p class="text-base lg:text-xl w-full lg:w-[85%] mx-auto text-gray-600">Generate free customizable QR codes for any purpose - URLs, text, email, and more. No sign-up required, completely free.</p>
+
+      <header class="container mx-auto px-4 py-20">
+        <div class="text-center max-w-3xl mx-auto">
+          <h1
+            class="text-3xl sm:text-4xl lg:text-5xl leading-[35px] sm:leading-[45px] lg:leading-[58px] font-bold text-gray-900 mb-6 ">
+            Create Professional <br> QR Codes <span class="text-violet-600 title-bottom-style">Completely Free</span>
+          </h1>
+          <p class="text-base lg:text-xl w-full lg:w-[85%] mx-auto text-gray-600">Generate free customizable QR codes
+            for any purpose - URLs, text, email, and more. No sign-up required, completely free.</p>
+        </div>
+      </header>
+
+      <!-- QR Code Generator -->
+      <div class="max-w-6xl mx-auto pb-12 px-6" id="qr-generator">
+
+        <form action="https://freeqrcodes.link/generate.php" method="post" id="qr-form">
+          <div class="rounded-lg border md:flex flex-wrap shadow">
+            <div class="bg-white border-r flex-1 md:min-w-96">
+
+              <div class="border-b p-4 rounded-t-lg">
+                <ul class="flex flex-wrap gap-2">
+                  <li class="relative flex-grow">
+                    <input type="radio" id="url" name="qr_type" value="url" class="peer sr-only" checked>
+                    <label for="url"
+                      class="flex items-center min-w-36 p-2 bg-white border border-gray-300 rounded-md cursor-pointer peer-checked:ring-2 peer-checked:ring-violet-500 peer-checked:border-transparent">
+                      <div class="bg-neutral-100 rounded mr-2 w-8 h-8 flex items-center justify-center">
+                        <i class="fa-solid fa-globe"></i>
+                      </div>
+                      <span>URL</span>
+                    </label>
+                  </li>
+
+                  <li class="relative flex-grow">
+                    <input type="radio" id="text" name="qr_type" value="text" class="peer sr-only">
+                    <label for="text"
+                      class="flex items-center min-w-36 p-2 bg-white border border-gray-300 rounded-md cursor-pointer peer-checked:ring-2 peer-checked:ring-violet-500 peer-checked:border-transparent">
+                      <div class="bg-neutral-100 rounded mr-2 w-8 h-8 flex items-center justify-center">
+                        <i class="fa-regular fa-file-lines"></i>
+                      </div>
+                      <span>Text</span>
+                    </label>
+                  </li>
+
+                  <li class="relative flex-grow">
+                    <input type="radio" id="email" name="qr_type" value="email" class="peer sr-only">
+                    <label for="email"
+                      class="flex items-center min-w-36 p-2 bg-white border border-gray-300 rounded-md cursor-pointer peer-checked:ring-2 peer-checked:ring-violet-500 peer-checked:border-transparent">
+                      <div class="bg-neutral-100 rounded mr-2 w-8 h-8 flex items-center justify-center">
+                        <i class="fa-solid fa-envelope"></i>
+                      </div>
+                      <span>Email</span>
+                    </label>
+                  </li>
+
+                  <li class="relative flex-grow">
+                    <input type="radio" id="phone" name="qr_type" value="phone" class="peer sr-only">
+                    <label for="phone"
+                      class="flex items-center min-w-36 p-2 bg-white border border-gray-300 rounded-md cursor-pointer peer-checked:ring-2 peer-checked:ring-violet-500 peer-checked:border-transparent">
+                      <div class="bg-neutral-100 rounded mr-2 w-8 h-8 flex items-center justify-center">
+                        <i class="fa-solid fa-phone"></i>
+                      </div>
+                      <span>Phone</span>
+                    </label>
+                  </li>
+
+                </ul>
+              </div>
+
+              <div class="p-4 flex flex-col space-y-6">
+
+                <div id="qr_content_wrapper">
+                  <div class="qr_type_url">
+                    <label class="block text-gray-700"><i class="fa-solid fa-link"></i> URL </label>
+                    <input type="text" name="qr_content"
+                      class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-violet-500 focus:border-violet-500 sm:text-sm"
+                      placeholder="https://example.com" required>
+                  </div>
                 </div>
-            </header>
 
-            <!-- QR Code Generator -->
-            <div class="max-w-6xl mx-auto pb-12 px-6" id="qr-generator">
-
-                <form action="https://freeqrcodes.link/generate.php" method="post" id="qr-form">
-                    <div class="rounded-lg border md:flex flex-wrap shadow">
-                        <div class="bg-white border-r flex-1 md:min-w-96">
-
-                            <div class="border-b p-4 rounded-t-lg">
-                                <ul class="flex flex-wrap gap-2">
-    <li class="relative flex-grow">
-        <input type="radio" id="url" name="qr_type" value="url" class="peer sr-only" checked>
-        <label for="url" class="flex items-center min-w-36 p-2 bg-white border border-gray-300 rounded-md cursor-pointer peer-checked:ring-2 peer-checked:ring-violet-500 peer-checked:border-transparent">
-            <div class="bg-neutral-100 rounded mr-2 w-8 h-8 flex items-center justify-center">
-                <i class="fa-solid fa-globe"></i>
-            </div>
-            <span>URL</span>
-        </label>
-    </li>
-
-    <li class="relative flex-grow">
-        <input type="radio" id="text" name="qr_type" value="text" class="peer sr-only">
-        <label for="text" class="flex items-center min-w-36 p-2 bg-white border border-gray-300 rounded-md cursor-pointer peer-checked:ring-2 peer-checked:ring-violet-500 peer-checked:border-transparent">
-            <div class="bg-neutral-100 rounded mr-2 w-8 h-8 flex items-center justify-center">
-                <i class="fa-regular fa-file-lines"></i>
-            </div>
-            <span>Text</span>
-        </label>
-    </li>
-
-    <li class="relative flex-grow">
-        <input type="radio" id="email" name="qr_type" value="email" class="peer sr-only">
-        <label for="email" class="flex items-center min-w-36 p-2 bg-white border border-gray-300 rounded-md cursor-pointer peer-checked:ring-2 peer-checked:ring-violet-500 peer-checked:border-transparent">
-            <div class="bg-neutral-100 rounded mr-2 w-8 h-8 flex items-center justify-center">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <span>Email</span>
-        </label>
-    </li>
-
-    <li class="relative flex-grow">
-        <input type="radio" id="phone" name="qr_type" value="phone" class="peer sr-only">
-        <label for="phone" class="flex items-center min-w-36 p-2 bg-white border border-gray-300 rounded-md cursor-pointer peer-checked:ring-2 peer-checked:ring-violet-500 peer-checked:border-transparent">
-            <div class="bg-neutral-100 rounded mr-2 w-8 h-8 flex items-center justify-center">
-                <i class="fa-solid fa-phone"></i>
-            </div>
-            <span>Phone</span>
-        </label>
-    </li>
-
-</ul>                            </div>
-
-                            <div class="p-4 flex flex-col space-y-6">
-
-                                <div id="qr_content_wrapper">
-                                    <div class="qr_type_url">
-                                        <label class="block text-gray-700"><i class="fa-solid fa-link"></i> URL </label>
-                                        <input type="text" name="qr_content" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-violet-500 focus:border-violet-500 sm:text-sm" placeholder="https://example.com" required>
-                                    </div>
-                                </div>
-
-
-                                <!-- Styles collapse -->
-                                <button type="button" class="text-gray-900 bg-gray-100 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rounded-md text-sm px-5 py-2.5" data-bs-toggle="collapse" data-bs-target="#style_container"><i class="fa-solid fa-qrcode"></i> Customize Design</button>
-
-                                <div class="collapse hidden" id="style_container">
-                                    <div class="mb-4">
-    <label for="style" class="block mb-3"><i class="fas fa-qrcode fa-sm text-muted mr-1"></i> Style</label>
-
-    <div class="flex flex-wrap gap-2">
-        <!-- Square style option -->
-        <div>
-            <label>
-                <input type="radio" name="style" value="square" class="hidden peer" checked="checked" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-square-full fa-sm mr-1"></i> Square
-                </div>
-            </label>
-        </div>
-
-        <!-- Dot style option -->
-        <div>
-            <label>
-                <input type="radio" name="style" value="dot" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-circle fa-sm mr-1"></i> Dot
-                </div>
-            </label>
-        </div>
-
-        <!-- Rounded style option -->
-        <div>
-            <label>
-                <input type="radio" name="style" value="round" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-square fa-sm mr-1"></i> Rounded
-                </div>
-            </label>
-        </div>
-
-        <!-- Heart style option -->
-        <div>
-            <label>
-                <input type="radio" name="style" value="heart" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-heart fa-sm mr-1"></i> Heart
-                </div>
-            </label>
-        </div>
-
-        <!-- Diamond style option -->
-        <div>
-            <label>
-                <input type="radio" name="style" value="diamond" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-gem fa-sm mr-1"></i> Diamond
-                </div>
-            </label>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="mb-4">
-    <label for="inner_eye_style" class="block mb-3">
-        <i class="fas fa-circle fa-sm text-muted mr-1"></i> Eye-ball
-    </label>
-
-    <div class="flex flex-wrap gap-2">
-
-        <!-- Square inner eye option -->
-        <div>
-            <label>
-                <input type="radio" name="inner_eye_style" value="square" class="hidden peer" checked="checked" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-square-full fa-sm mr-1"></i> Square
-                </div>
-            </label>
-        </div>
-
-        <!-- Circle inner eye option -->
-        <div>
-            <label>
-                <input type="radio" name="inner_eye_style" value="dot" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-circle fa-sm mr-1"></i> Dot
-                </div>
-            </label>
-        </div>
-
-        <!-- Rounded inner eye option -->
-        <div>
-            <label>
-                <input type="radio" name="inner_eye_style" value="rounded" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-square fa-sm mr-1"></i> Rounded
-                </div>
-            </label>
-        </div>
-
-        <!-- Diamond inner eye option -->
-        <div>
-            <label>
-                <input type="radio" name="inner_eye_style" value="diamond" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-gem fa-sm mr-1"></i> Diamond
-                </div>
-            </label>
-        </div>
-
-        <!-- Flower inner eye option -->
-        <div>
-            <label>
-                <input type="radio" name="inner_eye_style" value="flower" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-seedling fa-sm mr-1"></i> Flower
-                </div>
-            </label>
-        </div>
-
-        <!-- Leaf inner eye option -->
-        <div>
-            <label>
-                <input type="radio" name="inner_eye_style" value="leaf" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-leaf fa-sm mr-1"></i> Leaf
-                </div>
-            </label>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="mb-4">
-    <label for="outer_eye_style" class="block mb-3">
-        <i class="fas fa-dot-circle fa-sm text-muted mr-1"></i> Eye Frame
-    </label>
-
-    <div class="flex flex-wrap gap-2">
-        <!-- Square outer eye option -->
-        <div>
-            <label>
-                <input type="radio" name="outer_eye_style" value="square" class="hidden peer" checked="checked" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-square-full fa-sm mr-1"></i> Square
-                </div>
-            </label>
-        </div>
-
-        <!-- Pointy outer eye option -->
-        <div>
-            <label>
-                <input type="radio" name="outer_eye_style" value="pointy" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fa-brands fa-bitbucket fa-sm mr-1"></i> Pointy
-                </div>
-            </label>
-        </div>
-
-        <!-- Circle outer eye option -->
-        <div>
-            <label>
-                <input type="radio" name="outer_eye_style" value="circle" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-circle-dot fa-sm mr-1"></i> Circle
-                </div>
-            </label>
-        </div>
-
-        <!-- Rounded outer eye option -->
-        <div>
-            <label>
-                <input type="radio" name="outer_eye_style" value="rounded" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-square fa-sm mr-1"></i> Rounded
-                </div>
-            </label>
-        </div>
-
-        <!-- Flower outer eye option -->
-        <div>
-            <label>
-                <input type="radio" name="outer_eye_style" value="flower" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-seedling fa-sm mr-1"></i> Flower
-                </div>
-            </label>
-        </div>
-
-        <!-- Leaf outer eye option -->
-        <div>
-            <label>
-                <input type="radio" name="outer_eye_style" value="leaf" class="hidden peer" required="required" />
-                <div class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
-                    <i class="fas fa-leaf fa-sm mr-1"></i> Leaf
-                </div>
-            </label>
-        </div>
-    </div>
-
-</div>                                </div>
-
-                                <!-- Branding collapse -->
-                                <button type="button" class="text-gray-900 bg-gray-100 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rounded-md text-sm px-5 py-2.5" data-bs-toggle="collapse" data-bs-target="#branding_container"><i class="fa-solid fa-palette"></i> Branding</button>
-
-                                <div class="collapse hidden" id="branding_container">
-                                    <div>
-
-    <div class="mb-4">
-
-        <label for="logo" class="block"><i class="fas fa-image fa-sm text-muted mr-1"></i> Logo</label>
-
-        <div class="mt-2 flex items-center space-x-4">
-
-            <div class="flex-grow">
-                <label class="block p-3 bg-gray-50 text-center rounded-md cursor-pointer hover:bg-gray-100 border border-gray-300">
-                    <span class="sr-only">Choose qr code brand logo</span>
-                    <input type="file" name="logo" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100 focus:outline-none" accept=".jpg, .jpeg, .png" />
-                </label>
-            </div>
-            <img id="qr_code_logo_preview" src="#" alt="Logo Preview" class="hidden w-16 h-16 object-contain border border-gray-300 rounded-md">
-        </div>
-
-        <div>
-            <a href="#" id="remove_logo" class="hidden text-gray-500 hover:text-red-500 text-sm">
-                <div class="my-3">
-                    <i class="fa-solid fa-trash-alt mr-1"></i>
-                    Remove selected file
-                </div>
-            </a>
-
-            <small class="block mt-1 text-gray-500">Upload a logo in <b>jpg, jpeg, or png</b> format to be displayed in the QR code.</small>
-        </div>
-
-    </div>
-
-    <div class="mb-4">
-        <label for="logo_size" class="block"><i class="fas fa-expand-arrows-alt fa-sm mr-1"></i> Logo Size</label>
-        <div class="mt-2 flex items-center space-x-4">
-            <input type="range" name="logo_size" id="logo_size" min="5" max="60" value="25" class="flex-grow bg-gray-200 rounded-lg appearance-none cursor-pointer h-2" onchange="javascript:this.nextElementSibling.innerText = this.value + '%'">
-            <span id="logo_size_value" class="text-gray-700 w-12 text-center">25%</span>
-        </div>
-        <small class="block text-gray-500">Adjust the size of the logo within the QR code.</small>
-    </div>
-
-
-    <div class="mb-4">
-        <label class="inline-flex items-center cursor-pointer">
-            <input type="checkbox" value="1" class="hidden peer" name="logo_spotlight" onchange="javascript:document.getElementById('qr_error_correction').value = 'H';">
-            <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-violet-300 rounded-full peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-violet-600"></div>
-            <span class="ms-3 text-sm font-medium text-gray-900">Spotlight the Logo</span>
-        </label>
-
-        <small class="block text-gray-500">For best results, please set the error correction level to <b>High</b> in the options.</small>
-
-    </div>
-
-</div>                                </div>
-
-                                <!-- Options collapse -->
-                                <button type="button" class="text-gray-900 bg-gray-100 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rounded-md text-sm px-5 py-2.5" data-bs-toggle="collapse" data-bs-target="#options_container"><i class="fa-solid fa-cog"></i> Options</button>
-
-                                <div class="collapse hidden" id="options_container">
-                                    <div class="my-3">
-    <div class="mb-4">
-        <label for="qr_size" class="block"><i class="fas fa-expand-arrows-alt fa-sm mr-1"></i> Dimension Size</label>
-        <div class="mt-2 flex items-center space-x-4">
-            <input type="range" name="qr_size" id="qr_size" min="100" max="1000" value="400" step="50" class="flex-grow bg-gray-200 rounded-lg appearance-none cursor-pointer h-2" onchange="javascript:this.nextElementSibling.innerText = this.value + 'px'">
-            <span id="qr_size_value" class="text-gray-700 w-12 text-center">400px</span>
-        </div>
-        <small class="block text-gray-500">Adjust the size of the QR code.</small>
-    </div>
-
-    <div class="mb-4">
-        <label for="qr_margin" class="block"><i class="fas fa-arrows-alt fa-sm mr-1"></i> Margin</label>
-        <div class="mt-2 flex items-center space-x-4">
-            <input type="range" name="margin" id="qr_margin" min="0" max="10" value="2" class="flex-grow bg-gray-200 rounded-lg appearance-none cursor-pointer h-2" onchange="javascript:this.nextElementSibling.innerText = this.value + 'px'">
-            <span id="qr_margin_value" class="text-gray-700 w-12 text-center">2px</span>
-        </div>
-        <small class="block text-gray-500">Adjust the margin around the QR code.</small>
-    </div>
-
-    <div class="mb-4">
-        <label for="qr_error_correction" class="block"><i class="fas fa-check fa-sm mr-1"></i> Error correction capability</label>
-        <select name="ecc" id="qr_error_correction" class="mt-3 block w-full border-gray-300 rounded-md shadow-sm focus:ring-violet-500 focus:border-violet-500 sm:text-sm">
-            <option value="L">Low (7% recoverable)</option>
-            <option selected value="M">Medium (15% recoverable)</option>
-            <option value="Q">Quartile (25% recoverable)</option>
-            <option value="H">High (30% recoverable)</option>
-        </select>
-        <small class="block text-gray-500">Select the error correction level for the QR code.</small>
-    </div>
-</div>                                </div>
-
-                                <div>
-                                    <button type="submit" class="bg-violet-500 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded-md" id="qr-button">
-                                        <i class="fa-solid fa-qrcode"></i>
-                                        <span class="ml-2" id="qr-button-text">Generate QR Preview</span>
-                                    </button>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="p-4 min-w-72 md:max-w-96 mx-auto bg-violet-50">
-                            <div class="rounded text-center md:shrink-0 p-6" id="qr-result">
-                                <div class="shadow-md rounded-lg bg-white inline-block">
-                                    <img src="public/images/placeholder.png" alt="qr code placeholder" class="object-contain" width="250">
-
-                                </div>
-                            </div>
-
-                            <div class="mb-8 text-center print:hidden">
-
-                                <div id="is_readable" class="hidden text-green-500 text-sm mt-1">
-                                    <i class="fas fa-check-circle mr-1"></i> QR Code seems to be readable.
-                                </div>
-
-                                <small class="text-sm">
-                                    <i class="fas fa-info-circle text-gray-500 mr-1"></i>
-                                    <span class="text-gray-500">Scan the QR code to test it before production</span>
-                                </small>
-
-                                <div id="is_not_readable" class="hidden text-yellow-500 text-sm mt-1">
-                                    <i class="fas fa-exclamation-circle mr-1"></i> QR Code might not be readable. Adjust your QR code settings or content.
-                                </div>
-                            </div>
-
-                            <div class="mt-4 space-y-2">
-                                <!-- Multiple format download buttons -->
-                                <button type="button" class="w-full bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50" id="download-qr-jpeg" disabled>
-                                    <i class="fa-solid fa-file-image"></i> JPEG
-                                </button>
-                                <button type="button" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50" id="download-qr-png" disabled>
-                                    <i class="fa-solid fa-file-image"></i> PNG
-                                </button>
-                                <button type="button" class="w-full bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50" id="download-qr-svg" disabled>
-                                    <i class="fa-solid fa-file-code"></i> SVG
-                                </button>
-                                <button type="button" class="w-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50" id="download-qr-pdf" disabled>
-                                    <i class="fa-solid fa-file-pdf"></i> PDF
-                                </button>
-                            </div>
-                        </div>
+                <!-- Styles collapse -->
+                <button type="button"
+                  class="text-gray-900 bg-gray-100 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rounded-md text-sm px-5 py-2.5"
+                  data-bs-toggle="collapse" data-bs-target="#style_container"><i class="fa-solid fa-qrcode"></i>
+                  Customize Design</button>
+
+                <div class="collapse hidden" id="style_container">
+                  <div class="mb-4">
+                    <label for="style" class="block mb-3"><i class="fas fa-qrcode fa-sm text-muted mr-1"></i>
+                      Style</label>
+
+                    <div class="flex flex-wrap gap-2">
+                      <!-- Square style option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="style" value="square" class="hidden peer" checked="checked"
+                            required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-square-full fa-sm mr-1"></i> Square
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Dot style option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="style" value="dot" class="hidden peer" required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-circle fa-sm mr-1"></i> Dot
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Rounded style option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="style" value="round" class="hidden peer" required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-square fa-sm mr-1"></i> Rounded
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Heart style option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="style" value="heart" class="hidden peer" required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-heart fa-sm mr-1"></i> Heart
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Diamond style option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="style" value="diamond" class="hidden peer" required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-gem fa-sm mr-1"></i> Diamond
+                          </div>
+                        </label>
+                      </div>
 
                     </div>
-                </form>
+
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="inner_eye_style" class="block mb-3">
+                      <i class="fas fa-circle fa-sm text-muted mr-1"></i> Eye-ball
+                    </label>
+
+                    <div class="flex flex-wrap gap-2">
+
+                      <!-- Square inner eye option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="inner_eye_style" value="square" class="hidden peer"
+                            checked="checked" required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-square-full fa-sm mr-1"></i> Square
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Circle inner eye option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="inner_eye_style" value="dot" class="hidden peer"
+                            required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-circle fa-sm mr-1"></i> Dot
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Rounded inner eye option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="inner_eye_style" value="rounded" class="hidden peer"
+                            required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-square fa-sm mr-1"></i> Rounded
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Diamond inner eye option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="inner_eye_style" value="diamond" class="hidden peer"
+                            required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-gem fa-sm mr-1"></i> Diamond
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Flower inner eye option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="inner_eye_style" value="flower" class="hidden peer"
+                            required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-seedling fa-sm mr-1"></i> Flower
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Leaf inner eye option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="inner_eye_style" value="leaf" class="hidden peer"
+                            required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-leaf fa-sm mr-1"></i> Leaf
+                          </div>
+                        </label>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="outer_eye_style" class="block mb-3">
+                      <i class="fas fa-dot-circle fa-sm text-muted mr-1"></i> Eye Frame
+                    </label>
+
+                    <div class="flex flex-wrap gap-2">
+                      <!-- Square outer eye option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="outer_eye_style" value="square" class="hidden peer"
+                            checked="checked" required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-square-full fa-sm mr-1"></i> Square
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Pointy outer eye option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="outer_eye_style" value="pointy" class="hidden peer"
+                            required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fa-brands fa-bitbucket fa-sm mr-1"></i> Pointy
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Circle outer eye option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="outer_eye_style" value="circle" class="hidden peer"
+                            required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-circle-dot fa-sm mr-1"></i> Circle
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Rounded outer eye option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="outer_eye_style" value="rounded" class="hidden peer"
+                            required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-square fa-sm mr-1"></i> Rounded
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Flower outer eye option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="outer_eye_style" value="flower" class="hidden peer"
+                            required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-seedling fa-sm mr-1"></i> Flower
+                          </div>
+                        </label>
+                      </div>
+
+                      <!-- Leaf outer eye option -->
+                      <div>
+                        <label>
+                          <input type="radio" name="outer_eye_style" value="leaf" class="hidden peer"
+                            required="required" />
+                          <div
+                            class="cursor-pointer bg-gray-50 px-3 py-2 rounded-md peer-checked:bg-violet-100 peer-checked:border-violet-500 peer-checked:border-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-leaf fa-sm mr-1"></i> Leaf
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- Branding collapse -->
+                <button type="button"
+                  class="text-gray-900 bg-gray-100 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rounded-md text-sm px-5 py-2.5"
+                  data-bs-toggle="collapse" data-bs-target="#branding_container"><i class="fa-solid fa-palette"></i>
+                  Branding</button>
+
+                <div class="collapse hidden" id="branding_container">
+                  <div>
+
+                    <div class="mb-4">
+
+                      <label for="logo" class="block"><i class="fas fa-image fa-sm text-muted mr-1"></i> Logo</label>
+
+                      <div class="mt-2 flex items-center space-x-4">
+
+                        <div class="flex-grow">
+                          <label
+                            class="block p-3 bg-gray-50 text-center rounded-md cursor-pointer hover:bg-gray-100 border border-gray-300">
+                            <span class="sr-only">Choose qr code brand logo</span>
+                            <input type="file" name="logo"
+                              class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100 focus:outline-none"
+                              accept=".jpg, .jpeg, .png" />
+                          </label>
+                        </div>
+                        <img id="qr_code_logo_preview" src="#" alt="Logo Preview"
+                          class="hidden w-16 h-16 object-contain border border-gray-300 rounded-md">
+                      </div>
+
+                      <div>
+                        <a href="#" id="remove_logo" class="hidden text-gray-500 hover:text-red-500 text-sm">
+                          <div class="my-3">
+                            <i class="fa-solid fa-trash-alt mr-1"></i>
+                            Remove selected file
+                          </div>
+                        </a>
+
+                        <small class="block mt-1 text-gray-500">Upload a logo in <b>jpg, jpeg, or png</b> format to be
+                          displayed in the QR code.</small>
+                      </div>
+
+                    </div>
+
+                    <div class="mb-4">
+                      <label for="logo_size" class="block"><i class="fas fa-expand-arrows-alt fa-sm mr-1"></i> Logo
+                        Size</label>
+                      <div class="mt-2 flex items-center space-x-4">
+                        <input type="range" name="logo_size" id="logo_size" min="5" max="60" value="25"
+                          class="flex-grow bg-gray-200 rounded-lg appearance-none cursor-pointer h-2"
+                          onchange="javascript:this.nextElementSibling.innerText = this.value + '%'">
+                        <span id="logo_size_value" class="text-gray-700 w-12 text-center">25%</span>
+                      </div>
+                      <small class="block text-gray-500">Adjust the size of the logo within the QR code.</small>
+                    </div>
+
+                    <div class="mb-4">
+                      <label class="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="1" class="hidden peer" name="logo_spotlight"
+                          onchange="javascript:document.getElementById('qr_error_correction').value = 'H';">
+                        <div
+                          class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-violet-300 rounded-full peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-violet-600">
+                        </div>
+                        <span class="ms-3 text-sm font-medium text-gray-900">Spotlight the Logo</span>
+                      </label>
+
+                      <small class="block text-gray-500">For best results, please set the error correction level to
+                        <b>High</b> in the options.</small>
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- Options collapse -->
+                <button type="button"
+                  class="text-gray-900 bg-gray-100 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rounded-md text-sm px-5 py-2.5"
+                  data-bs-toggle="collapse" data-bs-target="#options_container"><i class="fa-solid fa-cog"></i>
+                  Options</button>
+
+                <div class="collapse hidden" id="options_container">
+                  <div class="my-3">
+                    <div class="mb-4">
+                      <label for="qr_size" class="block"><i class="fas fa-expand-arrows-alt fa-sm mr-1"></i> Dimension
+                        Size</label>
+                      <div class="mt-2 flex items-center space-x-4">
+                        <input type="range" name="qr_size" id="qr_size" min="100" max="1000" value="400" step="50"
+                          class="flex-grow bg-gray-200 rounded-lg appearance-none cursor-pointer h-2"
+                          onchange="javascript:this.nextElementSibling.innerText = this.value + 'px'">
+                        <span id="qr_size_value" class="text-gray-700 w-12 text-center">400px</span>
+                      </div>
+                      <small class="block text-gray-500">Adjust the size of the QR code.</small>
+                    </div>
+
+                    <div class="mb-4">
+                      <label for="qr_margin" class="block"><i class="fas fa-arrows-alt fa-sm mr-1"></i> Margin</label>
+                      <div class="mt-2 flex items-center space-x-4">
+                        <input type="range" name="margin" id="qr_margin" min="0" max="10" value="2"
+                          class="flex-grow bg-gray-200 rounded-lg appearance-none cursor-pointer h-2"
+                          onchange="javascript:this.nextElementSibling.innerText = this.value + 'px'">
+                        <span id="qr_margin_value" class="text-gray-700 w-12 text-center">2px</span>
+                      </div>
+                      <small class="block text-gray-500">Adjust the margin around the QR code.</small>
+                    </div>
+
+                    <div class="mb-4">
+                      <label for="qr_error_correction" class="block"><i class="fas fa-check fa-sm mr-1"></i> Error
+                        correction capability</label>
+                      <select name="ecc" id="qr_error_correction"
+                        class="mt-3 block w-full border-gray-300 rounded-md shadow-sm focus:ring-violet-500 focus:border-violet-500 sm:text-sm">
+                        <option value="L">Low (7% recoverable)</option>
+                        <option selected value="M">Medium (15% recoverable)</option>
+                        <option value="Q">Quartile (25% recoverable)</option>
+                        <option value="H">High (30% recoverable)</option>
+                      </select>
+                      <small class="block text-gray-500">Select the error correction level for the QR code.</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <button type="submit"
+                    class="bg-violet-500 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded-md" id="qr-button">
+                    <i class="fa-solid fa-qrcode"></i>
+                    <span class="ml-2" id="qr-button-text">Generate QR Preview</span>
+                  </button>
+                </div>
+
+              </div>
 
             </div>
-        </div>
 
+            <div class="p-4 min-w-72 md:max-w-96 mx-auto bg-violet-50">
+              <div class="rounded text-center md:shrink-0 p-6" id="qr-result">
+                <div class="shadow-md rounded-lg bg-white inline-block">
+                  <img src="public/images/placeholder.png" alt="qr code placeholder" class="object-contain" width="250">
 
-        <!-- Features Section -->
-        <section id="features" class="container mx-auto px-4 py-16">
-    <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="mb-4">
-                <i class="fa-solid fa-bolt text-3xl text-violet-600"></i>
+                </div>
+              </div>
+
+              <div class="mb-8 text-center print:hidden">
+
+                <div id="is_readable" class="hidden text-green-500 text-sm mt-1">
+                  <i class="fas fa-check-circle mr-1"></i> QR Code seems to be readable.
+                </div>
+
+                <small class="text-sm">
+                  <i class="fas fa-info-circle text-gray-500 mr-1"></i>
+                  <span class="text-gray-500">Scan the QR code to test it before production</span>
+                </small>
+
+                <div id="is_not_readable" class="hidden text-yellow-500 text-sm mt-1">
+                  <i class="fas fa-exclamation-circle mr-1"></i> QR Code might not be readable. Adjust your QR code
+                  settings or content.
+                </div>
+              </div>
+
+              <div class="mt-4 space-y-2">
+                <!-- Multiple format download buttons -->
+                <button type="button"
+                  class="w-full bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50"
+                  id="download-qr-jpeg" disabled>
+                  <i class="fa-solid fa-file-image"></i> JPEG
+                </button>
+                <button type="button"
+                  class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50"
+                  id="download-qr-png" disabled>
+                  <i class="fa-solid fa-file-image"></i> PNG
+                </button>
+                <button type="button"
+                  class="w-full bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50"
+                  id="download-qr-svg" disabled>
+                  <i class="fa-solid fa-file-code"></i> SVG
+                </button>
+                <button type="button"
+                  class="w-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50"
+                  id="download-qr-pdf" disabled>
+                  <i class="fa-solid fa-file-pdf"></i> PDF
+                </button>
+              </div>
             </div>
-            <h3 class="text-xl font-semibold mb-2">Lightning Fast</h3>
-            <p class="text-gray-600">Generate QR codes in seconds with our intuitive interface. No technical knowledge required.</p>
-        </div>
-        <div class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="mb-4">
-                <i class="fa-solid fa-palette text-3xl text-violet-600"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Fully Customizable</h3>
-            <p class="text-gray-600">Choose from various styles, colors, and patterns to match your brand identity.</p>
-        </div>
-        <div class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="mb-4">
-                <i class="fa-solid fa-download text-3xl text-violet-600"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Multiple Formats</h3>
-            <p class="text-gray-600">Download your QR codes in PNG, SVG, PDF formats for any use case.</p>
-        </div>
+
+          </div>
+        </form>
+
+      </div>
     </div>
-</section>
-        <!-- How it works -->
-        <section id="how-it-works" class="bg-white py-16">
-    <div class="mx-auto px-4 container">
-        <h2 class="mb-12 font-bold text-3xl text-center">How It <span class="text-violet-600 title-bottom-style">Works</span></h2>
+
+    <!-- Features Section -->
+    <section id="features" class="container mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="mb-4">
+            <i class="fa-solid fa-bolt text-3xl text-violet-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Lightning Fast</h3>
+          <p class="text-gray-600">Generate QR codes in seconds with our intuitive interface. No technical knowledge
+            required.</p>
+        </div>
+        <div class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="mb-4">
+            <i class="fa-solid fa-palette text-3xl text-violet-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Fully Customizable</h3>
+          <p class="text-gray-600">Choose from various styles, colors, and patterns to match your brand identity.</p>
+        </div>
+        <div class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="mb-4">
+            <i class="fa-solid fa-download text-3xl text-violet-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Multiple Formats</h3>
+          <p class="text-gray-600">Download your QR codes in PNG, SVG, PDF formats for any use case.</p>
+        </div>
+      </div>
+    </section>
+    <!-- How it works -->
+    <section id="how-it-works" class="bg-white py-16">
+      <div class="mx-auto px-4 container">
+        <h2 class="mb-12 font-bold text-3xl text-center">How It <span
+            class="text-violet-600 title-bottom-style">Works</span></h2>
         <div class="gap-8 grid md:grid-cols-3">
-            <div class="text-center">
-                <div
-                    class="flex justify-center items-center bg-violet-100 mx-auto mb-4 rounded-full w-12 h-12 font-bold text-violet-600 text-xl">
-                    1</div>
-                <h3 class="mb-2 font-semibold text-xl">Choose QR Type</h3>
-                <p class="text-gray-600">Select from URL, text, email, or other formats</p>
-            </div>
-            <div class="text-center">
-                <div
-                    class="flex justify-center items-center bg-violet-100 mx-auto mb-4 rounded-full w-12 h-12 font-bold text-violet-600 text-xl">
-                    2</div>
-                <h3 class="mb-2 font-semibold text-xl">Customize Design</h3>
-                <p class="text-gray-600">Personalize colors, patterns, and add your logo</p>
-            </div>
-            <div class="text-center">
-                <div
-                    class="flex justify-center items-center bg-violet-100 mx-auto mb-4 rounded-full w-12 h-12 font-bold text-violet-600 text-xl">
-                    3</div>
-                <h3 class="mb-2 font-semibold text-xl">Download &amp; Share</h3>
-                <p class="text-gray-600">Get your QR code in your preferred format</p>
-            </div>
+          <div class="text-center">
+            <div
+              class="flex justify-center items-center bg-violet-100 mx-auto mb-4 rounded-full w-12 h-12 font-bold text-violet-600 text-xl">
+              1</div>
+            <h3 class="mb-2 font-semibold text-xl">Choose QR Type</h3>
+            <p class="text-gray-600">Select from URL, text, email, or other formats</p>
+          </div>
+          <div class="text-center">
+            <div
+              class="flex justify-center items-center bg-violet-100 mx-auto mb-4 rounded-full w-12 h-12 font-bold text-violet-600 text-xl">
+              2</div>
+            <h3 class="mb-2 font-semibold text-xl">Customize Design</h3>
+            <p class="text-gray-600">Personalize colors, patterns, and add your logo</p>
+          </div>
+          <div class="text-center">
+            <div
+              class="flex justify-center items-center bg-violet-100 mx-auto mb-4 rounded-full w-12 h-12 font-bold text-violet-600 text-xl">
+              3</div>
+            <h3 class="mb-2 font-semibold text-xl">Download &amp; Share</h3>
+            <p class="text-gray-600">Get your QR code in your preferred format</p>
+          </div>
         </div>
-    </div>
-</section>
-        <!-- CTA Section -->
-        <section class="py-20 text-center  bg-gray-50">
-    <div class="container mx-auto">
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-20 text-center  bg-gray-50">
+      <div class="container mx-auto">
         <div class="bg-violet-100 rounded-2xl p-12 max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6">Ready to Create Your QR Code?</h2>
-            <p class="text-lg text-gray-600 mb-8">Join thousands of users who trust our QR code generator for their business and personal needs.</p>
-            <a href="#qr-generator" class="bg-violet-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-violet-700 transition-colors">Get Started - It's Free</a>
+          <h2 class="text-3xl font-bold mb-6">Ready to Create Your QR Code?</h2>
+          <p class="text-lg text-gray-600 mb-8">Join thousands of users who trust our QR code generator for their
+            business and personal needs.</p>
+          <a href="#qr-generator"
+            class="bg-violet-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-violet-700 transition-colors">Get
+            Started - It's Free</a>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-    </main>
+  </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-100 py-12">
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-12">
     <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-5 gap-8">
-            <div class="md:col-span-2">
-                <div class="flex items-center mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-violet-600">
-                        <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                        <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                        <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                        <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                        <path d="M21 21v.01"></path>
-                        <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                        <path d="M3 12h.01"></path>
-                        <path d="M12 3h.01"></path>
-                        <path d="M12 16v.01"></path>
-                        <path d="M16 12h1"></path>
-                        <path d="M21 12v.01"></path>
-                        <path d="M12 21v-1"></path>
-                    </svg><span class="ml-2 font-bold">FreeQRcodes.link</span>
-                </div>
-                <p class="text-gray-600 text-sm">Our QR code generator is designed to help you create high-quality QR codes for your business, events, and personal use. With our easy-to-use interface, you can customize your QR codes with logos, colors, and more. Join thousands of users who trust FreeQRcodes.link for their QR code needs.</p>
-            </div>
-            <div>
-                <h3 class="font-semibold mb-4">Product</h3>
-                <ul class="space-y-2 text-gray-600">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#qr-generator">Qr Generator</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="font-semibold mb-4">Company</h3>
-                <ul class="space-y-2 text-gray-600">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#">Use Cases</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="font-semibold mb-4">Connect With Us</h3>
-                <div class="flex space-x-4">
-                    <a href="https://www.facebook.com/alpha.net.bd" class="text-gray-600 hover:text-gray-800"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.youtube.com/c/AlphaNetBD" class="text-gray-600 hover:text-gray-800"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.linkedin.com/company/alpha.net.bd" class="text-gray-600 hover:text-gray-800"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
+      <div class="grid md:grid-cols-5 gap-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="h-6 w-6 text-violet-600">
+              <rect width="5" height="5" x="3" y="3" rx="1"></rect>
+              <rect width="5" height="5" x="16" y="3" rx="1"></rect>
+              <rect width="5" height="5" x="3" y="16" rx="1"></rect>
+              <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
+              <path d="M21 21v.01"></path>
+              <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
+              <path d="M3 12h.01"></path>
+              <path d="M12 3h.01"></path>
+              <path d="M12 16v.01"></path>
+              <path d="M16 12h1"></path>
+              <path d="M21 12v.01"></path>
+              <path d="M12 21v-1"></path>
+            </svg><span class="ml-2 font-bold">FreeQRcodes.link</span>
+          </div>
+          <p class="text-gray-600 text-sm">Our QR code generator is designed to help you create high-quality QR codes
+            for your business, events, and personal use. With our easy-to-use interface, you can customize your QR codes
+            with logos, colors, and more. Join thousands of users who trust FreeQRcodes.link for their QR code needs.
+          </p>
         </div>
+        <div>
+          <h3 class="font-semibold mb-4">Product</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#qr-generator">Qr Generator</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-4">Company</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Use Cases</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-4">Connect With Us</h3>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/alpha.net.bd" class="text-gray-600 hover:text-gray-800"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/c/AlphaNetBD" class="text-gray-600 hover:text-gray-800"><i
+                class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/alpha.net.bd" class="text-gray-600 hover:text-gray-800"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="mt-8 text-center text-gray-600">
-        <p>&copy; 2024 FreeQRcodes.link. All rights reserved.</p>
+      <p>&copy; 2024 FreeQRcodes.link. All rights reserved.</p>
     </div>
-</footer>
+  </footer>
 
-<script src="../cdn.jsdelivr.net/npm/bootstrap%405.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../cdn.jsdelivr.net/npm/jspdf%402.5.2/dist/jspdf.umd.min.js"></script>
-<script src="../cdn.jsdelivr.net/npm/html5-qrcode%402.3.8/html5-qrcode.min.js"></script>
+  <script src="../cdn.jsdelivr.net/npm/bootstrap%405.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../cdn.jsdelivr.net/npm/jspdf%402.5.2/dist/jspdf.umd.min.js"></script>
+  <script src="../cdn.jsdelivr.net/npm/html5-qrcode%402.3.8/html5-qrcode.min.js"></script>
 
-<script src="public/js/script3860.js?v=1"></script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2EZX12RC5B"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
 
-    gtag('config', 'G-2EZX12RC5B');
-</script>
+    <!-- Footer -->
+    <footer class="relative bg-slate-950 bg-opacity-95 text-white py-12  bg-cover bg-center bg-no-repeat">
+
+      <!-- Footer Content -->
+      <div class="relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="gap-20 sm:flex lg:justify-between">
+  
+            <!-- Company Information with Logo -->
+            <div class="mb-6 lg:mb-0 sm:w-1/2">
+  
+              <div class="flex flex-shrink-0 items-center">
+                <a href="/" class="flex flex-shrink-0 items-center" title="vmx.link">
+                  <!-- <img class="h-7 w-auto" src="/public/images/logo.png" alt="vmx.link" height="28" width="28">
+                  <span class="ml-2  font-bold text-white text-2xl font-semibold">vmx.link</span> -->
+                  <i class="fa fa-qrcode text-violet-600 text-2xl text-white"></i>
+                </a>
+              </div>
+              <p class="mt-4 text-gray-400">
+                FreeQRCodes.link is your go-to platform for creating high-quality QR codes.
+                Whether it's for business, events, or personal use, our tool simplifies QR code creation with features like color customization, logo embedding, and detailed analytics.
+                Join thousands of satisfied users leveraging FreeQRCodes.
+                link for their QR code needs.
+              </p>
+            </div>
+  
+            <!-- Navigation Links -->
+            <div class="grid grid-cols-3 sm:grid-cols-3 sm:w-1/2 gap-4">
+  
+              <div>
+                <h3 class="text-lg font-semibold">Services</h3>
+                <ul class="mt-4 space-y-2">
+                  <li><a href="https://alpha.net.bd/" target="_blank" class="text-gray-400 hover:text-white">Alpha
+                      Net</a></li>
+                  <li><a href="https://cfl-it.com/" target="_blank" class="text-gray-400 hover:text-white">CFL-IT</a>
+                  </li>
+                  <li><a href="https://www.godigital.com.bd/" target="_blank" class="text-gray-400 hover:text-white">Go
+                      Digital</a></li>
+                  <li><a href="/brands" class="text-gray-400 hover:text-white">All Brands</a></li>
+                </ul>
+              </div>
+
+
+              <div>
+                <h3 class="text-lg font-semibold">Brands</h3>
+                <ul class="mt-4 space-y-2">
+                  <li><a href="https://alpha.net.bd/" target="_blank" class="text-gray-400 hover:text-white">Alpha
+                      Net</a></li>
+                  <li><a href="https://cfl-it.com/" target="_blank" class="text-gray-400 hover:text-white">CFL-IT</a>
+                  </li>
+                  <li><a href="https://www.godigital.com.bd/" target="_blank" class="text-gray-400 hover:text-white">Go
+                      Digital</a></li>
+                  <li><a href="/brands" class="text-gray-400 hover:text-white">All Brands</a></li>
+                </ul>
+              </div>
+  
+              <div>
+                <h3 class="text-lg font-semibold">Quick Links</h3>
+                <ul class="mt-4 space-y-2">
+                  <li><a href="/" class="text-gray-400 hover:text-white relative  inline-block">Home</a>
+                  </li>
+                  <li><a href="/about" class="text-gray-400 hover:text-white relative  inline-block">About</a>
+                  </li>
+                  <li><a href="/contact" class="text-gray-400 hover:text-white relative  inline-block">Contact</a></li>
+                  <li><a href="/faq" class="text-gray-400 hover:text-white relative  inline-block">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="flex items-center space-x-3 mb-3 mt-3 w-full md:mb-0">
+  
+                <div>Share:</div>
+  
+                <a href="http://www.facebook.com/share.php?u=https://vmx.link" target="_blank" rel="noopener noreferrer"
+                  class="text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-7 w-7" fill="currentColor">
+                    <path
+                      d="M13 19.94a8 8 0 1 0-2 0V14H9v-2h2v-1.65c0-1.34.14-1.83.4-2.32.26-.48.65-.87 1.14-1.13.38-.2.85-.33 1.68-.38.33-.02.76 0 1.28.08v1.9H15c-.92 0-1.3.04-1.52.16a.73.73 0 0 0-.31.32c-.13.22-.17.45-.17 1.37V12h2.5l-.5 2h-2v5.94ZM12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="https://twitter.com/intent/tweet?url=https://vmx.link" target="_blank" rel="noopener noreferrer"
+                  class="text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-7 w-7" fill="currentColor">
+                    <path
+                      d="M15.35 5.55a2.9 2.9 0 0 0-2.9 2.85l-.03 1.57a.6.6 0 0 1-.68.59l-1.56-.22a11.7 11.7 0 0 1-5.9-2.8c-.6 3.31.56 5.6 3.37 7.38l1.75 1.1a.6.6 0 0 1 .04.99l-1.6 1.16c.95.06 1.85.02 2.6-.13 4.71-.94 7.85-4.5 7.85-10.35 0-.48-1.01-2.14-2.94-2.14Zm-4.9 2.81a4.9 4.9 0 0 1 8.38-3.35c.72-.01 1.32.17 2.67-.65C21.17 6 21 6.7 20.3 7.69c0 7.64-4.7 11.36-9.46 12.31-3.27.65-8.02-.42-9.38-1.84.69-.05 3.5-.36 5.14-1.55C5.2 15.7-.28 12.47 3.33 3.79c1.7 1.97 3.4 3.32 5.15 4.03 1.16.48 1.44.47 1.97.54Z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="whatsapp://send?text=https://vmx.link" target="_blank" rel="noopener noreferrer"
+                  class="text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-7 w-7" fill="currentColor">
+                    <path
+                      d="m7.25 18.5.73.42a8 8 0 1 0-2.9-2.9l.43.73-.66 2.4 2.4-.66ZM2.01 22l1.35-4.97a10 10 0 1 1 3.61 3.61L2.01 22ZM8.39 7.3h.4l.17.02c.16.02.33.12.39.25l.87 2.04c.06.15.02.35-.1.54a4.35 4.35 0 0 1-.61.78s-.1.12-.07.26l.1.2.07.1c.25.43.6.86 1.02 1.27.12.12.23.24.36.35.47.41 1 .75 1.57 1l.26.1a1.43 1.43 0 0 0 .26.09c.16 0 .26-.1.3-.14.72-.88.78-.94.79-.94.1-.1.24-.13.38-.12a.5.5 0 0 1 .17.04l1.4.62.59.26c.1.05.18.16.19.27l-.02.37c-.03.26-.1.57-.18.73-.06.12-.13.22-.21.3a2.38 2.38 0 0 1-.46.38l-.38.22c-.26.14-.54.22-.83.23-.19.01-.38.02-.56.01l-.57-.08a9.45 9.45 0 0 1-3.84-2.05c-.23-.2-.43-.41-.65-.62a9.52 9.52 0 0 1-1.97-2.75c-.2-.44-.33-.92-.33-1.4 0-.62.2-1.2.57-1.69.07-.1.14-.2.26-.3a.96.96 0 0 1 .67-.33Z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vmx.link" target="_blank"
+                  rel="noopener noreferrer" class="text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-7 w-7" fill="currentColor">
+                    <path
+                      d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm1 2v14h14V5H5Zm2.5 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm-1 1h2v7.5h-2V10Zm5.5.43a2.93 2.93 0 0 1 2-.93c2.07 0 3.5 1.68 3.5 3.75v4.25h-2v-4.25a1.75 1.75 0 1 0-3.5 0v4.25h-2V10h2v.43Z">
+                    </path>
+                  </svg>
+                </a>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+    </footer>
+  
+    <div class="flex-shrink-0  bg-gray-900 text-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row min-h-[4rem] py-2 md:py-0 items-center justify-between text-sm">
+          <span class="text-center mb-3 md:mb-0">Copyright © 2024 freeqrcodes.link. All rights reserved.</span>
+          <span class=" mb-3 md:mb-0 ">Powered by <a class="text-indigo-300" href="https://alpha.net.bd"
+              target="_blank">Alpha
+              Net</a></span>
+        </div>
+      </div>
+    </div>
+  
     <script>
-        $(document).ready(function() {
-            $('input[name="qr_type"]').on('change', function() {
-                var qrType = $('input[name="qr_type"]:checked').val();
-                $('#qr_content_wrapper').html(getQRFields(qrType));
-            });
-
-            $('#qr-form').on('submit', function(e) {
-                e.preventDefault();
-
-                var formData = new FormData($('form')[0]);
-                var qrType = formData.get('qr_type');
-
-                if (!validateQRContent(qrType, Object.fromEntries(formData.entries()))) {
-                    alert('Please enter valid content for the selected QR type.');
-                    return;
-                }
-
-                var qrUrl = 'generate.html';
-
-                $('#qr-result img').addClass('qr-code-loading');
-                $('#qr-button-text').text('Generating QR Code...');
-
-                $.ajax({
-                    url: qrUrl,
-                    type: 'POST',
-                    data: formData,
-                    processData: false,
-                    contentType: false,
-                    dataType: 'json',
-                    success: function(data) {
-                        if (!data.data) {
-                            alert(data.message);
-                            return;
-                        }
-
-                        $('#qr-result img').removeClass('qr-code-loading').attr('src', data.data);
-                        $('[id^="download-"]').removeAttr('disabled');
-
-                        scanQRCodeFromImage('#qr-result img')
-                            .then(result => {
-                                console.log(result);
-                                $('#is_readable').removeClass('hidden');
-                                $('#is_not_readable').addClass('hidden');
-                            })
-                            .catch(error => {
-                                console.error(error);
-                                $('#is_readable').addClass('hidden');
-                                $('#is_not_readable').removeClass('hidden');
-                            });
-                    },
-                    error: function(xhr, status, error) {
-                        alert('Failed to generate QR code. Please try again later.');
-                    },
-                    complete: function() {
-                        $('#qr-button-text').text('Generate QR Preview');
-                    }
-                });
-            });
-
-            function getQRFields(qr_type) {
-                switch (qr_type) {
-                    case 'url':
-                        return `
-                        <div class="mb-4 qr_type_url">
-                            <label class="block text-gray-700"><i class="fa-solid fa-link"></i> URL </label>
-                            <input type="text" name="qr_content" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-violet-500 focus:border-violet-500 sm:text-sm" placeholder="https://example.com" required>
-                        </div>`;
-                        break;
-
-                    case 'text':
-                        return `
-                        <div class="mb-4 qr_type_text">
-                            <label class="block text-gray-700">Text</label>
-                            <textarea name="qr_content" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-violet-500 focus:border-violet-500 sm:text-sm" placeholder="Enter text" rows="4" required></textarea>
-                        </div>`;
-                        break;
-
-                    case 'email':
-                        return `
-                        <div class="mb-4 qr_type_email">
-                            <label class="block text-gray-700">Email Address</label>
-                            <input type="email" name="qr_content" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-violet-500 focus:border-violet-500 sm:text-sm" placeholder="Enter email address" required>
-                            
-                            <label class="block text-gray-700 mt-4">Subject</label>
-                            <input type="text" name="qr_subject" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-violet-500 focus:border-violet-500 sm:text-sm" placeholder="Enter email subject" required>
-                
-                            <label class="block text-gray-700 mt-4">Message</label>
-                            <textarea name="qr_message" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-violet-500 focus:border-violet-500 sm:text-sm" placeholder="Enter email message" rows="4" required></textarea>
-            
-                        </div>`;
-                        break;
-
-                    case 'phone':
-                        return `
-                        <div class="mb-4 qr_type_phone">
-                            <label class="block text-gray-700">Phone Number</label>
-                            <input type="tel" name="qr_content" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-violet-500 focus:border-violet-500 sm:text-sm" placeholder="Enter phone number" required>
-                        </div>`;
-                        break;
-
-                    default:
-                        return '';
-                }
-            }
-
-            function validateQRContent(qrType, formEntries) {
-                var isValid = true;
-                switch (qrType) {
-                    case 'url':
-                        var urlPattern = new RegExp('^(https?:\\/\\/)?' +
-                            '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.?)+[a-z]{2,}|' +
-                            '((\\d{1,3}\\.){3}\\d{1,3}))' +
-                            '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' +
-                            '(\\?[;&a-z\\d%_.~+=-]*)?' +
-                            '(\\#[-a-z\\d_]*)?$', 'i');
-                        isValid = !!urlPattern.test(formEntries.qr_content);
-                        break;
-                    case 'text':
-                        isValid = formEntries.qr_content.trim().length > 0;
-                        break;
-                    case 'email':
-                        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                        isValid = emailPattern.test(formEntries.qr_content) && formEntries.qr_subject.trim().length > 0 && formEntries.qr_message.trim().length > 0;
-                        break;
-
-                    case 'phone':
-                        var phonePattern = /^\+?\d{9,15}$/;
-                        isValid = phonePattern.test(formEntries.qr_content);
-                        break;
-
-                    default:
-                        isValid = false;
-                }
-
-                if (!isValid) {
-                    $('input, textarea').each(function() {
-                        if (!this.checkValidity()) {
-                            $(this).addClass('border-red-500');
-                        } else {
-                            $(this).removeClass('border-red-500');
-                        }
-                    });
-                }
-
-                return isValid;
-            }
-
-            $(document).on('input', 'input, textarea', function() {
-                if (this.checkValidity()) {
-                    $(this).removeClass('border-red-500');
-                }
-            });
-        });
+      function toggleMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      }
     </script>
 </body>
 
-
 <!-- Mirrored from freeqrcodes.link/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Dec 2024 09:30:56 GMT -->
+
 </html>

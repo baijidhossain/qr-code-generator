@@ -106,39 +106,93 @@
   </div>
 
   <!-- Main Content -->
-  <section class="px-4 py-20 sm:px-10 bg-gradient-to-br from-gray-900 via-violet-900 to-indigo-600 text-white">
 
-    <div class="gap-8 grid grid-cols-1 items-center lg:grid-cols-2 max-w-7xl mx-auto">
+  <section class="bg-gray-50">
 
-      <div class="order-2 lg:order-1">
+    <div class="lg:px-10 pb-20 pt-20 px-4 sm:px-24">
 
-        <h3 class="text-3xl font-extrabold mb-4 sm:text-4xl">QR Code Generator</h3>
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-wrap  justify-between">
 
-        <p class="sm:text-lg leading-relaxed">
-          FreeQRCodes.link is your go-to platform for creating high-quality QR codes. Whether it's for business, events,
-          or personal use, our tool simplifies QR code creation with features like color customization, logo embedding,
-          and detailed analytics. Join thousands of satisfied users leveraging FreeQRCodes.link for their QR code needs.
-        </p>
+          <div class="grid lg:w-1/2 w-full">
+            <div class="brand-img lg:me-10  place-self-center lg:place-self-start lg:mb-0 mb-14">
+              <img src="./public/images/about-section.png" alt="Discover Hotels &amp; Motels Across the USA"
+                loading="lazy" width="400" height="400" class="place-self-center">
+            </div>
+          </div>
 
-        <ul class="list-disc list-inside mt-4 text-lg">
-          <li>Customizable QR Codes with logos and colors.</li>
-          <li>Detailed analytics: Click counts, location data, and more.</li>
-          <li>Security features: Link expiration and password protection.</li>
-        </ul>
+          <div class="grid lg:w-1/2 place-items-center w-full">
 
-      </div>
+            <div class="order-2 lg:order-1">
 
-      <div class="flex justify-center order-1 lg:order-2">
-        <img src="./public/images/about-section.png" alt="Empowering Businesses with QR Code Solutions"
-          class="w-full max-w-md" loading="lazy">
+              <h3 class="text-3xl font-extrabold mb-4 sm:text-4xl">QR Code Generator</h3>
+
+              <p class="sm:text-lg leading-relaxed">
+                FreeQRCodes.link is your go-to platform for creating high-quality QR codes. Whether it's for business,
+                events,
+                or personal use, our tool simplifies QR code creation with features like color customization, logo
+                embedding,
+                and detailed analytics. Join thousands of satisfied users leveraging FreeQRCodes.link for their QR code
+                needs.
+              </p>
+
+              <ul class="list-disc list-inside mt-4 text-lg">
+                <li>Customizable QR Codes with logos and colors.</li>
+                <li>Detailed analytics: Click counts, location data, and more.</li>
+                <li>Security features: Link expiration and password protection.</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
     </div>
 
   </section>
 
-  <!-- Brand Section -->
+  <section class="bg-gray-100 py-20">
+    <div class="lg:px-10 px-4 sm:px-24 mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
+        <!-- Mission Card -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <h3 class="text-3xl font-extrabold mb-4 sm:text-4xl text-gray-800">Mission</h3>
+          <p class="sm:text-lg leading-relaxed text-gray-600">
+            At FreeQRCodes.link, our mission is to empower individuals and businesses by providing a user-friendly
+            platform for creating high-quality, customizable QR codes. We aim to simplify communication, enhance
+            connectivity, and drive innovation through technology.
+          </p>
+          <p class="sm:text-lg leading-relaxed text-gray-600">
+            Whether you're looking to share information, promote a business, or enhance customer engagement, we are
+            committed to delivering a seamless QR code creation experience tailored to your needs.
+          </p>
+        </div>
+
+        <!-- Values Card -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <h3 class="text-3xl font-extrabold mb-4 sm:text-4xl text-gray-800">Values</h3>
+          <p class="sm:text-lg leading-relaxed text-gray-600">
+            We prioritize simplicity, ensuring that advanced QR code creation is accessible to everyone, regardless of
+            technical expertise. Innovation drives us to continuously enhance our platform with cutting-edge features
+            like
+            analytics, security, and customization.
+          </p>
+          <p class="sm:text-lg leading-relaxed text-gray-600">
+            Our focus on accessibility ensures that our tools remain free and available to a global audience. Security
+            is
+            paramount, with features such as password-protected links and link expiration to protect user data.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Section -->
   <section class="bg-gray-50 pt-24 pb-24">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-8">
@@ -149,7 +203,8 @@
 
         <p class="mx-auto max-w-md sm:text-lg md:mt-5 md:max-w-3xl">
           Discover a wide range of reliable brands offering cutting-edge solutions across various industries.
-          From cloud services to digital marketing, communication tools, and more, our brands are committed to empowering your business growth and innovation.
+          From cloud services to digital marketing, communication tools, and more, our brands are committed to
+          empowering your business growth and innovation.
         </p>
 
       </div>
@@ -234,62 +289,23 @@
       </div>
 
       <div class="mt-5 text-center">
-        <a href="/brands" class="bg-blue-600 focus:outline-none font-semibold hover:bg-blue-700 items-center justify-center mx-auto px-5 py-2 rounded-full shadow-md text-white w-80 flex">
+        <a href="/brands"
+          class="bg-blue-600 focus:outline-none font-semibold hover:bg-blue-700 items-center justify-center mx-auto px-5 py-2 rounded-full shadow-md text-white w-80 flex">
           About of All Brands
           <span class="ml-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5">
+              </path>
             </svg>
           </span>
         </a>
       </div>
-      
-    
+
     </div>
   </section>
 
   <!-- Footer -->
-  <!-- <footer class="bg-gray-100 py-12">
-      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8">
-        <div class="md:col-span-2">
-          <div class="flex items-center mb-4">
-            <i class="fa fa-qrcode text-violet-600 text-2xl"></i>
-            <span class="ml-2 font-bold text-gray-700">FreeQRcodes.link</span>
-          </div>
-          <p class="text-gray-600 text-sm">
-            Our QR code generator helps you create high-quality QR codes with ease. Customize your codes with logos,
-            colors, and more to suit your needs.
-          </p>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-4 text-gray-700">Product</h3>
-          <ul class="space-y-2 text-gray-600">
-            <li><a href="#features" class="hover:text-violet-600">Features</a></li>
-            <li><a href="#how-it-works" class="hover:text-violet-600">How It Works</a></li>
-            <li><a href="#qr-generator" class="hover:text-violet-600">QR Generator</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-4 text-gray-700">Company</h3>
-          <ul class="space-y-2 text-gray-600">
-            <li><a href="#about" class="hover:text-violet-600">About</a></li>
-            <li><a href="#contact" class="hover:text-violet-600">Contact</a></li>
-            <li><a href="#use-cases" class="hover:text-violet-600">Use Cases</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-4 text-gray-700">Connect With Us</h3>
-          <div class="flex space-x-4">
-            <a href="https://www.facebook.com" class="text-gray-600 hover:text-gray-800"><i
-                class="fab fa-facebook"></i></a>
-            <a href="https://www.youtube.com" class="text-gray-600 hover:text-gray-800"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.linkedin.com" class="text-gray-600 hover:text-gray-800"><i
-                class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-  </footer> -->
-
   <footer class="relative bg-slate-950 bg-opacity-95 text-white py-12  bg-cover bg-center bg-no-repeat">
 
     <!-- Footer Content -->
@@ -309,7 +325,8 @@
             </div>
             <p class="mt-4 text-gray-400">
               FreeQRCodes.link is your go-to platform for creating high-quality QR codes.
-              Whether it's for business, events, or personal use, our tool simplifies QR code creation with features like color customization, logo embedding, and detailed analytics.
+              Whether it's for business, events, or personal use, our tool simplifies QR code creation with features
+              like color customization, logo embedding, and detailed analytics.
               Join thousands of satisfied users leveraging FreeQRCodes.
               link for their QR code needs.
             </p>
