@@ -33,3 +33,14 @@
   transition: .3s all ease !important;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
 }
+
+.brand-img{
+    border-radius: 5px;
+    padding: 71px;
+    height: 90%;
+    min-height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/public/images/bg-all.jpg") no-repeat center center / cover;
+}
