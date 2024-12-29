@@ -2,131 +2,417 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Generator | About FreeQRCodes.link</title>
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Learn about FreeQRCodes.link, your go-to free QR code generator. Discover our mission, features, and commitment to providing easy-to-use QR code solutions.">
-    <meta name="keywords" content="about FreeQRCodes.link, QR code generator features, free QR code tool, QR code company">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="about.html">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator | About freeqrcodes.link</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Learn about FreeQRCodes.link, your go-to free QR code generator. Discover our mission, features, and commitment to providing easy-to-use QR code solutions.">
+  <meta name="keywords"
+    content="about FreeQRCodes.link, QR code generator features, free QR code tool, QR code company">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="about.html">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="about.html">
-    <meta property="og:title" content="About FreeQRCodes.link | Your Trusted QR Code Generator">
-    <meta property="og:description" content="Discover FreeQRCodes.link: A free, user-friendly QR code generator. Learn about our mission, features, and commitment to simplifying QR code creation.">
-    <meta property="og:image" content="/public/images/freeqrcode.png">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="about.html">
+  <meta property="og:title" content="About FreeQRCodes.link | Your Trusted QR Code Generator">
+  <meta property="og:description"
+    content="Discover FreeQRCodes.link: A free, user-friendly QR code generator. Learn about our mission, features, and commitment to simplifying QR code creation.">
+  <meta property="og:image" content="/public/images/freeqrcode.png">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="about.html">
-    <meta property="twitter:title" content="About FreeQRCodes.link | Your Trusted QR Code Generator">
-    <meta property="twitter:description" content="Discover FreeQRCodes.link: A free, user-friendly QR code generator. Learn about our mission, features, and commitment to simplifying QR code creation.">
-    <meta property="twitter:image" content="/public/images/freeqrcode.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="about.html">
+  <meta property="twitter:title" content="About FreeQRCodes.link | Your Trusted QR Code Generator">
+  <meta property="twitter:description"
+    content="Discover FreeQRCodes.link: A free, user-friendly QR code generator. Learn about our mission, features, and commitment to simplifying QR code creation.">
+  <meta property="twitter:image" content="/public/images/freeqrcode.png">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <script src="https://cdn.tailwindcss.com/?plugins=forms"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="./public/css/style.css">
+  <script src="https://cdn.tailwindcss.com/?plugins=forms"></script>
 </head>
 
 <body class="flex flex-col min-h-screen bg-gray-100">
 
-    <!-- Header -->
-    <header class="w-96 mx-auto bg-white border-b">
-        <nav class="px-4 py-2 lg:px-6 xl:px-20 flex justify-between items-center">
-            <a href="index.html" class="flex items-center">
-                <img src="/public/images/freeqrcodes.png" width="210" height="30" alt="Free QR Codes" class="mr-2">
-            </a>
+  <!-- Header -->
 
-            <ul class="hidden md:flex space-x-6 font-semibold text-gray-700">
-                <li><a href="index.html" class="hover:text-violet-600">Home</a></li>
-                <li><a href="about.html" class="hover:text-violet-600">About</a></li>
-                <li><a href="contact.html" class="hover:text-violet-600">Contact Us</a></li>
-            </ul>
+  <!-- Header -->
+  <header class="bg-white border-b">
+    <nav class="lg:py-0 max-w-7xl mx-auto py-2 w-full z-10">
+      <div class="flex justify-between items-center">
 
-            <div class="flex items-center gap-4">
-                <a href="contact.html" class="px-4 py-2 text-white bg-violet-600 hover:bg-violet-700 rounded-md">Contact Us <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
-                <button class="md:hidden text-gray-700 text-2xl" onclick="toggleMenu()">☰</button>
-            </div>
-        </nav>
-    </header>
+        <a href="index.html" class="flex items-center">
+          <img src="public/images/freeqrcodes.png" fetchpriority="high" width="210" height="30" alt="Free QR Codes"
+            class="mr-2" decoding="async">
+        </a>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden bg-gray-800 text-white p-4 space-y-4">
-        <a href="index.html" class="block hover:text-violet-400">Home</a>
-        <a href="about.html" class="block hover:text-violet-400">About</a>
-        <a href="contact.html" class="block hover:text-violet-400">Contact Us</a>
+        <ul class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
+                    md:relative md:flex md:p-0 md:bg-transparent md:flex-row font-semibold" id="menu">
+          <li class="md:hidden z-90 fixed top-4 right-6">
+            <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">×</a>
+          </li>
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="index.html"
+              class="text-white md:text-gray-700 hover:text-violet-600">Home</a></li>
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="about.html"
+              class="text-white md:text-gray-700 hover:text-violet-600">About</a></li>
+
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="about.html"
+              class="text-white md:text-gray-700 hover:text-violet-600">Brands</a></li>
+
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="about.html"
+              class="text-white md:text-gray-700 hover:text-violet-600">FAQ</a></li>
+
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="contact.html"
+              class="text-white md:text-gray-700 hover:text-violet-600">Contact</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4 min-w-52 justify-end">
+          <a href="contact.html"
+            class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">Contact Us<i
+              class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+
+          <!-- This is used to open the menu on mobile devices -->
+          <div class="flex items-center md:hidden">
+            <button class="text-4xl font-bold opacity-70 hover:opacity-100 duration-300" aria-label="Open Menu"
+              onclick="toggleMenu()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu">
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden bg-gray-800 text-white p-4 space-y-4">
+    <a href="index.html" class="block hover:text-violet-400">Home</a>
+    <a href="about.html" class="block hover:text-violet-400">About</a>
+    <a href="brand.html" class="block hover:text-violet-400">Brands</a>
+    <a href="faq.html" class="block hover:text-violet-400">FAQ</a>
+    <a href="contact.html" class="block hover:text-violet-400">Contact Us</a>
+  </div>
+
+  <!-- Main Content -->
+  <section class="px-4 py-20 sm:px-10 bg-gradient-to-br from-gray-900 via-violet-900 to-indigo-600 text-white">
+
+    <div class="gap-8 grid grid-cols-1 items-center lg:grid-cols-2 max-w-7xl mx-auto">
+
+      <div class="order-2 lg:order-1">
+
+        <h3 class="text-3xl font-extrabold mb-4 sm:text-4xl">QR Code Generator</h3>
+
+        <p class="sm:text-lg leading-relaxed">
+          FreeQRCodes.link is your go-to platform for creating high-quality QR codes. Whether it's for business, events,
+          or personal use, our tool simplifies QR code creation with features like color customization, logo embedding,
+          and detailed analytics. Join thousands of satisfied users leveraging FreeQRCodes.link for their QR code needs.
+        </p>
+
+        <ul class="list-disc list-inside mt-4 text-lg">
+          <li>Customizable QR Codes with logos and colors.</li>
+          <li>Detailed analytics: Click counts, location data, and more.</li>
+          <li>Security features: Link expiration and password protection.</li>
+        </ul>
+
+      </div>
+
+      <div class="flex justify-center order-1 lg:order-2">
+        <img src="./public/images/about-section.png" alt="Empowering Businesses with QR Code Solutions"
+          class="w-full max-w-md" loading="lazy">
+      </div>
+
     </div>
 
-    <!-- Main Content -->
-    <section class="px-4 py-20 sm:px-10 bg-gradient-to-br from-gray-900 via-violet-900 to-indigo-600 text-white">
-        <div class="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div class="order-2 lg:order-1">
-                <h3 class="text-3xl font-extrabold mb-4 sm:text-4xl">QR Code Generator</h3>
-                <p class="sm:text-lg leading-relaxed">
-                    FreeQRCodes.link is your go-to platform for creating high-quality QR codes. Whether it's for business, events, or personal use, our tool simplifies QR code creation with features like color customization, logo embedding, and detailed analytics. Join thousands of satisfied users leveraging FreeQRCodes.link for their QR code needs.
-                </p>
-                <ul class="list-disc list-inside mt-4 text-lg">
-                    <li>Customizable QR Codes with logos and colors.</li>
-                    <li>Detailed analytics: Click counts, location data, and more.</li>
-                    <li>Security features: Link expiration and password protection.</li>
-                </ul>
-            </div>
-            <div class="flex justify-center order-1 lg:order-2">
-                <img src="/public/images/url_shortener_about.svg" alt="Empowering Businesses with QR Code Solutions" class="w-full max-w-md">
-            </div>
-        </div>
-    </section>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-100 py-12">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8">
-            <div class="md:col-span-2">
-                <div class="flex items-center mb-4">
-                    <i class="fa fa-qrcode text-violet-600 text-2xl"></i>
-                    <span class="ml-2 font-bold text-gray-700">FreeQRcodes.link</span>
-                </div>
-                <p class="text-gray-600 text-sm">
-                    Our QR code generator helps you create high-quality QR codes with ease. Customize your codes with logos, colors, and more to suit your needs.
-                </p>
-            </div>
-            <div>
-                <h3 class="font-semibold mb-4 text-gray-700">Product</h3>
-                <ul class="space-y-2 text-gray-600">
-                    <li><a href="#features" class="hover:text-violet-600">Features</a></li>
-                    <li><a href="#how-it-works" class="hover:text-violet-600">How It Works</a></li>
-                    <li><a href="#qr-generator" class="hover:text-violet-600">QR Generator</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="font-semibold mb-4 text-gray-700">Company</h3>
-                <ul class="space-y-2 text-gray-600">
-                    <li><a href="#about" class="hover:text-violet-600">About</a></li>
-                    <li><a href="#contact" class="hover:text-violet-600">Contact</a></li>
-                    <li><a href="#use-cases" class="hover:text-violet-600">Use Cases</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="font-semibold mb-4 text-gray-700">Connect With Us</h3>
-                <div class="flex space-x-4">
-                    <a href="https://www.facebook.com" class="text-gray-600 hover:text-gray-800"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.youtube.com" class="text-gray-600 hover:text-gray-800"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.linkedin.com" class="text-gray-600 hover:text-gray-800"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="mt-8 text-center text-gray-600">
-            <p>&copy; 2024 FreeQRcodes.link. All rights reserved.</p>
-        </div>
-    </footer>
+  <!-- Brand Section -->
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        }
-        alert("This is test alert")
-    </script>
+  <section class="bg-gray-50 pt-24 pb-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4 md:max-w-4xl mx-auto">
+          Global Solutions: Empower your business with our IT and other services
+        </h2>
+        <p class="mx-auto max-w-md sm:text-lg md:mt-5 md:max-w-3xl">
+          Cloud and IT services for businesses. Our resources encompass website design, digital marketing, graphic
+          design, communication solutions, and more. Their cutting-edge cloud services support business growth, while
+          they manage the remaining tasks.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Brand Card -->
+        <div class="text-center brand-card">
+          <a href="https://alpha.net.bd/" target="_blank" class="inline-block">
+            <img src="./public/images/brands/alpha_net.svg" alt="Alpha Net" loading="lazy" width="244" height="80">
+          </a>
+        </div>
+
+        <div class="text-center brand-card">
+          <a href="https://cfl-it.com/" target="_blank" class="inline-block">
+            <img src="./public/images/brands/cfl-it.svg" alt="CFL IT" loading="lazy" width="244" height="80">
+          </a>
+        </div>
+
+        <div class="text-center brand-card">
+          <a href="https://ipbxphone.com/" target="_blank" class="inline-block">
+            <img src="./public/images/brands/ipbxphone.svg" alt="IPBX Phone" loading="lazy" width="244" height="80">
+          </a>
+        </div>
+
+        <div class="text-center brand-card">
+          <a href="https://residentialvps.com/" target="_blank" class="inline-block">
+            <img src="./public/images/brands/residential_vps.svg" alt="Residential VPS" loading="lazy" width="244"
+              height="80">
+          </a>
+        </div>
+
+        <div class="text-center brand-card">
+          <a href="https://www.sms.net.bd/" target="_blank" class="inline-block">
+            <img src="./public/images/brands/alpha_sms.svg" alt="Alpha SMS" loading="lazy" width="244" height="80">
+          </a>
+        </div>
+
+        <div class="text-center brand-card">
+          <a href="https://www.vps.com.bd/" target="_blank" class="inline-block">
+            <img src="./public/images/brands/vps.com.bd.svg" alt="VPS.com.bd" loading="lazy" width="244" height="80">
+          </a>
+        </div>
+
+        <div class="text-center brand-card">
+          <a href="https://www.pbx.com.bd/" target="_blank" class="inline-block">
+            <img src="./public/images/brands/alpha_pbx.svg" alt="Alpha PBX" loading="lazy" width="244" height="80">
+          </a>
+        </div>
+
+        <div class="text-center brand-card">
+          <a href="https://www.godigital.com.bd/" target="_blank" class="inline-block">
+            <img src="./public/images/brands/godigital.svg" alt="Go Digital BD" loading="lazy" width="244" height="80">
+          </a>
+        </div>
+
+        <div class="text-center brand-card">
+          <a href="https://virtue.works/" target="_blank" class="inline-block">
+            <img src="./public/images/brands/virtue-work.svg" alt="Virtue Works" loading="lazy" width="244" height="80">
+          </a>
+        </div>
+
+        <div class="text-center brand-card">
+          <a href="https://www.hotelmotels.info/" target="_blank" class="inline-block">
+            <img src="./public/images/brands/hotel-motels.png" alt="Hotel Motels" loading="lazy" width="244"
+              height="80">
+          </a>
+        </div>
+
+        <div class="text-center brand-card">
+          <a href="https://dojos.info/" target="_blank" class="inline-block">
+            <img src="./public/images/brands/dojos-info.svg" alt="Dojos Info" loading="lazy" width="244" height="80">
+          </a>
+        </div>
+
+        <div class="text-center brand-card">
+          <a href="https://www.pizzashops.info/" target="_blank" class="inline-block">
+            <img src="./public/images/brands/pizzashops-info.svg" alt="Pizza Shops" loading="lazy" width="244"
+              height="80">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="mt-5 text-center">
+        <a href="/brands" class="bg-blue-600 focus:outline-none font-semibold hover:bg-blue-700 items-center justify-center mx-auto px-5 py-2 rounded-full shadow-md text-white w-80 flex">
+          About of All Brands
+          <span class="ml-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+      
+      
+      
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- <footer class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center mb-4">
+            <i class="fa fa-qrcode text-violet-600 text-2xl"></i>
+            <span class="ml-2 font-bold text-gray-700">FreeQRcodes.link</span>
+          </div>
+          <p class="text-gray-600 text-sm">
+            Our QR code generator helps you create high-quality QR codes with ease. Customize your codes with logos,
+            colors, and more to suit your needs.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-4 text-gray-700">Product</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#features" class="hover:text-violet-600">Features</a></li>
+            <li><a href="#how-it-works" class="hover:text-violet-600">How It Works</a></li>
+            <li><a href="#qr-generator" class="hover:text-violet-600">QR Generator</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-4 text-gray-700">Company</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#about" class="hover:text-violet-600">About</a></li>
+            <li><a href="#contact" class="hover:text-violet-600">Contact</a></li>
+            <li><a href="#use-cases" class="hover:text-violet-600">Use Cases</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-4 text-gray-700">Connect With Us</h3>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com" class="text-gray-600 hover:text-gray-800"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com" class="text-gray-600 hover:text-gray-800"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com" class="text-gray-600 hover:text-gray-800"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+  </footer> -->
+
+  <footer class="relative bg-slate-950 bg-opacity-95 text-white py-12  bg-cover bg-center bg-no-repeat">
+
+    <!-- Footer Content -->
+    <div class="relative z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="gap-20 sm:flex lg:justify-between">
+
+          <!-- Company Information with Logo -->
+          <div class="mb-6 lg:mb-0 sm:w-1/2">
+
+            <div class="flex flex-shrink-0 items-center">
+              <a href="/" class="flex flex-shrink-0 items-center" title="vmx.link">
+                <!-- <img class="h-7 w-auto" src="/public/images/logo.png" alt="vmx.link" height="28" width="28">
+                <span class="ml-2  font-bold text-white text-2xl font-semibold">vmx.link</span> -->
+                <i class="fa fa-qrcode text-violet-600 text-2xl text-white"></i>
+              </a>
+            </div>
+            <p class="mt-4 text-gray-400">
+              vmx.link is a powerful URL shortener designed to simplify long URLs into concise links,
+              enhancing user
+              convenience and enabling seamless sharing across platforms. With features like detailed
+              analytics, link
+              expiration, password protection, and integration with social media and marketing tools, VMX.link
+              ensures
+              efficient link management and valuable insights for digital marketing campaigns.
+            </p>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="grid grid-cols-2 sm:grid-cols-2 sm:w-1/4 gap-4">
+
+            <div>
+              <h3 class="text-lg font-semibold">Brands</h3>
+              <ul class="mt-4 space-y-2">
+                <li><a href="https://alpha.net.bd/" target="_blank" class="text-gray-400 hover:text-white">Alpha
+                    Net</a></li>
+                <li><a href="https://cfl-it.com/" target="_blank" class="text-gray-400 hover:text-white">CFL-IT</a>
+                </li>
+                <li><a href="https://www.godigital.com.bd/" target="_blank" class="text-gray-400 hover:text-white">Go
+                    Digital</a></li>
+                <li><a href="/brands" class="text-gray-400 hover:text-white">All Brands</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold">Quick Links</h3>
+              <ul class="mt-4 space-y-2">
+                <li><a href="/" class="text-gray-400 hover:text-white relative  inline-block">Home</a>
+                </li>
+                <li><a href="/about" class="text-gray-400 hover:text-white relative  inline-block">About</a>
+                </li>
+                <li><a href="/contact" class="text-gray-400 hover:text-white relative  inline-block">Contact</a></li>
+                <li><a href="/faq" class="text-gray-400 hover:text-white relative  inline-block">FAQ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex items-center space-x-3 mb-3 mt-3 w-full md:mb-0">
+
+              <div>Share:</div>
+
+              <a href="http://www.facebook.com/share.php?u=https://vmx.link" target="_blank" rel="noopener noreferrer"
+                class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-7 w-7" fill="currentColor">
+                  <path
+                    d="M13 19.94a8 8 0 1 0-2 0V14H9v-2h2v-1.65c0-1.34.14-1.83.4-2.32.26-.48.65-.87 1.14-1.13.38-.2.85-.33 1.68-.38.33-.02.76 0 1.28.08v1.9H15c-.92 0-1.3.04-1.52.16a.73.73 0 0 0-.31.32c-.13.22-.17.45-.17 1.37V12h2.5l-.5 2h-2v5.94ZM12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z">
+                  </path>
+                </svg>
+              </a>
+              <a href="https://twitter.com/intent/tweet?url=https://vmx.link" target="_blank" rel="noopener noreferrer"
+                class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-7 w-7" fill="currentColor">
+                  <path
+                    d="M15.35 5.55a2.9 2.9 0 0 0-2.9 2.85l-.03 1.57a.6.6 0 0 1-.68.59l-1.56-.22a11.7 11.7 0 0 1-5.9-2.8c-.6 3.31.56 5.6 3.37 7.38l1.75 1.1a.6.6 0 0 1 .04.99l-1.6 1.16c.95.06 1.85.02 2.6-.13 4.71-.94 7.85-4.5 7.85-10.35 0-.48-1.01-2.14-2.94-2.14Zm-4.9 2.81a4.9 4.9 0 0 1 8.38-3.35c.72-.01 1.32.17 2.67-.65C21.17 6 21 6.7 20.3 7.69c0 7.64-4.7 11.36-9.46 12.31-3.27.65-8.02-.42-9.38-1.84.69-.05 3.5-.36 5.14-1.55C5.2 15.7-.28 12.47 3.33 3.79c1.7 1.97 3.4 3.32 5.15 4.03 1.16.48 1.44.47 1.97.54Z">
+                  </path>
+                </svg>
+              </a>
+              <a href="whatsapp://send?text=https://vmx.link" target="_blank" rel="noopener noreferrer"
+                class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-7 w-7" fill="currentColor">
+                  <path
+                    d="m7.25 18.5.73.42a8 8 0 1 0-2.9-2.9l.43.73-.66 2.4 2.4-.66ZM2.01 22l1.35-4.97a10 10 0 1 1 3.61 3.61L2.01 22ZM8.39 7.3h.4l.17.02c.16.02.33.12.39.25l.87 2.04c.06.15.02.35-.1.54a4.35 4.35 0 0 1-.61.78s-.1.12-.07.26l.1.2.07.1c.25.43.6.86 1.02 1.27.12.12.23.24.36.35.47.41 1 .75 1.57 1l.26.1a1.43 1.43 0 0 0 .26.09c.16 0 .26-.1.3-.14.72-.88.78-.94.79-.94.1-.1.24-.13.38-.12a.5.5 0 0 1 .17.04l1.4.62.59.26c.1.05.18.16.19.27l-.02.37c-.03.26-.1.57-.18.73-.06.12-.13.22-.21.3a2.38 2.38 0 0 1-.46.38l-.38.22c-.26.14-.54.22-.83.23-.19.01-.38.02-.56.01l-.57-.08a9.45 9.45 0 0 1-3.84-2.05c-.23-.2-.43-.41-.65-.62a9.52 9.52 0 0 1-1.97-2.75c-.2-.44-.33-.92-.33-1.4 0-.62.2-1.2.57-1.69.07-.1.14-.2.26-.3a.96.96 0 0 1 .67-.33Z">
+                  </path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vmx.link" target="_blank"
+                rel="noopener noreferrer" class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-7 w-7" fill="currentColor">
+                  <path
+                    d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm1 2v14h14V5H5Zm2.5 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm-1 1h2v7.5h-2V10Zm5.5.43a2.93 2.93 0 0 1 2-.93c2.07 0 3.5 1.68 3.5 3.75v4.25h-2v-4.25a1.75 1.75 0 1 0-3.5 0v4.25h-2V10h2v.43Z">
+                  </path>
+                </svg>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="flex-shrink-0  bg-gray-900 text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row min-h-[4rem] py-2 md:py-0 items-center justify-between text-sm">
+        <span class="text-center mb-3 md:mb-0">Copyright © 2024 freeqrcodes.link. All rights reserved.</span>
+        <span class=" mb-3 md:mb-0 ">Powered by <a class="text-indigo-300" href="https://alpha.net.bd"
+            target="_blank">Alpha
+            Net</a></span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+
 </body>
 
 </html>
