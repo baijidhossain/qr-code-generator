@@ -1,32 +1,32 @@
 .collapsing {
-    height: 0;
-    overflow: hidden;
-    transition: height .35s ease;
+  height: 0;
+  overflow: hidden;
+  transition: height .35s ease;
 }
 
 .qr-code-loading {
-    animation: opacity-loading 2s infinite ease-in-out;
+  animation: opacity-loading 2s infinite ease-in-out;
 }
 
 @keyframes opacity-loading {
-    0% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
 
-    50% {
-        opacity: 0.5;
-    }
+  50% {
+    opacity: 0.5;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .title-bottom-style {
-    background-image: linear-gradient(180deg, #FFFFFF00 80%, #e1d0ff 0%);
+  background-image: linear-gradient(180deg, #FFFFFF00 90%, #e1d0ff 0%);
 }
 
-.brand-card{
+.brand-card {
   background-color: white !important;
   padding: 25px 25px;
   border-radius: 5px !important;
@@ -34,20 +34,23 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
 }
 
-.brand-img{
-    border-radius: 5px;
-    padding: 71px;
-    height: 90%;
-    min-height: 420px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url("/public/images/bg-all.jpg") no-repeat center center / cover;
+.brand-img {
+  border-radius: 5px;
+  padding: 71px;
+  height: 90%;
+  min-height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/public/images/bg-all.jpg") no-repeat center center / cover;
 }
 
-.logo{
+.logo {
   width: 145px;
   height: 55px;
   object-fit: contain;
 }
- 
+
+.feature-card {
+  min-height: 195px;
+}
