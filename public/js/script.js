@@ -3,10 +3,9 @@ const links = document.querySelectorAll('a'); // Select all anchor tags
 
 links.forEach(link => {
     if (link.pathname === currentPath) {
-        // Do something with the matching link
-        console.log(`Found: ${link.href}`);
-        console.log(link.pathname)
-        console.log(currentPath)
-        link.classList.add('active'); // Example: Add 'active' class
+        const parentLi = link.closest('li'); // Find the closest parent <li>
+        if (parentLi) {
+            parentLi.classList.add('active'); // Add 'active' class to the parent <li>
+        }
     }
 });
