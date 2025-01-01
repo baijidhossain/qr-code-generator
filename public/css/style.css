@@ -54,3 +54,11 @@
 .feature-card {
   min-height: 195px;
 }
+
+.active {
+  color: #8b5cf6 !important;
+  border-bottom: 3px solid #8b5cf6 !important;
+  font-weight: 600 !important;
+  transition: .3s all ease !important;
+
+}
