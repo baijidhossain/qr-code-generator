@@ -61,7 +61,7 @@
   transition: .3s all ease !important;
 }
 
-.active a {
+.active>a {
   color: #8b5cf6 !important;
   font-weight: 600 !important;
 }
