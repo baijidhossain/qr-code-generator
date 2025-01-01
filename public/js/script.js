@@ -1,3 +1,5 @@
+
+
 const currentPath = window.location.pathname; // e.g., "/about"
 const links = document.querySelectorAll('a'); // Select all anchor tags
 
