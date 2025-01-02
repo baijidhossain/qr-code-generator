@@ -40,59 +40,59 @@
 
 <body class="flex flex-col min-h-screen bg-gray-100">
 
-  <!-- Header -->
 
-  <!-- Header -->
-  <header class="bg-white  border-b">
-    <nav class="lg:py-0 max-w-7xl mx-auto py-2 w-full z-10">
-      <div class="flex justify-between items-center">
 
-        <a href="index.html" class="flex items-center">
-          <img src="public/images/freecodes-logo.png" fetchpriority="high" width="210" height="30" alt="Free QR Codes"
-            class="mr-2 logo" decoding="async">
-        </a>
-
-        <ul class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
-              md:relative md:flex md:p-0 md:bg-transparent md:flex-row font-semibold" id="menu">
-          <li class="md:hidden z-90 fixed top-4 right-6">
-            <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">×</a>
-          </li>
-          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="index.html"
-              class="text-white md:text-gray-700 hover:text-violet-600">Home</a></li>
-          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="about.html"
-              class="text-white md:text-gray-700 hover:text-violet-600">About</a></li>
-
-          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="brands.html"
-              class="text-white md:text-gray-700 hover:text-violet-600">Brands</a></li>
-
-              <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="faq.html"
+    <!-- Header -->
+    <header class="bg-white border-b">
+      <nav class="lg:py-0 max-w-7xl mx-auto py-2 w-full z-10">
+        <div class="flex justify-between items-center">
+  
+          <a href="index.html" class="flex items-center">
+            <img src="public/images/freecodes-logo.png" fetchpriority="high" width="210" height="30" alt="Free QR Codes"
+              class="mr-2 logo" decoding="async">
+          </a>
+  
+          <ul class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
+                      md:relative md:flex md:p-0 md:bg-transparent md:flex-row font-semibold" id="menu">
+            <li class="md:hidden z-90 fixed top-4 right-6">
+              <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">×</a>
+            </li>
+            <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="index.html"
+                class="text-white md:text-gray-700 hover:text-violet-600">Home</a></li>
+            <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="about.html"
+                class="text-white md:text-gray-700 hover:text-violet-600 ">About</a></li>
+  
+            <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="brands.html"
+                class="text-white md:text-gray-700 hover:text-violet-600">Brands</a></li>
+  
+            <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="faq.html"
                 class="text-white md:text-gray-700 hover:text-violet-600">FAQ</a></li>
-
-        </ul>
-
-        <div class="flex items-center gap-4 min-w-52 justify-end">
-          <a href="contact.html"
-            class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">Contact<i
-              class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
-
-          <!-- This is used to open the menu on mobile devices -->
-          <div class="flex items-center md:hidden">
-            <button class="text-4xl font-bold opacity-70 hover:opacity-100 duration-300" aria-label="Open Menu"
-              onclick="toggleMenu()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-menu">
-                <line x1="4" x2="20" y1="12" y2="12"></line>
-                <line x1="4" x2="20" y1="6" y2="6"></line>
-                <line x1="4" x2="20" y1="18" y2="18"></line>
-              </svg>
-            </button>
+  
+          </ul>
+  
+          <div class="flex items-center gap-4 min-w-52 justify-end">
+            <a href="contact.html"
+              class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">Contact<i
+                class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+  
+            <!-- This is used to open the menu on mobile devices -->
+            <div class="flex items-center md:hidden">
+              <button class="text-4xl font-bold opacity-70 hover:opacity-100 duration-300" aria-label="Open Menu"
+                onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-menu">
+                  <line x1="4" x2="20" y1="12" y2="12"></line>
+                  <line x1="4" x2="20" y1="6" y2="6"></line>
+                  <line x1="4" x2="20" y1="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
           </div>
+  
         </div>
-
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden bg-gray-800 text-white p-4 space-y-4">
@@ -1088,7 +1088,6 @@
                 Whether you're craving classic favorites or unique toppings, PizzaShops.info is your trusted resource
                 for all things pizza across the USA.</p>
 
-
               <div class="mt-10">
                 <a href="https://pizzashops.info" class="bg-violet-600 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-violet-700 transition duration-300" target="_blank" >
                   Learn more about pizzashops.info
@@ -1110,18 +1109,19 @@
   </section>
 
 
-    <!-- CTA Section -->
-    <section class="pb-20 pt-20  text-center  bg-gray-50">
-      <div class="container mx-auto">
-        <div class="bg-violet-100 rounded-2xl p-12 max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold mb-6">Create Your Perfect QR Code Today!</h2>
-          <p class="text-lg text-gray-600 mb-8">Join thousands of satisfied users who rely on our QR code generator for both personal and professional needs.</p>
-          <a href="#qr-generator"
-            class="bg-violet-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-violet-700 transition-colors">Get
-            Started - It's Free</a>
-        </div>
+  <!-- CTA Section -->
+  <section class="text-center  bg-white pb-20 pt-20 ">
+    <div class="container mx-auto px-4">
+      <div class="bg-violet-100 rounded-2xl p-12 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-6">Create Your Perfect QR Code Today!</h2>
+        <p class="text-lg text-gray-600 mb-8">Join thousands of satisfied users who rely on our QR code generator for
+          both personal and professional needs.</p>
+        <a href="#qr-generator"
+          class="bg-violet-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-violet-700 transition-colors">Get
+          Started - It's Free</a>
       </div>
-    </section>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="relative bg-slate-950 bg-opacity-95 text-white py-12  bg-cover bg-center bg-no-repeat">
