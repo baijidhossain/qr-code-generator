@@ -1,41 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Mirrored from freeqrcodes.link/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Dec 2024 09:30:49 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QR Code Generator | About freeqrcodes.link</title>
+  <title>QR Code Generator | FreeQRCodes.link</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="Learn about FreeQRCodes.link, your go-to free QR code generator. Discover our mission, features, and commitment to providing easy-to-use QR code solutions.">
+    content="Generate free QR codes instantly for URLs, text, email, and more. No sign-up required. Create custom QR codes with our easy-to-use online tool.">
   <meta name="keywords"
-    content="about FreeQRCodes.link, QR code generator features, free QR code tool, QR code company">
+    content="QR code generator, free QR codes, custom QR codes, URL to QR, text to QR, email QR code">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="about.html">
+  <link rel="canonical" href="index.html">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="about.html">
-  <meta property="og:title" content="About FreeQRCodes.link | Your Trusted QR Code Generator">
+  <meta property="og:url" content="index.html">
+  <meta property="og:title" content="FreeQRCode.link - Generate QR Codes Instantly | Free & Easy">
   <meta property="og:description"
-    content="Discover FreeQRCodes.link: A free, user-friendly QR code generator. Learn about our mission, features, and commitment to simplifying QR code creation.">
-  <meta property="og:image" content="/public/images/freeqrcode.png">
+    content="Create custom QR codes for free. No sign-up needed. Generate QR codes for URLs, text, email, and more with our user-friendly online tool.">
+  <meta property="og:image" content="public/images/freeqrcode.html">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="about.html">
-  <meta property="twitter:title" content="About FreeQRCodes.link | Your Trusted QR Code Generator">
+  <meta property="twitter:url" content="index.html">
+  <meta property="twitter:title" content="FreeQRCode.link - Generate QR Codes Instantly | Free & Easy">
   <meta property="twitter:description"
-    content="Discover FreeQRCodes.link: A free, user-friendly QR code generator. Learn about our mission, features, and commitment to simplifying QR code creation.">
-  <meta property="twitter:image" content="/public/images/freeqrcode.png">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    content="Create custom QR codes for free. No sign-up needed. Generate QR codes for URLs, text, email, and more with our user-friendly online tool.">
+  <meta property="twitter:image" content="public/images/freeqrcode.html">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link rel="stylesheet" href="./public/css/style.css">
   <script src="https://cdn.tailwindcss.com/?plugins=forms"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
+    rel="stylesheet">
+  <script src="../code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+
+  <style>
+    /* Sticky Header */
+    .header {
+
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      background-color: #fff !important;
+      box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+    header {
+      transition: all 1s ease-in-out;
+      background-color: transparent;
+      position: fixed;
+      width: 100%;
+      transition: 0.3s ease-in-out;
+    }
+  </style>
+
+  <style>
+    .footer {
+      background: linear-gradient(110deg, rgb(59 130 246 / 0.3), rgba(255, 249, 242, 0.4) 50%, rgba(137, 129, 255, 0.4)), url(./public/images/footer-bg.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+    }
+
+    .footer .content-wrapper {
+      padding-top: 160px;
+      padding-bottom: 30px;
+    }
+
+    .logo {
+      width: 250px;
+    }
+
+    .link-hover {
+      display: inline-block;
+      padding: 0rem 0.5rem;
+      border-radius: 0.375rem;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .copyright-wrapper .copy-right-border-t {
+      border-top: 1.5px solid rgba(0, 0, 0, 0.06);
+    }
+  </style>
+
 </head>
 
 <body class="flex flex-col min-h-screen bg-gray-100">
@@ -101,37 +166,31 @@
     <a href="contact.html" class="block hover:text-violet-400">Contact</a>
   </div>
 
-  <!-- Main Content -->
-
-  <section class="bg-white py-20 ">
-    <div class="lg:px-10 px-4 sm:px-24 mx-auto max-w-7xl">
+  <section class="bg-gray-50 faq-section">
+    <div class="bg-white max-w-4xl mx-auto py-11">
       <!-- Title Section -->
-      <div class="lg:order-1 mb-10 order-2 text-center max-w-5xl mx-auto px-20">
+      <div class="mb-10 text-center max-w-5xl mx-auto px-20">
         <h3 class="text-3xl font-extrabold sm:text-4xl text-gray-800 mb-6">FAQs</h3>
         <p class="sm:text-lg leading-relaxed text-gray-600 mt-2">
           FreeQRCodes.link is your go-to platform for creating high-quality QR codes. Whether it's for business, events,
           or personal use, we have you covered.
         </p>
       </div>
-      
 
       <!-- FAQ Accordion -->
-      <div class="grid grid-cols-1 max-w-4xl mx-auto">
-        <div class="bg-white  rounded-lg">
+      <div class="grid grid-cols-1 mx-auto">
+        <div class="bg-white rounded-lg">
           <div class="space-y-4">
             <!-- Item 1 -->
             <div class="rounded-md">
-              <button
-                class="w-full flex justify-between items-center p-4 text-left text-gray-800 font-semibold focus:outline-none border-b"
-                onclick="toggleFAQ(this)">
+              <button class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full" onclick="toggleFAQ(this)">
                 <span>What is FreeQRCodes.link?</span>
-                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
-              <div class="max-h-0 overflow-hidden transition-all duration-300">
-                <p class="p-4 text-gray-600">
+              <div class="max-h-0 overflow-hidden transition-all duration-300" style="">
+                <p class="px-6 py-4 text-gray-600">
                   FreeQRCodes.link is a platform that provides tools for creating high-quality, customizable QR codes
                   for various personal and business needs.
                 </p>
@@ -140,17 +199,14 @@
 
             <!-- Item 2 -->
             <div class="rounded-md">
-              <button
-                class="w-full flex justify-between items-center p-4 text-left text-gray-800 font-semibold focus:outline-none border-b"
-                onclick="toggleFAQ(this)">
+              <button class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full" onclick="toggleFAQ(this)">
                 <span>Is it free to use?</span>
-                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
-              <div class="max-h-0 overflow-hidden transition-all duration-300">
-                <p class="p-4 text-gray-600">
+              <div class="max-h-0 overflow-hidden transition-all duration-300" style="">
+                <p class="p-4 px-6 py-4 text-gray-600">
                   Yes! Our platform is free to use for creating basic QR codes. Premium features are also available for
                   advanced customization.
                 </p>
@@ -159,17 +215,14 @@
 
             <!-- Item 3 -->
             <div class="rounded-md">
-              <button
-                class="w-full flex justify-between items-center p-4 text-left text-gray-800 font-semibold focus:outline-none border-b"
-                onclick="toggleFAQ(this)">
+              <button class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full" onclick="toggleFAQ(this)">
                 <span>How can I contact support?</span>
-                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
-              <div class="max-h-0 overflow-hidden transition-all duration-300">
-                <p class="p-4 text-gray-600">
+              <div class="max-h-0 overflow-hidden transition-all duration-300" style="">
+                <p class="p-4 px-6 py-4 text-gray-600">
                   You can contact us via the support form on our website or by emailing support@freeqrcodes.link.
                 </p>
               </div>
@@ -177,17 +230,14 @@
 
             <!-- Item 4 -->
             <div class="rounded-md">
-              <button
-                class="w-full flex justify-between items-center p-4 text-left text-gray-800 font-semibold focus:outline-none border-b"
-                onclick="toggleFAQ(this)">
+              <button class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full" onclick="toggleFAQ(this)">
                 <span>Can I customize my QR code?</span>
-                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
-              <div class="max-h-0 overflow-hidden transition-all duration-300">
-                <p class="p-4 text-gray-600">
+              <div class="max-h-0 overflow-hidden transition-all duration-300" style="">
+                <p class="px-6 py-4 text-gray-600">
                   Yes, we offer customizable options for the QR codes, including colors, logos, and more.
                 </p>
               </div>
@@ -195,38 +245,29 @@
 
             <!-- Item 5 -->
             <div class="rounded-md">
-              <button
-                class="w-full flex justify-between items-center p-4 text-left text-gray-800 font-semibold focus:outline-none border-b"
-                onclick="toggleFAQ(this)">
+              <button class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full" onclick="toggleFAQ(this)">
                 <span>How can I download my QR code?</span>
-                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
-              <div class="max-h-0 overflow-hidden transition-all duration-300">
-                <p class="p-4 text-gray-600">
+              <div class="max-h-0 overflow-hidden transition-all duration-300" style="">
+                <p class="p-4 px-6 py-4 text-gray-600">
                   After creating your QR code, simply click on the "Download" button to save it in various formats.
                 </p>
               </div>
             </div>
 
-            <!-- Item 6 to 15 -->
-            <!-- Repeat the same structure for items 6 to 15. Update the question and answer content accordingly. -->
-
-            <!-- Example for Item 6 -->
+            <!-- Item 6 -->
             <div class="rounded-md">
-              <button
-                class="w-full flex justify-between items-center p-4 text-left text-gray-800 font-semibold focus:outline-none border-b"
-                onclick="toggleFAQ(this)">
+              <button class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full" onclick="toggleFAQ(this)">
                 <span>How long does it take to generate a QR code?</span>
-                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-5 h-5 transform transition-transform rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
-              <div class="max-h-0 overflow-hidden transition-all duration-300">
-                <p class="p-4 text-gray-600">
+              <div class="max-h-0 overflow-hidden transition-all duration-300" style="max-height: 56px;">
+                <p class="px-6 py-4 text-gray-600">
                   The process is almost instant. QR codes are generated in just a few seconds.
                 </p>
               </div>
@@ -237,6 +278,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -276,159 +318,113 @@
   </script>
 
   <!-- CTA Section -->
-  <section class="py-20 text-center  bg-gray-50">
-    <div class="container mx-auto">
-      <div class="bg-violet-100 rounded-2xl p-12 max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-6">Create Your Perfect QR Code Today!</h2>
-        <p class="text-lg text-gray-600 mb-8">Join thousands of satisfied users who rely on our QR code generator for
-          both personal and professional needs.</p>
+  <section class="text-center relative bg-gray-50">
+    <div class="relative lg:px-8 max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="bg-violet-100 p-12 rounded-2xl -mb-16 relative z-10 shadow-lg">
+        <h2 class="font-bold mb-4 text-3xl">Create Your Perfect QR Code Today!</h2>
+        <p class="max-w-md mb-8 md:max-w-3xl mx-auto text-center text-gray-600 text-lg">
+          Trusted by thousands, our QR code generator makes creating dynamic and customized QR codes effortless.
+          Perfect for businesses, events, and personal use.
+        </p>
+
         <a href="#qr-generator"
-          class="bg-violet-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-violet-700 transition-colors">Get
-          Started - It's Free</a>
+          class="bg-violet-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-violet-700 transition-colors">
+          Get Started - It's Free
+        </a>
       </div>
     </div>
   </section>
 
- 
-    <!-- Footer -->
-    <footer class="relative bg-slate-950 bg-opacity-95 text-white bg-cover bg-center bg-no-repeat pb-20 pt-20 ">
-      <!-- Footer Content -->
-      <div class="relative z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="gap-20 sm:flex lg:justify-between">
-  
-            <!-- Company Information with Logo -->
-            <div class="mb-6 lg:mb-0 sm:w-1/2">
-  
-              <div class="flex flex-shrink-0 items-center">
-                <a href="index.html" class="flex items-center">
-                  <img src="public/images/freeqrcodes.png" fetchpriority="high" width="210" height="30"
-                    alt="Free QR Codes" class="mr-2 logo" decoding="async">
-                </a>
-              </div>
-              <p class="mt-4 text-gray-400">
-                freeqrcodes.link is your go-to platform for creating high-quality QR codes.
-                Whether it's for business, events, or personal use, our tool simplifies QR code creation with features
-                like color customization, logo embedding, and detailed analytics.
-                Join thousands of satisfied users leveraging FreeQRCodes.
-                link for their QR code needs.
-              </p>
-            </div>
-  
-            <!-- Navigation Links -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:w-1/2 gap-4">
-  
-              <div>
-                <h3 class="text-lg font-semibold">Our Services</h3>
-                <ul class="mt-4 space-y-2">
-                  <li><a href="https://freeqrcodes.link" target="_blank" class="text-gray-400 hover:text-white"> URL
-                      Shortener
-                    </a></li>
-                  <li><a href="https://passgenapp.com" target="_blank" class="text-gray-400 hover:text-white">Password
-                      Generator</a>
-                  </li>
-                  <li><a href="https://freeqrcodes.com" class="text-gray-400 hover:text-white">QR Code Generator</a></li>
-                </ul>
-              </div>
-  
-              <div>
-                <h3 class="text-lg font-semibold"> Our Brands </h3>
-                <ul class="mt-4 space-y-2">
-                  <li><a href="https://alpha.net.bd/" target="_blank" class="text-gray-400 hover:text-white">Alpha
-                      Net</a></li>
-                  <li><a href="https://cfl-it.com/" target="_blank" class="text-gray-400 hover:text-white">CFL-IT</a>
-                  </li>
-                  <li><a href="https://www.godigital.com.bd/" target="_blank" class="text-gray-400 hover:text-white">Go
-                      Digital</a></li>
-                  <li><a href="/brands" class="text-gray-400 hover:text-white">All Brands</a></li>
-                </ul>
-              </div>
-  
-              <div>
-  
-                <h3 class="text-lg font-semibold">Quick Links</h3>
-  
-                <ul class="mt-4 space-y-2">
-                  <li><a href="/" class="text-gray-400 hover:text-white relative  inline-block">Home</a>
-                  </li>
-                  <li><a href="/about" class="text-gray-400 hover:text-white relative  inline-block">About</a>
-                  </li>
-                  <li><a href="/contact" class="text-gray-400 hover:text-white relative  inline-block">Contact</a></li>
-                  <li><a href="/faq" class="text-gray-400 hover:text-white relative  inline-block">FAQ</a>
-                  </li>
-                </ul>
-  
-                <div class="flex items-center space-x-3 mb-3  w-full md:mb-0">
-  
-                  <div class="text-gray-400">Share:</div>
-  
-                  <a href="http://www.facebook.com/share.php?u=https://freeqrcodes.link" target="_blank"
-                    rel="noopener noreferrer" class="text-gray-400 hover:text-white relative  inline-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-7 w-7" fill="currentColor">
-                      <path
-                        d="M13 19.94a8 8 0 1 0-2 0V14H9v-2h2v-1.65c0-1.34.14-1.83.4-2.32.26-.48.65-.87 1.14-1.13.38-.2.85-.33 1.68-.38.33-.02.76 0 1.28.08v1.9H15c-.92 0-1.3.04-1.52.16a.73.73 0 0 0-.31.32c-.13.22-.17.45-.17 1.37V12h2.5l-.5 2h-2v5.94ZM12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z">
-                      </path>
-                    </svg>
-                  </a>
-  
-                  <a href="https://twitter.com/intent/tweet?url=https://freeqrcodes.link" target="_blank"
-                    rel="noopener noreferrer" class="text-gray-400 hover:text-white relative  inline-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-7 w-7" fill="currentColor">
-                      <path
-                        d="M15.35 5.55a2.9 2.9 0 0 0-2.9 2.85l-.03 1.57a.6.6 0 0 1-.68.59l-1.56-.22a11.7 11.7 0 0 1-5.9-2.8c-.6 3.31.56 5.6 3.37 7.38l1.75 1.1a.6.6 0 0 1 .04.99l-1.6 1.16c.95.06 1.85.02 2.6-.13 4.71-.94 7.85-4.5 7.85-10.35 0-.48-1.01-2.14-2.94-2.14Zm-4.9 2.81a4.9 4.9 0 0 1 8.38-3.35c.72-.01 1.32.17 2.67-.65C21.17 6 21 6.7 20.3 7.69c0 7.64-4.7 11.36-9.46 12.31-3.27.65-8.02-.42-9.38-1.84.69-.05 3.5-.36 5.14-1.55C5.2 15.7-.28 12.47 3.33 3.79c1.7 1.97 3.4 3.32 5.15 4.03 1.16.48 1.44.47 1.97.54Z">
-                      </path>
-                    </svg>
-                  </a>
-  
-                  <a href="whatsapp://send?text=https://freeqrcodes.link" target="_blank" rel="noopener noreferrer"
-                    class="text-gray-400 hover:text-white relative  inline-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-7 w-7" fill="currentColor">
-                      <path
-                        d="m7.25 18.5.73.42a8 8 0 1 0-2.9-2.9l.43.73-.66 2.4 2.4-.66ZM2.01 22l1.35-4.97a10 10 0 1 1 3.61 3.61L2.01 22ZM8.39 7.3h.4l.17.02c.16.02.33.12.39.25l.87 2.04c.06.15.02.35-.1.54a4.35 4.35 0 0 1-.61.78s-.1.12-.07.26l.1.2.07.1c.25.43.6.86 1.02 1.27.12.12.23.24.36.35.47.41 1 .75 1.57 1l.26.1a1.43 1.43 0 0 0 .26.09c.16 0 .26-.1.3-.14.72-.88.78-.94.79-.94.1-.1.24-.13.38-.12a.5.5 0 0 1 .17.04l1.4.62.59.26c.1.05.18.16.19.27l-.02.37c-.03.26-.1.57-.18.73-.06.12-.13.22-.21.3a2.38 2.38 0 0 1-.46.38l-.38.22c-.26.14-.54.22-.83.23-.19.01-.38.02-.56.01l-.57-.08a9.45 9.45 0 0 1-3.84-2.05c-.23-.2-.43-.41-.65-.62a9.52 9.52 0 0 1-1.97-2.75c-.2-.44-.33-.92-.33-1.4 0-.62.2-1.2.57-1.69.07-.1.14-.2.26-.3a.96.96 0 0 1 .67-.33Z">
-                      </path>
-                    </svg>
-                  </a>
-  
-                  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://freeqrcodes.link" target="_blank"
-                    rel="noopener noreferrer" class="text-gray-400 hover:text-white relative  inline-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-7 w-7" fill="currentColor">
-                      <path
-                        d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm1 2v14h14V5H5Zm2.5 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm-1 1h2v7.5h-2V10Zm5.5.43a2.93 2.93 0 0 1 2-.93c2.07 0 3.5 1.68 3.5 3.75v4.25h-2v-4.25a1.75 1.75 0 1 0-3.5 0v4.25h-2V10h2v.43Z">
-                      </path>
-                    </svg>
-                  </a>
-  
-                </div>
-  
-              </div>
-  
-            </div>
-  
+  <!-- Footer -->
+  <footer class="footer relative bg-center bg-no-repeat ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-wrapper">
+      <div class="gap-20 sm:flex lg:justify-between">
+        <!-- Company Information with Logo -->
+        <div class="mb-6 lg:mb-0 sm:w-1/2">
+          <div class="flex flex-shrink-0 items-center">
+            <a href="index.html" class="flex items-center">
+              <img src="public/images/freeqrcodes.png" fetchpriority="high" alt="Free QR Codes" class="logo"
+                decoding="async">
+            </a>
           </div>
-  
+          <p class="mt-4">
+            freeqrcodes.link is your go-to platform for creating high-quality QR codes. Whether it's for business,
+            events, or personal use, our tool simplifies QR code creation with features like color customization, logo
+            embedding, and detailed analytics. Join thousands of satisfied users leveraging FreeQRCodes.link for their
+            QR code needs.
+          </p>
+          <div class="flex items-center space-x-3 mb-3 w-full md:mb-0 mt-4">
+            <div>Share:</div>
+            <a href="http://www.facebook.com/share.php?u=https://freeqrcodes.link" target="_blank"
+              rel="noopener noreferrer" class="hover:text-white relative inline-block">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/intent/tweet?url=https://freeqrcodes.link" target="_blank"
+              rel="noopener noreferrer" class="hover:text-white relative inline-block">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="whatsapp://send?text=https://freeqrcodes.link" target="_blank" rel="noopener noreferrer"
+              class="hover:text-white relative inline-block">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://freeqrcodes.link" target="_blank"
+              rel="noopener noreferrer" class="hover:text-white relative inline-block">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
         </div>
-  
-      </div>
-    </footer>
-  
-    <div class="flex-shrink-0  bg-gray-900 text-white">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row min-h-[4rem] py-2 md:py-0 items-center justify-between text-sm">
-          <span class="text-center mb-3 md:mb-0">Copyright © 2024 freeqrcodes.link. All rights reserved.</span>
-          <span class=" mb-3 md:mb-0 ">Powered by <a class="text-indigo-300" href="https://alpha.net.bd"
-              target="_blank">Alpha Net </a></span>
+        <!-- Navigation Links -->
+        <div class="grid grid-cols-2 lg:grid-cols-3 sm:w-1/2 gap-4">
+          <div>
+            <h3 class="text-lg font-semibold">Products</h3>
+            <ul class="mt-4 space-y-2">
+              <li><a href="https://freeqrcodes.link" target="_blank" class="link-hover">URL Shortener</a></li>
+              <li><a href="https://passgenapp.com" target="_blank" class="link-hover">Password Generator</a></li>
+              <li><a href="https://freeqrcodes.com" class="link-hover">QR Code Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Our Brands</h3>
+            <ul class="mt-4 space-y-2">
+              <li><a href="https://alpha.net.bd/" target="_blank" class="link-hover">Alpha Net</a></li>
+              <li><a href="https://cfl-it.com/" target="_blank" class="link-hover">CFL-IT</a></li>
+              <li><a href="https://www.godigital.com.bd/" target="_blank" class="link-hover">Go Digital</a></li>
+              <li><a href="/brands" class="link-hover">All Brands</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Quick Links</h3>
+            <ul class="mt-4 space-y-2">
+              <li><a href="/" class="link-hover">Home</a></li>
+              <li><a href="/about" class="link-hover">About</a></li>
+              <li><a href="/contact" class="link-hover">Contact</a></li>
+              <li><a href="/faq" class="link-hover">FAQ</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  
-    <script src="./public/js/script.js"></script>
-  
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById('mobile-menu');
-        menu.classList.toggle('hidden');
-      }
-    </script>
+    <!-- Copyright Section -->
+    <div class="copyright-wrapper">
+      <div class="border-indigo-600 max-w-7xl mx-auto px-4 sm:px-6 copy-right-border-t">
+        <div class="flex flex-col items-center justify-between md:flex-row  py-5 text-sm">
+          <span class="text-center mb-3 md:mb-0">Copyright © 2024 freeqrcodes.link. All rights reserved.</span>
+          <span>Powered by <a class="font-bold text-black underline" href="https://alpha.net.bd" target="_blank">Alpha
+              Net</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./public/js/script.js"></script>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+
 
 </body>
 
