@@ -12,10 +12,7 @@ links.forEach(link => {
     }
 });
 
-
-
 // header sticky Toggle the visibility of the menu
-
  function toggleMenu() {
   const menu = document.getElementById('menu');
   menu.classList.toggle('hidden');
@@ -41,3 +38,35 @@ window.addEventListener('load', function () {
     header.classList.add('header');
   }
 });
+
+
+function toggleFAQ(button) {
+  const content = button.nextElementSibling;
+  const icon = button.querySelector("svg");
+  if (content.style.maxHeight) {
+    content.style.maxHeight = null;
+    icon.classList.remove("rotate-180");
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+    icon.classList.add("rotate-180");
+  }
+}
+
+function toggleFAQ(button) {
+  // Close all other FAQ items
+  const allFAQs = document.querySelectorAll(".grid .max-h-0");
+  const allIcons = document.querySelectorAll(".grid svg");
+  allFAQs.forEach((faq) => {
+    faq.style.maxHeight = null;
+  });
+  allIcons.forEach((icon) => {
+    icon.classList.remove("rotate-180");
+  });
+  // Toggle the clicked FAQ item
+  const content = button.nextElementSibling;
+  const icon = button.querySelector("svg");
+  if (!content.style.maxHeight) {
+    content.style.maxHeight = content.scrollHeight + "px";
+    icon.classList.add("rotate-180");
+  }
+}

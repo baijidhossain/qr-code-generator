@@ -282,41 +282,6 @@
     </div>
   </section>
 
-  <script>
-    function toggleFAQ(button) {
-      const content = button.nextElementSibling;
-      const icon = button.querySelector("svg");
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-        icon.classList.remove("rotate-180");
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-        icon.classList.add("rotate-180");
-      }
-    }
-  </script>
-
-  <script>
-    function toggleFAQ(button) {
-      // Close all other FAQ items
-      const allFAQs = document.querySelectorAll(".grid .max-h-0");
-      const allIcons = document.querySelectorAll(".grid svg");
-      allFAQs.forEach((faq) => {
-        faq.style.maxHeight = null;
-      });
-      allIcons.forEach((icon) => {
-        icon.classList.remove("rotate-180");
-      });
-      // Toggle the clicked FAQ item
-      const content = button.nextElementSibling;
-      const icon = button.querySelector("svg");
-      if (!content.style.maxHeight) {
-        content.style.maxHeight = content.scrollHeight + "px";
-        icon.classList.add("rotate-180");
-      }
-    }
-  </script>
-
   <!-- CTA Section -->
   <section class="text-center relative bg-gray-50">
     <div class="relative lg:px-8 max-w-7xl mx-auto px-4 sm:px-6">
@@ -417,14 +382,6 @@
   </footer>
 
   <script src="./public/js/script.js"></script>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    }
-  </script>
-
 
 </body>
 
