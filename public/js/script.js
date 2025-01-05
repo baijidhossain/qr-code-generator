@@ -32,6 +32,7 @@ function toggleMenu(button) {
     }
   }
 }
+
 // Add dynamic shadow and smooth appearance on scroll
 window.addEventListener('scroll', function () {
   const header = document.querySelector('header');
