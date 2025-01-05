@@ -90,8 +90,6 @@
     transition: 0.3s ease-in-out;
   }
 
-
-
   .footer {
     background: linear-gradient(110deg, rgb(59 130 246 / 0.3), rgba(255, 249, 242, 0.4) 50%, rgba(137, 129, 255, 0.4)), url(/public/images/footer-bg.png);
     background-size: cover;
