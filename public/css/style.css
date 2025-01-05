@@ -78,11 +78,10 @@
 
   /* Sticky Header */
   .header {
-
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 9999 !important;
     background-color: #fff !important;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
 
