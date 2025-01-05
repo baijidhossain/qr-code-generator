@@ -35,7 +35,7 @@ function toggleMenu(button) {
 // Add dynamic shadow and smooth appearance on scroll
 window.addEventListener('scroll', function () {
   const header = document.querySelector('header');
-  if (window.scrollY > 100) {
+  if (window.scrollY > 70) {
     // Make the header visible smoothly
     header.classList.add('header');
   } else {
@@ -47,7 +47,7 @@ window.addEventListener('scroll', function () {
 // Check the scroll position when the page loads
 window.addEventListener('load', function () {
   const header = document.querySelector('header');
-  if (window.scrollY > 100) {
+  if (window.scrollY > 70) {
     // If already scrolled, add the header class
     header.classList.add('header');
   }
