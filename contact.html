@@ -28,7 +28,7 @@
   <meta property="og:description"
     content="Create custom QR codes for free. No sign-up needed. Generate QR codes for URLs, text, email, and more with our user-friendly online tool.">
   <meta property="og:image" content="public/images/freeqrcode.html">
-  
+
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="index.html">
@@ -36,7 +36,7 @@
   <meta property="twitter:description"
     content="Create custom QR codes for free. No sign-up needed. Generate QR codes for URLs, text, email, and more with our user-friendly online tool.">
   <meta property="twitter:image" content="public/images/freeqrcode.html">
-    
+
   <!-- no index meta tag -->
   <meta name="robots" content="noindex">
 
@@ -92,7 +92,8 @@
 
           <!-- This is used to open the menu on mobile devices -->
           <div class="flex items-center md:hidden">
-            <button class="duration-300 hover:opacity-100 opacity-70" aria-label="Open Menu" onclick="toggleMenu(this)" style="width: 30px;font-size: 18px;">
+            <button class="duration-300 hover:opacity-100 opacity-70" aria-label="Open Menu" onclick="toggleMenu(this)"
+              style="width: 30px;font-size: 18px;">
               <i class="fa-solid fa-bars"></i>
             </button>
           </div>
@@ -101,98 +102,103 @@
       </div>
     </nav>
 
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden bg-violet-100 p-4 space-y-4">
-        <a href="index.html" class="block hover:text-violet-400">Home</a>
-        <a href="about.html" class="block hover:text-violet-400">About</a>
-        <a href="brand.html" class="block hover:text-violet-400">Brands</a>
-        <a href="faq.html" class="block hover:text-violet-400">FAQ</a>
-        <a href="contact.html" class="block hover:text-violet-400">Contact</a>
-      </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-violet-100 p-4 space-y-4">
+      <a href="index.html" class="block hover:text-violet-400">Home</a>
+      <a href="about.html" class="block hover:text-violet-400">About</a>
+      <a href="brand.html" class="block hover:text-violet-400">Brands</a>
+      <a href="faq.html" class="block hover:text-violet-400">FAQ</a>
+      <a href="contact.html" class="block hover:text-violet-400">Contact</a>
+    </div>
   </header>
-  
+
   <!-- Main Content -->
   <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <section class="bg-white max-w-3xl mx-auto p-8 rounded-lg" style="margin-top: 120px; margin-bottom: 65px; ">
-<div class="flex flex-col">
-  <div>
-    <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Contact Us</h1>
-    <p class="text-gray-600 mb-8 text-center">
-      Have a question or feedback? We'd love to hear from you! Fill out the form below and we'll get back to you as
-      soon as possible.
-    </p>
-    <form action="#" method="POST" class="space-y-6">
-      <!-- Name Field -->
-      <div>
-        <label for="name" class="block text-sm font-medium text-gray-700 ">Name</label>
-        <input type="text" name="name" id="name" autocomplete="name" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
+    <section class="" style="margin-top: 120px; margin-bottom: 65px; ">
+      <div class="mx-auto px-4">
+        <div class="flex gap-4">
+          <div class="bg-white p-6 rounded-md">
+            <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Contact Us</h1>
+            <p class="text-gray-600 mb-8 text-center">
+              Have a question or feedback? We'd love to hear from you! Fill out the form below and we'll get back to you
+              as
+              soon as possible.
+            </p>
+            <form action="#" method="POST" class="space-y-6">
+              <!-- Name Field -->
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 ">Name</label>
+                <input type="text" name="name" id="name" autocomplete="name" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
+              </div>
+              <!-- Email Field -->
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" name="email" id="email" autocomplete="email" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
+              </div>
+              <!-- Subject Field -->
+              <div>
+                <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                <input type="text" name="subject" id="subject" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
+              </div>
+              <!-- Message Field -->
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" name="message" rows="4" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
+              </div>
+              <!-- Submit Button -->
+              <div>
+                <button type="submit" class="w-full flex justify-center py-3 px-6 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="bg-white p-6 rounded-md">
+            <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Contact Us</h1>
+            <p class="text-gray-600 mb-8 text-center">
+              Have a question or feedback? We'd love to hear from you! Fill out the form below and we'll get back to you
+              as
+              soon as possible.
+            </p>
+            <form action="#" method="POST" class="space-y-6">
+              <!-- Name Field -->
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 ">Name</label>
+                <input type="text" name="name" id="name" autocomplete="name" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
+              </div>
+              <!-- Email Field -->
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" name="email" id="email" autocomplete="email" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
+              </div>
+              <!-- Subject Field -->
+              <div>
+                <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                <input type="text" name="subject" id="subject" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
+              </div>
+              <!-- Message Field -->
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" name="message" rows="4" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
+              </div>
+              <!-- Submit Button -->
+              <div>
+                <button type="submit" class="w-full flex justify-center py-3 px-6 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <!-- Email Field -->
-      <div>
-        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-        <input type="email" name="email" id="email" autocomplete="email" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
-      </div>
-      <!-- Subject Field -->
-      <div>
-        <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
-        <input type="text" name="subject" id="subject" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
-      </div>
-      <!-- Message Field -->
-      <div>
-        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-        <textarea id="message" name="message" rows="4" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
-      </div>
-      <!-- Submit Button -->
-      <div>
-        <button type="submit" class="w-full flex justify-center py-3 px-6 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500">
-          Send Message
-        </button>
-      </div>
-    </form>
-  </div>
-  <div>
-    <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Contact Us</h1>
-    <p class="text-gray-600 mb-8 text-center">
-      Have a question or feedback? We'd love to hear from you! Fill out the form below and we'll get back to you as
-      soon as possible.
-    </p>
-    <form action="#" method="POST" class="space-y-6">
-      <!-- Name Field -->
-      <div>
-        <label for="name" class="block text-sm font-medium text-gray-700 ">Name</label>
-        <input type="text" name="name" id="name" autocomplete="name" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
-      </div>
-      <!-- Email Field -->
-      <div>
-        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-        <input type="email" name="email" id="email" autocomplete="email" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
-      </div>
-      <!-- Subject Field -->
-      <div>
-        <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
-        <input type="text" name="subject" id="subject" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
-      </div>
-      <!-- Message Field -->
-      <div>
-        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-        <textarea id="message" name="message" rows="4" required="" class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
-      </div>
-      <!-- Submit Button -->
-      <div>
-        <button type="submit" class="w-full flex justify-center py-3 px-6 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500">
-          Send Message
-        </button>
-      </div>
-    </form>
-  </div>
-</div>
     </section>
   </main>
-  
+
   <!-- Footer -->
   <footer class="footer relative bg-center bg-no-repeat">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-wrapper" style="padding-top: 50px; padding-bottom: 50px;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-wrapper"
+      style="padding-top: 50px; padding-bottom: 50px;">
       <div class="gap-20 sm:flex lg:justify-between">
         <!-- Company Information with Logo -->
         <div class="mb-6 lg:mb-0 sm:w-1/2">
@@ -281,7 +287,6 @@
       menu.classList.toggle('hidden');
     }
   </script>
-
 
 </body>
 
