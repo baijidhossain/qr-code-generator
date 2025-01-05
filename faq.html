@@ -54,8 +54,8 @@
 <body class="flex flex-col min-h-screen bg-gray-100">
 
   <!-- Header -->
-  <header class="border-b">
-    <nav class="lg:py-0 max-w-7xl mx-auto py-2 w-full z-10">
+  <header class="border-b z-[1]">
+    <nav class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between items-center">
 
         <a href="index.html" class="flex items-center">
@@ -68,6 +68,7 @@
           <li class="md:hidden z-90 fixed top-4 right-6">
             <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">×</a>
           </li>
+
           <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="index.html"
               class="text-white md:text-gray-700 hover:text-violet-600">Home</a></li>
           <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="about.html"
@@ -88,34 +89,29 @@
 
           <!-- This is used to open the menu on mobile devices -->
           <div class="flex items-center md:hidden">
-            <button class="text-4xl font-bold opacity-70 hover:opacity-100 duration-300" aria-label="Open Menu"
-              onclick="toggleMenu()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-menu">
-                <line x1="4" x2="20" y1="12" y2="12"></line>
-                <line x1="4" x2="20" y1="6" y2="6"></line>
-                <line x1="4" x2="20" y1="18" y2="18"></line>
-              </svg>
+            <button class="duration-300 hover:opacity-100 opacity-70" aria-label="Open Menu" onclick="toggleMenu(this)"
+              style="width: 30px;font-size: 18px;">
+              <i class="fa-solid fa-bars"></i>
             </button>
           </div>
         </div>
 
       </div>
     </nav>
+
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-violet-100 p-4 space-y-4">
+      <a href="index.html" class="block hover:text-violet-400">Home</a>
+      <a href="about.html" class="block hover:text-violet-400">About</a>
+      <a href="brand.html" class="block hover:text-violet-400">Brands</a>
+      <a href="faq.html" class="block hover:text-violet-400">FAQ</a>
+      <a href="contact.html" class="block hover:text-violet-400">Contact</a>
+    </div>
   </header>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden bg-gray-800 text-white p-4 space-y-4">
-    <a href="index.html" class="block hover:text-violet-400">Home</a>
-    <a href="about.html" class="block hover:text-violet-400">About</a>
-    <a href="brand.html" class="block hover:text-violet-400">Brands</a>
-    <a href="faq.html" class="block hover:text-violet-400">FAQ</a>
-    <a href="contact.html" class="block hover:text-violet-400">Contact</a>
-  </div>
-
   <section class="bg-gray-50 faq-section">
-    <div class="bg-white max-w-4xl mx-auto py-11">
+    <div class="bg-white max-w-4xl mx-auto py-11 rounded-md shadow-sm">
       <!-- Title Section -->
       <div class="mb-10 text-center max-w-5xl mx-auto px-20">
         <h3 class="text-3xl font-extrabold sm:text-4xl text-gray-800 mb-6">FAQs</h3>
@@ -131,9 +127,12 @@
           <div class="space-y-4">
             <!-- Item 1 -->
             <div class="rounded-md">
-              <button class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full" onclick="toggleFAQ(this)">
+              <button
+                class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full"
+                onclick="toggleFAQ(this)">
                 <span>What is FreeQRCodes.link?</span>
-                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
@@ -147,9 +146,12 @@
 
             <!-- Item 2 -->
             <div class="rounded-md">
-              <button class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full" onclick="toggleFAQ(this)">
+              <button
+                class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full"
+                onclick="toggleFAQ(this)">
                 <span>Is it free to use?</span>
-                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
@@ -163,9 +165,12 @@
 
             <!-- Item 3 -->
             <div class="rounded-md">
-              <button class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full" onclick="toggleFAQ(this)">
+              <button
+                class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full"
+                onclick="toggleFAQ(this)">
                 <span>How can I contact support?</span>
-                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
@@ -178,9 +183,12 @@
 
             <!-- Item 4 -->
             <div class="rounded-md">
-              <button class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full" onclick="toggleFAQ(this)">
+              <button
+                class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full"
+                onclick="toggleFAQ(this)">
                 <span>Can I customize my QR code?</span>
-                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
@@ -193,9 +201,12 @@
 
             <!-- Item 5 -->
             <div class="rounded-md">
-              <button class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full" onclick="toggleFAQ(this)">
+              <button
+                class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full"
+                onclick="toggleFAQ(this)">
                 <span>How can I download my QR code?</span>
-                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-5 h-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
@@ -208,9 +219,12 @@
 
             <!-- Item 6 -->
             <div class="rounded-md">
-              <button class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full" onclick="toggleFAQ(this)">
+              <button
+                class="border-b flex focus:outline-none font-semibold items-center justify-between px-6 py-4 text-gray-800 text-left w-full"
+                onclick="toggleFAQ(this)">
                 <span>How long does it take to generate a QR code?</span>
-                <svg class="w-5 h-5 transform transition-transform rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-5 h-5 transform transition-transform rotate-180" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
@@ -229,7 +243,6 @@
 
     </div>
   </section>
-
   <!-- CTA Section -->
   <section class="text-center relative bg-gray-50">
     <div class="relative lg:px-8 max-w-7xl mx-auto px-4 sm:px-6">

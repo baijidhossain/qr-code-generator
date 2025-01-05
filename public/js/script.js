@@ -13,11 +13,25 @@ links.forEach(link => {
 });
 
 // header sticky Toggle the visibility of the menu
- function toggleMenu() {
-  const menu = document.getElementById('menu');
-  menu.classList.toggle('hidden');
-}
+function toggleMenu(button) {
+  const mobileMenu = document.getElementById("mobile-menu");
 
+  // Toggle the 'hidden' class on the mobile menu
+  if (mobileMenu.classList.contains("hidden")) {
+    mobileMenu.classList.remove("hidden");
+  } else {
+    mobileMenu.classList.add("hidden");
+  }
+
+  // Toggle the button icon if applicable
+  if (button) {
+    const icon = button.querySelector("i"); // Select the icon inside the button
+    if (icon) {
+      icon.classList.toggle("fa-bars"); // Replace with your current icon class
+      icon.classList.toggle("fa-xmark"); // Replace with the class for the close icon
+    }
+  }
+}
 // Add dynamic shadow and smooth appearance on scroll
 window.addEventListener('scroll', function () {
   const header = document.querySelector('header');

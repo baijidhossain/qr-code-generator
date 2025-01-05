@@ -56,8 +56,8 @@
 <body class="flex flex-col min-h-screen bg-gray-100">
 
   <!-- Header -->
-  <header class=" border-b">
-    <nav class="max-w-7xl mx-auto px-4 ">
+  <header class="border-b z-[1]">
+    <nav class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between items-center">
 
         <a href="index.html" class="flex items-center">
@@ -70,6 +70,7 @@
           <li class="md:hidden z-90 fixed top-4 right-6">
             <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">×</a>
           </li>
+
           <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="index.html"
               class="text-white md:text-gray-700 hover:text-violet-600">Home</a></li>
           <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="about.html"
@@ -90,40 +91,26 @@
 
           <!-- This is used to open the menu on mobile devices -->
           <div class="flex items-center md:hidden">
-            <button class="text-4xl font-bold opacity-70 hover:opacity-100 duration-300" aria-label="Open Menu"
-              onclick="toggleMenu()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-menu">
-                <line x1="4" x2="20" y1="12" y2="12"></line>
-                <line x1="4" x2="20" y1="6" y2="6"></line>
-                <line x1="4" x2="20" y1="18" y2="18"></line>
-              </svg>
+            <button class="duration-300 hover:opacity-100 opacity-70" aria-label="Open Menu" onclick="toggleMenu(this)" style="width: 30px;font-size: 18px;">
+              <i class="fa-solid fa-bars"></i>
             </button>
           </div>
         </div>
 
       </div>
     </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden bg-violet-100 p-4 space-y-4">
+        <a href="index.html" class="block hover:text-violet-400">Home</a>
+        <a href="about.html" class="block hover:text-violet-400">About</a>
+        <a href="brand.html" class="block hover:text-violet-400">Brands</a>
+        <a href="faq.html" class="block hover:text-violet-400">FAQ</a>
+        <a href="contact.html" class="block hover:text-violet-400">Contact</a>
+      </div>
   </header>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden bg-gray-800 text-white p-4 space-y-4">
-    <a href="index.html" class="block hover:text-violet-400">Home</a>
-    <a href="about.html" class="block hover:text-violet-400">About</a>
-    <a href="brand.html" class="block hover:text-violet-400">Brands</a>
-    <a href="faq.html" class="block hover:text-violet-400">FAQ</a>
-    <a href="contact.html" class="block hover:text-violet-400">Contact Us</a>
-  </div>
 
-  <style>
-    .bg-pattern{
-      background: linear-gradient(230deg, #e1d0ff, rgba(255, 249, 242, 0.4) 60%, rgba(255, 249, 242, 0.2) 100%);
-    }
-    .shape-opacity {
-      opacity: 0.2;
-    }
-  </style>
 
   <!-- Brand Section -->
   <section class="mt-12 payment-method-section pb-5 pt-20 relative z-[2]" style="background: linear-gradient(0deg, #e1d0ff, rgba(255, 249, 242, 0.4) 60%, rgba(255, 249, 242, 0.2) 100%);

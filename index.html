@@ -28,7 +28,7 @@
   <meta property="og:description"
     content="Create custom QR codes for free. No sign-up needed. Generate QR codes for URLs, text, email, and more with our user-friendly online tool.">
   <meta property="og:image" content="public/images/freeqrcode.html">
-  
+
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="index.html">
@@ -49,6 +49,7 @@
   <script src="../code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
     crossorigin="anonymous"></script>
 
+
 </head>
 
 <body class="flex flex-col min-h-screen ">
@@ -68,6 +69,7 @@
           <li class="md:hidden z-90 fixed top-4 right-6">
             <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">×</a>
           </li>
+
           <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="index.html"
               class="text-white md:text-gray-700 hover:text-violet-600">Home</a></li>
           <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="about.html"
@@ -88,31 +90,28 @@
 
           <!-- This is used to open the menu on mobile devices -->
           <div class="flex items-center md:hidden">
-            <button class="text-4xl font-bold opacity-70 hover:opacity-100 duration-300" aria-label="Open Menu"
-              onclick="toggleMenu()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-menu">
-                <line x1="4" x2="20" y1="12" y2="12"></line>
-                <line x1="4" x2="20" y1="6" y2="6"></line>
-                <line x1="4" x2="20" y1="18" y2="18"></line>
-              </svg>
+            <button class="duration-300 hover:opacity-100 opacity-70" aria-label="Open Menu" onclick="toggleMenu(this)" style="width: 30px;font-size: 18px;">
+              <i class="fa-solid fa-bars"></i>
             </button>
           </div>
         </div>
 
       </div>
     </nav>
+
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden bg-violet-100 p-4 space-y-4">
+        <a href="index.html" class="block hover:text-violet-400">Home</a>
+        <a href="about.html" class="block hover:text-violet-400">About</a>
+        <a href="brand.html" class="block hover:text-violet-400">Brands</a>
+        <a href="faq.html" class="block hover:text-violet-400">FAQ</a>
+        <a href="contact.html" class="block hover:text-violet-400">Contact</a>
+      </div>
   </header>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden bg-gray-800 text-white p-4 space-y-4">
-    <a href="index.html" class="block hover:text-violet-400">Home</a>
-    <a href="about.html" class="block hover:text-violet-400">About</a>
-    <a href="brand.html" class="block hover:text-violet-400">Brands</a>
-    <a href="faq.html" class="block hover:text-violet-400">FAQ</a>
-    <a href="contact.html" class="block hover:text-violet-400">Contact Us</a>
-  </div>
+
+
 
 
   <!-- Main Content -->
@@ -629,106 +628,117 @@
     </div>
 
     <!-- Hero Section -->
-  
+
     <section class="bg-gray-50 pb-20 pt-20">
       <div class="max-w-7xl mx-auto px-4">
         <div class="flex flex-wrap items-center justify-between">
-          
+
           <!-- Content Section -->
           <div class="w-full lg:w-1/2 order-2 lg:order-1 text-center lg:text-left">
-          
-              <h3 class="text-3xl font-extrabold mb-4 sm:text-4xl">
-                Best <span class="text-violet-600 title-bottom-style">Free QR Code</span> Generator Online FreeQRCodes.link
-              </h3>
-              <p class="sm:text-lg leading-relaxed mb-6">
-                Discover the ultimate platform for generating high-quality QR codes for free! At FreeQRCodes.link,
-                create customized QR codes with options like color personalization, logo embedding, and real-time analytics.
-                Perfect for businesses, events, and personal use, join thousands who trust FreeQRCodes.link for seamless QR code creation.
-              </p>
-              <div class="mt-12">
-                <a href="/#qr-generator" class="bg-violet-600 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-violet-700 transition duration-300">
-                  Create Your QR Code
-                </a>
-              </div>
+
+            <h3 class="text-3xl font-extrabold mb-4 sm:text-4xl">
+              Best <span class="text-violet-600 title-bottom-style">Free QR Code</span> Generator Online
+              FreeQRCodes.link
+            </h3>
+            <p class="sm:text-lg leading-relaxed mb-6">
+              Discover the ultimate platform for generating high-quality QR codes for free! At FreeQRCodes.link,
+              create customized QR codes with options like color personalization, logo embedding, and real-time
+              analytics.
+              Perfect for businesses, events, and personal use, join thousands who trust FreeQRCodes.link for seamless
+              QR code creation.
+            </p>
+            <div class="mt-12">
+              <a href="/#qr-generator"
+                class="bg-violet-600 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-violet-700 transition duration-300">
+                Create Your QR Code
+              </a>
+            </div>
           </div>
-    
+
           <!-- Image Section -->
           <div class="flex justify-center items-center lg:justify-end lg:order-2 lg:w-1/2 order-1 w-full">
-            <img src="./public/images/scan-qrcode.svg" alt="QR Code Generator" loading="lazy" width="400" height="300" class="max-w-full h-auto">
+            <img src="./public/images/scan-qrcode.svg" alt="QR Code Generator" loading="lazy" width="400" height="300"
+              class="max-w-full h-auto">
           </div>
-          
+
         </div>
       </div>
     </section>
 
+    <!-- feature section -->
+    <section id="features" class="bg-white pt-20 pb-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4 md:max-w-4xl mx-auto">
+            Which QR Codes can I create <span class="text-violet-600 title-bottom-style">for free?</span>
+          </h2>
+          <p class="mx-auto max-w-md sm:text-lg md:mt-5 md:max-w-3xl">
+            These free Static QR Codes never expire. Once created, they are yours permanently, but you can't modify the
+            content or monitor scan statistics.
+          </p>
+        </div>
 
-  <!-- feature section -->
-  <section id="features" class="bg-white pt-20 pb-20">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center mb-8">
-        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4 md:max-w-4xl mx-auto">
-          Which QR Codes can I create <span class="text-violet-600 title-bottom-style">for free?</span>
-        </h2>
-        <p class="mx-auto max-w-md sm:text-lg md:mt-5 md:max-w-3xl">
-          These free Static QR Codes never expire. Once created, they are yours permanently, but you can't modify the
-          content or monitor scan statistics.
-        </p>
+        <div class="flex flex-wrap gap-6 justify-center max-w-7xl mb-4 mx-auto">
+          <!-- URL QR Code -->
+          <div
+            class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow w-full sm:w-[48%] lg:w-[32%] h-[180px]">
+            <div class="flex gap-2">
+              <div class="me-2"><i class="fa-solid fa-link text-3xl text-violet-600"></i></div>
+              <h3 class="font-semibold text-xl font-bold">Seamless URL Sharing</h3>
+            </div>
+            <p class="text-gray-600">Easily create QR codes for any URL with a user-friendly interface that makes
+              sharing
+              and accessing links quick and simple.</p>
+          </div>
+
+          <!-- Email QR Code -->
+          <div
+            class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow w-full sm:w-[48%] lg:w-[32%] h-[180px]">
+            <div class="flex gap-2">
+              <div class="me-2"><i class="fa-solid fa-envelope text-3xl text-violet-600"></i></div>
+              <h3 class="font-semibold text-xl font-bold">Instant Email Access</h3>
+            </div>
+            <p class="text-gray-600">Generate QR codes for email addresses that instantly open an email client with
+              pre-filled details, perfect for quick outreach and promotional use.</p>
+          </div>
+
+          <!-- Text QR Code -->
+          <div
+            class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow w-full sm:w-[48%] lg:w-[32%] h-[180px]">
+            <div class="flex gap-2 ">
+              <div class="me-2"><i class="fa-solid fa-file-text text-3xl text-violet-600"></i></div>
+              <h3 class="font-semibold text-xl font-bold">Universal Text Sharing</h3>
+            </div>
+            <p class="text-gray-600">Quickly generate QR codes for text that can be shared universally, making it easier
+              for others to access and read the content.</p>
+          </div>
+
+          <!-- Wifi QR Code -->
+          <div
+            class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow w-full sm:w-[48%] lg:w-[32%] h-[180px]">
+            <div class="flex gap-2 ">
+              <div class="me-2"><i class="fa-solid fa-wifi text-3xl text-violet-600"></i></div>
+              <h3 class="font-semibold text-xl font-bold">Effortless Wi-Fi Access</h3>
+            </div>
+            <p class="text-gray-600">Create a QR code that lets others connect to your Wi-Fi network effortlessly,
+              without
+              entering the password, for fast internet access.</p>
+          </div>
+
+          <!-- Phone QR Code -->
+          <div
+            class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow w-full sm:w-[48%] lg:w-[32%] h-[180px]">
+            <div class="flex gap-2">
+              <div class="me-2"><i class="fa-solid fa-phone-alt text-3xl text-violet-600"></i></div>
+              <h3 class="font-semibold text-xl font-bold">Quick Call Dialer</h3>
+            </div>
+            <p class="text-gray-600">Generate a QR code that will dial a phone number directly when scanned, making it
+              easy for people to initiate calls with a single scan.</p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="flex flex-wrap gap-6 justify-center max-w-7xl mb-4 mx-auto">
-        <!-- URL QR Code -->
-        <div class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow w-full sm:w-[48%] lg:w-[32%] h-[180px]">
-          <div class="flex gap-2">
-            <div class="me-2"><i class="fa-solid fa-link text-3xl text-violet-600"></i></div>
-            <h3 class="font-semibold text-xl font-bold">Seamless URL Sharing</h3>
-          </div>
-          <p class="text-gray-600">Easily create QR codes for any URL with a user-friendly interface that makes sharing
-            and accessing links quick and simple.</p>
-        </div>
-
-        <!-- Email QR Code -->
-        <div class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow w-full sm:w-[48%] lg:w-[32%] h-[180px]">
-          <div class="flex gap-2">
-            <div class="me-2"><i class="fa-solid fa-envelope text-3xl text-violet-600"></i></div>
-            <h3 class="font-semibold text-xl font-bold">Instant Email Access</h3>
-          </div>
-          <p class="text-gray-600">Generate QR codes for email addresses that instantly open an email client with
-            pre-filled details, perfect for quick outreach and promotional use.</p>
-        </div>
-
-        <!-- Text QR Code -->
-        <div class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow w-full sm:w-[48%] lg:w-[32%] h-[180px]">
-          <div class="flex gap-2 ">
-            <div class="me-2"><i class="fa-solid fa-file-text text-3xl text-violet-600"></i></div>
-            <h3 class="font-semibold text-xl font-bold">Universal Text Sharing</h3>
-          </div>
-          <p class="text-gray-600">Quickly generate QR codes for text that can be shared universally, making it easier
-            for others to access and read the content.</p>
-        </div>
-
-        <!-- Wifi QR Code -->
-        <div class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow w-full sm:w-[48%] lg:w-[32%] h-[180px]">
-          <div class="flex gap-2 ">
-            <div class="me-2"><i class="fa-solid fa-wifi text-3xl text-violet-600"></i></div>
-            <h3 class="font-semibold text-xl font-bold">Effortless Wi-Fi Access</h3>
-          </div>
-          <p class="text-gray-600">Create a QR code that lets others connect to your Wi-Fi network effortlessly, without
-            entering the password, for fast internet access.</p>
-        </div>
-
-        <!-- Phone QR Code -->
-        <div class="bg-violet-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow w-full sm:w-[48%] lg:w-[32%] h-[180px]">
-          <div class="flex gap-2">
-            <div class="me-2"><i class="fa-solid fa-phone-alt text-3xl text-violet-600"></i></div>
-            <h3 class="font-semibold text-xl font-bold">Quick Call Dialer</h3>
-          </div>
-          <p class="text-gray-600">Generate a QR code that will dial a phone number directly when scanned, making it
-            easy for people to initiate calls with a single scan.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-    
     <!-- Brand Section -->
     <section class="payment-method-section pb-24 pt-20 relative z-[2]" style="background: linear-gradient(180deg, #e1d0ff, rgba(255, 249, 242, 0.4) 60%, rgba(255, 249, 242, 0.2) 100%);
     background-size: cover;

@@ -32,7 +32,12 @@
   transition: .3s all ease !important;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
 }
-
+.bg-pattern{
+  background: linear-gradient(230deg, #e1d0ff, rgba(255, 249, 242, 0.4) 60%, rgba(255, 249, 242, 0.2) 100%);
+}
+.shape-opacity {
+  opacity: 0.2;
+}
 .brand-img {
   border-radius: 5px;
   padding: 71px;

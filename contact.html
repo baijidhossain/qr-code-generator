@@ -56,67 +56,60 @@
 
 <body class="flex flex-col min-h-screen bg-gray-100">
 
- <!-- Header -->
- <header class="border-b z-[1]">
-  <nav class="max-w-7xl mx-auto px-4">
-    <div class="flex justify-between items-center">
+  <!-- Header -->
+  <header class="border-b z-[1]">
+    <nav class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center">
 
-      <a href="index.html" class="flex items-center">
-        <img src="public/images/freeqrcodes.png" fetchpriority="high" width="210" height="30" alt="Free QR Codes"
-          class="mr-2 logo" decoding="async">
-      </a>
+        <a href="index.html" class="flex items-center">
+          <img src="public/images/freeqrcodes.png" fetchpriority="high" width="210" height="30" alt="Free QR Codes"
+            class="mr-2 logo" decoding="async">
+        </a>
 
-      <ul class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
-                  md:relative md:flex md:p-0 md:bg-transparent md:flex-row font-semibold" id="menu">
-        <li class="md:hidden z-90 fixed top-4 right-6">
-          <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">×</a>
-        </li>
-        <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="index.html"
-            class="text-white md:text-gray-700 hover:text-violet-600">Home</a></li>
-        <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="about.html"
-            class="text-white md:text-gray-700 hover:text-violet-600 ">About</a></li>
+        <ul class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
+                    md:relative md:flex md:p-0 md:bg-transparent md:flex-row font-semibold" id="menu">
+          <li class="md:hidden z-90 fixed top-4 right-6">
+            <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">×</a>
+          </li>
 
-        <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="brands.html"
-            class="text-white md:text-gray-700 hover:text-violet-600">Brands</a></li>
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="index.html"
+              class="text-white md:text-gray-700 hover:text-violet-600">Home</a></li>
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="about.html"
+              class="text-white md:text-gray-700 hover:text-violet-600 ">About</a></li>
 
-        <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="faq.html"
-            class="text-white md:text-gray-700 hover:text-violet-600">FAQ</a></li>
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="brands.html"
+              class="text-white md:text-gray-700 hover:text-violet-600">Brands</a></li>
 
-      </ul>
+          <li class="my-5 md:my-0 py-2.5 px-3 lg:py-5 xl:px-5"><a href="faq.html"
+              class="text-white md:text-gray-700 hover:text-violet-600">FAQ</a></li>
 
-      <div class="flex items-center gap-4 min-w-52 justify-end">
-        <a href="contact.html"
-          class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">Contact<i
-            class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+        </ul>
 
-        <!-- This is used to open the menu on mobile devices -->
-        <div class="flex items-center md:hidden">
-          <button class="text-4xl font-bold opacity-70 hover:opacity-100 duration-300" aria-label="Open Menu"
-            onclick="toggleMenu()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-menu">
-              <line x1="4" x2="20" y1="12" y2="12"></line>
-              <line x1="4" x2="20" y1="6" y2="6"></line>
-              <line x1="4" x2="20" y1="18" y2="18"></line>
-            </svg>
-          </button>
+        <div class="flex items-center gap-4 min-w-52 justify-end">
+          <a href="contact.html"
+            class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">Contact<i
+              class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+
+          <!-- This is used to open the menu on mobile devices -->
+          <div class="flex items-center md:hidden">
+            <button class="duration-300 hover:opacity-100 opacity-70" aria-label="Open Menu" onclick="toggleMenu(this)" style="width: 30px;font-size: 18px;">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
         </div>
+
       </div>
+    </nav>
 
-    </div>
-  </nav>
-</header>
-
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden bg-gray-800 text-white p-4 space-y-4">
-  <a href="index.html" class="block hover:text-violet-400">Home</a>
-  <a href="about.html" class="block hover:text-violet-400">About</a>
-  <a href="brand.html" class="block hover:text-violet-400">Brands</a>
-  <a href="faq.html" class="block hover:text-violet-400">FAQ</a>
-  <a href="contact.html" class="block hover:text-violet-400">Contact Us</a>
-</div>
-
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden bg-violet-100 p-4 space-y-4">
+        <a href="index.html" class="block hover:text-violet-400">Home</a>
+        <a href="about.html" class="block hover:text-violet-400">About</a>
+        <a href="brand.html" class="block hover:text-violet-400">Brands</a>
+        <a href="faq.html" class="block hover:text-violet-400">FAQ</a>
+        <a href="contact.html" class="block hover:text-violet-400">Contact</a>
+      </div>
+  </header>
   
   <!-- Main Content -->
   <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
