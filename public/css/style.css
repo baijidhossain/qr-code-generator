@@ -22,10 +22,9 @@
   }
 }
 
-/* .title-bottom-style {
-  background-image: linear-gradient(180deg, #FFFFFF00 90%, #e1d0ff 0%);
-} */
-
+.hero-section{
+  padding-top: 150px;
+}
 .brand-card {
   background-color: white !important;
   padding: 15px 15px;
