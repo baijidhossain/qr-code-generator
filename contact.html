@@ -117,14 +117,14 @@
 
     <section class="" style="margin-top: 130px;margin-bottom: 65px;">
       <div class="max-w-7xl mx-auto px-4">
-        <div class="flex flex-wrap gap-4 items-center justify-between">
+        <div class="flex flex-wrap gap-4 items-center justify-center lg:justify-between">
           <!-- Image Section -->
           <div class="p-6 rounded-md">
             <img src="./public/images/scan-qrcode.svg" alt="QR Code Generator" loading="lazy" width="400" height="300"
               class="max-w-full h-auto">
           </div>
           <!-- Form Section -->
-          <div class="bg-white p-6 rounded-xl w-full lg:w-1/2">
+          <div class="bg-white lg:w-1/2 p-6 rounded-xl shadow-lg w-full">
             <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Contact Us</h1>
             <p class="text-gray-600 mb-8 text-center">
               Have a question or feedback? We'd love to hear from you! Fill out the form below and we'll get back to you
@@ -144,6 +144,7 @@
                 <input type="email" name="email" id="email" autocomplete="email" required=""
                   class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
               </div>
+
               <!-- Subject Field -->
               <div>
                 <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
@@ -151,17 +152,19 @@
                   class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-11">
               </div>
               <!-- Message Field -->
+
               <div>
                 <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
                 <textarea id="message" name="message" rows="4" required=""
                   class="mt-1 focus:ring-violet-500 focus:border-violet-600 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
               </div>
+              
               <!-- Submit Button -->
               <div class="flex justify-center">
                 <button type="submit"
                   class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"
                   id="qr-button">
-                  <i class="fa-solid fa-qrcode"></i>
+                  <i class="fa-solid fa-paper-plane"></i>
                   <span class="ml-2" id="qr-button-text">Send Message</span>
                 </button>
               </div>
@@ -259,15 +262,6 @@
 
   <script src="./public/js/script.js"></script>
 
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    }
-  </script>
-
 </body>
-
-<!-- Mirrored from freeqrcodes.link/contact by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Dec 2024 09:30:56 GMT -->
 
 </html>
