@@ -69,7 +69,6 @@ body{
 
 .active {
   color: #8b5cf6 !important;
-  border-bottom: 3px solid #8b5cf6 !important;
   transition: .3s all ease !important;
 }
 
