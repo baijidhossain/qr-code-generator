@@ -5,12 +5,7 @@ body{
   font-family: "Inter", serif;
   
 }
-body h2{
-  color: #000;
-}
-p{
-  color: #6b7280;
-}
+
 
 .collapsing {
   height: 0;
