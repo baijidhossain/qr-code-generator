@@ -37,7 +37,7 @@
     content="Create custom QR codes for free. No sign-up needed. Generate QR codes for URLs, text, email, and more with our user-friendly online tool.">
   <meta property="twitter:image" content="public/images/freeqrcode.html">
 
-    <!-- no index meta tag -->
+  <!-- no index meta tag -->
   <meta name="robots" content="noindex">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
@@ -57,7 +57,8 @@
 <body class="flex flex-col min-h-screen bg-gray-100">
 
   <!-- Header -->
-  <header class="border-b ">
+  <header>
+
     <nav class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between items-center">
 
@@ -92,7 +93,8 @@
 
           <!-- This is used to open the menu on mobile devices -->
           <div class="flex items-center md:hidden">
-            <button class="duration-300 hover:opacity-100 opacity-70" aria-label="Open Menu" onclick="toggleMenu(this)" style="width: 30px;font-size: 18px;">
+            <button class="duration-300 hover:opacity-100 opacity-70" aria-label="Open Menu" onclick="toggleMenu(this)"
+              style="width: 30px;font-size: 18px;">
               <i class="fa-solid fa-bars"></i>
             </button>
           </div>
@@ -101,22 +103,23 @@
       </div>
     </nav>
 
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden bg-violet-100 p-4 space-y-4">
-        <a href="index.html" class="block hover:text-violet-400">Home</a>
-        <a href="about.html" class="block hover:text-violet-400">About</a>
-        <a href="brand.html" class="block hover:text-violet-400">Brands</a>
-        <a href="faq.html" class="block hover:text-violet-400">FAQ</a>
-        <a href="contact.html" class="block hover:text-violet-400">Contact</a>
-      </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-violet-100 p-4 space-y-4">
+      <a href="index.html" class="block hover:text-violet-400">Home</a>
+      <a href="about.html" class="block hover:text-violet-400">About</a>
+      <a href="brand.html" class="block hover:text-violet-400">Brands</a>
+      <a href="faq.html" class="block hover:text-violet-400">FAQ</a>
+      <a href="contact.html" class="block hover:text-violet-400">Contact</a>
+    </div>
+
   </header>
 
   <!-- Brand Section -->
-  <section class="payment-method-section pt-20 relative z-[2]" style="
-  background: linear-gradient(0deg, #e1d0ff, rgba(255, 249, 242, 0.4) 60%, rgba(255, 249, 242, 0.2) 100%);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;">
+  <section class="overflow-hidden pb-20 pt-20 relative z-[2]" style="margin-top: -75px; padding-top: 143px;">
+
+    <img alt="payment-method" loading="lazy" width="1728" height="862" decoding="async" data-nimg="1" class="absolute"
+      style="width: 100%;height: 100%;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: -1;"
+      src="./public/images/shape3.webp">
 
     <div class="max-w-3xl mb-16 mx-auto px-4 text-center">
       <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4 ">
@@ -129,45 +132,53 @@
       <!-- Flexbox for Brand Cards (Top Row) -->
       <div class="flex flex-wrap gap-4 justify-center max-w-7xl mb-4 mx-auto">
         <!-- Brand Cards -->
-        <div class="text-center brand-card flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
+        <div
+          class="text-center  bg-white py-2 lg:py-3 px-3 lg:px-5 rounded-[10px] flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
           <a href="https://alpha.net.bd/" target="_blank" class="inline-block">
             <img src="./public/images/brands/alpha_net.svg" alt="Alpha Net" class="w-full h-full" loading="lazy">
           </a>
         </div>
-        <div class="text-center brand-card flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
+
+        <div
+          class="text-center  bg-white py-2 lg:py-3 px-3 lg:px-5 rounded-[10px] flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
           <a href="https://cfl-it.com/" target="_blank" class="inline-block">
             <img src="./public/images/brands/cfl-it.svg" alt="CFL IT" class="w-full h-full" loading="lazy">
           </a>
         </div>
-      
-        <div class="text-center brand-card flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
+
+        <div
+          class="text-center  bg-white py-2 lg:py-3 px-3 lg:px-5 rounded-[10px] flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
           <a href="https://www.godigital.com.bd/" target="_blank" class="inline-block">
             <img src="./public/images/brands/godigital.svg" alt="Go Digital BD" class="w-full h-full" loading="lazy">
           </a>
         </div>
-     
+
       </div>
 
       <!-- Flexbox for Brand Cards (Middle Row) -->
       <div class="flex flex-wrap gap-4 justify-center  mb-4 mx-auto">
 
-        <div class="text-center brand-card flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
+        <div
+          class="text-center  bg-white py-2 lg:py-3 px-3 lg:px-5 rounded-[10px] flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
           <a href="https://www.vps.com.bd/" target="_blank" class="inline-block">
             <img src="./public/images/brands/vps.com.bd.svg" alt="VPS.com.bd" class="w-full h-full" loading="lazy">
           </a>
         </div>
-        <div class="text-center brand-card flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
+        <div
+          class="text-center  bg-white py-2 lg:py-3 px-3 lg:px-5 rounded-[10px] flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
           <a href="https://www.pbx.com.bd/" target="_blank" class="inline-block">
             <img src="./public/images/brands/alpha_pbx.svg" alt="Alpha PBX" class="w-full h-full" loading="lazy">
           </a>
         </div>
-      
-        <div class="text-center brand-card flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
+
+        <div
+          class="text-center  bg-white py-2 lg:py-3 px-3 lg:px-5 rounded-[10px] flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
           <a href="https://virtue.works/" target="_blank" class="inline-block">
             <img src="./public/images/brands/virtue-work.svg" alt="Virtue Works" class="w-full h-full" loading="lazy">
           </a>
         </div>
-        <div class="text-center brand-card flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
+        <div
+          class="text-center  bg-white py-2 lg:py-3 px-3 lg:px-5 rounded-[10px] flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
           <a href="https://www.hotelmotels.info/" target="_blank" class="inline-block">
             <img src="./public/images/brands/hotel-motels.png" alt="Hotel Motels" class="w-full h-full" loading="lazy">
           </a>
@@ -177,112 +188,38 @@
       <!-- Flexbox for Brand Cards (Bottom Row) -->
       <div class="flex flex-wrap gap-4 justify-center mb-4">
 
-        <div class="text-center brand-card flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
+        <div
+          class="text-center  bg-white py-2 lg:py-3 px-3 lg:px-5 rounded-[10px] flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
           <a href="https://www.sms.net.bd/" target="_blank" class="inline-block">
             <img src="./public/images/brands/alpha_sms.svg" alt="Alpha SMS" class="w-full h-full" loading="lazy">
           </a>
         </div>
 
-        <div class="text-center brand-card flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
+        <div
+          class="text-center  bg-white py-2 lg:py-3 px-3 lg:px-5 rounded-[10px] flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
           <a href="https://ipbxphone.com/" target="_blank" class="inline-block">
             <img src="./public/images/brands/ipbxphone.svg" alt="IPBX Phone" class="w-full h-full" loading="lazy">
           </a>
         </div>
 
-        <div class="text-center brand-card flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
+        <div
+          class="text-center  bg-white py-2 lg:py-3 px-3 lg:px-5 rounded-[10px] flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg flex-shrink-0 w-full sm:w-[180px] sm:h-[60px] md:w-[190px] md:h-[70px]">
           <a href="https://residentialvps.com/" target="_blank" class="inline-block">
-            <img src="./public/images/brands/residential_vps.svg" alt="Residential VPS" class="w-full h-full" loading="lazy">
+            <img src="./public/images/brands/residential_vps.svg" alt="Residential VPS" class="w-full h-full"
+              loading="lazy">
           </a>
         </div>
 
       </div>
 
-    </div>
+      <div class="flex items-center justify-center min-w-52 mt-10">
+        <a href="brands.html"
+          class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">About All Brands<i
+            class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+      </div>
 
+    </div>
   </section>
-
-  <section class="px-4" style="background: linear-gradient(180deg, #e1d0ff, rgba(255, 249, 242, 0.4) 60%, rgba(255, 249, 242, 0.2) 100%);">
-  <div class="overflow-hidden pb-20 pt-20 relative rounded-[20px] z-10">
-    <!-- Background Images -->
-    <div class="absolute top-0 z-[-1]">
-      <img alt="process" loading="lazy" width="1312" height="699" decoding="async" class="max-w-full h-auto shape-opacity" style="color: transparent" src="./public/images/shape1.webp">
-    </div>
-    <div class="process-element absolute top-0 left-0 z-[-1]">
-      <img alt="process" loading="lazy" width="417" height="415" decoding="async" class="object-cover max-w-full h-auto" style="color: transparent" src="./public/images/shape2.webp">
-    </div>
-
-    <!-- Content Wrapper -->
-    <div class="flex flex-wrap justify-center lg:justify-between max-w-7xl mx-auto px-6">
-      <!-- Image Section -->
-      <div class="flex lg:justify-start lg:w-1/2 place-self-center">
-        <div class="lg:mb-0 lg:ml-10 mb-10">
-          <img src="./public/images/brands/alpha_net.svg" alt="Empowering Businesses Globally with Next-Gen Cloud &amp; Technology Solutions" loading="lazy" width="400" height="400" class="max-w-full h-auto">
-        </div>
-      </div>
-
-      <!-- Text Content Section -->
-      <div class="grid lg:w-1/2 w-full place-items-center">
-        <div>
-          <h3 class="font-semibold mb-4 text-center lg:text-start text-3xl font-extrabold sm:text-4xl ">
-            Cloud Solutions and Advanced Technology for Global Business Success
-          </h3>
-          <p class="text-justify sm:text-lg mb-4 ">
-            At <a href="https://alpha.net.bd" target="_blank" class="underline hover:text-violet-700">Alpha Net</a>, we are redefining the future of digital transformation under the visionary leadership of our CEO. With a relentless focus on innovation and excellence, Alpha Net empowers businesses to achieve their goals through cutting-edge cloud technologies and digital solutions.
-          </p>
-
-          <!-- Services Section -->
-          <div class="flex flex-wrap justify-between mt-2 sm:text-lg">
-            <div class="sm:w-1/2 w-full mb-4 lg:mb-0">
-              <ul class="list-style">
-                <li class="mb-2">
-                  <a href="https://www.alpha.net.bd/Dedicated/" target="_blank" class="hover:text-violet-700">
-                    <i class="fa-solid fa-angles-right text-gray-500 mr-2"></i> Dedicated Server
-                  </a>
-                </li>
-                <li class="mb-2">
-                  <a href="https://www.alpha.net.bd/Domains/" target="_blank" class=" hover:text-violet-700">
-                    <i class="fa-solid fa-angles-right text-gray-500 mr-2"></i> Domain Registration
-                  </a>
-                </li>
-                <li class="mb-2">
-                  <a href="https://www.alpha.net.bd/Email/" target="_blank" class=" hover:text-violet-700">
-                    <i class="fa-solid fa-angles-right text-gray-500 mr-2"></i> Email Hosting
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="sm:w-1/2 w-full">
-              <ul class="list-style">
-                <li class="mb-2">
-                  <a href="https://www.alpha.net.bd/VPS/" target="_blank" class=" hover:text-violet-700">
-                    <i class="fa-solid fa-angles-right text-gray-500 mr-2"></i> Virtual Private Server
-                  </a>
-                </li>
-                <li class="mb-2">
-                  <a href="https://www.alpha.net.bd/WebDesign/" target="_blank" class=" hover:text-violet-700">
-                    <i class="fa-solid fa-angles-right text-gray-500 mr-2"></i> Website Design &amp; Development
-                  </a>
-                </li>
-                <li class="mb-2">
-                  <a href="https://www.alpha.net.bd/Hosting/" target="_blank" class=" hover:text-violet-700">
-                    <i class="fa-solid fa-angles-right text-gray-500 mr-2"></i> Web Hosting
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Call to Action -->
-          <div class="flex items-center gap-4 min-w-52 mt-6">
-            <a href="https://alpha.net.bd" class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">Learn more about Alpha Net<i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
   <section class="bg-gray-50 pt-20 pb-20">
 
@@ -321,7 +258,7 @@
 
                     <li class="mb-2">
                       <a href="https://ipbxphone.com/Business_Phone/" target="_blank" class="hover:text-violet-700">
-                        <i class="fa-angles-right fa-solid text-gray-500 text-sm"></i> Business Phone 
+                        <i class="fa-angles-right fa-solid text-gray-500 text-sm"></i> Business Phone
                       </a>
                     </li>
 
@@ -352,7 +289,8 @@
                     </li>
 
                     <li class="mb-2">
-                      <a href="https://ipbxphone.com/Contact_Center_Solution/" target="_blank" class="hover:text-violet-700">
+                      <a href="https://ipbxphone.com/Contact_Center_Solution/" target="_blank"
+                        class="hover:text-violet-700">
                         <i class="fa-angles-right fa-solid text-gray-500 text-sm"></i> Call
                         Center
                       </a>
@@ -365,7 +303,9 @@
               </div>
 
               <div class="flex items-center gap-4 min-w-52 mt-6">
-                <a href="https://pbx.com.bd" class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more about IPBX Phone System <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+                <a href="https://pbx.com.bd"
+                  class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more
+                  about IPBX Phone System <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
               </div>
 
             </div>
@@ -380,94 +320,92 @@
 
   </section>
 
-  <section class="px-4 " style="background: linear-gradient(286deg, #e1d0ff, rgba(255, 249, 242, 0.4) 60%, rgba(255, 249, 242, 0.2) 100%);">
+  <section class="px-4"
+    style="background: linear-gradient(286deg, #e1d0ff, rgba(255, 249, 242, 0.4) 60%, rgba(255, 249, 242, 0.2) 100%);">
     <div class="overflow-hidden pb-20 pt-20 relative rounded-[20px] z-10">
+
       <!-- Background Images -->
       <div class="absolute top-0 z-[-1]">
-        <img alt="process" loading="lazy" width="1312" height="699" decoding="async" class="max-w-full h-auto shape-opacity" style="color: transparent" src="./public/images/shape1.webp">
+        <img alt="process" loading="lazy" width="1312" height="699" decoding="async"
+          class="max-w-full h-auto shape-opacity" style="color: transparent" src="./public/images/shape1.webp">
       </div>
       <div class="process-element absolute top-0 left-0 z-[-1]">
-        <img alt="process" loading="lazy" width="417" height="415" decoding="async" class="object-cover max-w-full h-auto" style="color: transparent" src="./public/images/shape2.webp">
+        <img alt="process" loading="lazy" width="417" height="415" decoding="async"
+          class="object-cover max-w-full h-auto" style="color: transparent" src="./public/images/shape2.webp">
       </div>
-  
+
       <!-- Content Wrapper -->
       <div class="flex flex-wrap justify-center lg:justify-between max-w-7xl mx-auto px-6">
         <!-- Image Section -->
         <div class="flex lg:justify-start lg:w-1/2 place-self-center">
           <div class="lg:mb-0 lg:ml-10 mb-10">
-            <img src="./public/images/brands/residential_vps.svg" alt="Empowering Businesses Globally with Next-Gen Cloud &amp; Technology Solutions" loading="lazy" width="400" height="400" class="max-w-full h-auto">
+            <img src="./public/images/brands/alpha_net.svg"
+              alt="Empowering Businesses Globally with Next-Gen Cloud &amp; Technology Solutions" loading="lazy"
+              width="400" height="400" class="max-w-full h-auto">
           </div>
         </div>
-  
+
         <!-- Text Content Section -->
         <div class="grid lg:w-1/2 w-full place-items-center">
           <div>
             <h3 class="font-semibold mb-4 text-center lg:text-start text-3xl font-extrabold sm:text-4xl ">
-              Secure Remote Desktop Access with Residential IP
+              Cloud Solutions and Advanced Technology for Global Business Success
             </h3>
             <p class="text-justify sm:text-lg mb-4 ">
-              <a href="https://residentialvps.com/" target="_blank" rel="noopener noreferrer" class="underline">Residential VPS </a> offers a fast, secure, and reliable remote desktop service with
-              a USA residential IP address.
-              It makes you appear as a home user online, ideal for productivity work, bypassing restrictions, and
-              accessing geo-locked content.
+              At <a href="https://alpha.net.bd" target="_blank" class="underline hover:text-violet-700">Alpha Net</a>,
+              we are redefining the future of digital transformation under the visionary leadership of our CEO. With a
+              relentless focus on innovation and excellence, Alpha Net empowers businesses to achieve their goals
+              through cutting-edge cloud technologies and digital solutions.
             </p>
 
-            <p class="text-justify sm:text-lg mb-4 ">
-              Our service includes a dedicated IP and a genuine Windows 10 Operating System, ensuring a seamless,
-              high-performance experience.
-              With VPSs connected to high-speed internet from the USA’s top ISPs, you can work more efficiently and
-              securely.
-            </p>
-  
             <!-- Services Section -->
             <div class="flex flex-wrap justify-between mt-2 sm:text-lg">
               <div class="sm:w-1/2 w-full mb-4 lg:mb-0">
                 <ul class="list-style">
                   <li class="mb-2">
-                    <a href="https://residentialvps.com/residential-vps/" target="_blank" class="hover:text-violet-700">
-                      <i class="fa-angles-right fa-solid text-gray-500 text-sm  "></i>
-                      Residential VPS </a>
-                  </li>
-
-                  <li class="mb-2">
-                    <a href="https://residentialvps.com/residential-ip/" target="_blank" class="hover:text-violet-700">
-                      <i class="fa-angles-right fa-solid text-gray-500 text-sm "></i>
-                      Residential IP
+                    <a href="https://www.alpha.net.bd/Dedicated/" target="_blank" class="hover:text-violet-700">
+                      <i class="fa-solid fa-angles-right text-gray-500 mr-2"></i> Dedicated Server
                     </a>
                   </li>
-
+                  <li class="mb-2">
+                    <a href="https://www.alpha.net.bd/Domains/" target="_blank" class=" hover:text-violet-700">
+                      <i class="fa-solid fa-angles-right text-gray-500 mr-2"></i> Domain Registration
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="https://www.alpha.net.bd/Email/" target="_blank" class=" hover:text-violet-700">
+                      <i class="fa-solid fa-angles-right text-gray-500 mr-2"></i> Email Hosting
+                    </a>
+                  </li>
                 </ul>
               </div>
-
               <div class="sm:w-1/2 w-full">
-
                 <ul class="list-style">
-
                   <li class="mb-2">
-                    <a href="https://residentialvps.com/fresh-ip/" target="_blank" class="hover:text-violet-700">
-                      <i class="fa-angles-right fa-solid text-gray-500 text-sm "></i> Fresh IP
+                    <a href="https://www.alpha.net.bd/VPS/" target="_blank" class=" hover:text-violet-700">
+                      <i class="fa-solid fa-angles-right text-gray-500 mr-2"></i> Virtual Private Server
                     </a>
                   </li>
-
                   <li class="mb-2">
-                    <a href="https://residentialvps.com/RDP/" target="_blank" class="hover:text-violet-700">
-                      <i class="fa-angles-right fa-solid text-gray-500 text-sm"></i> Remote
-                      Desktop
+                    <a href="https://www.alpha.net.bd/WebDesign/" target="_blank" class=" hover:text-violet-700">
+                      <i class="fa-solid fa-angles-right text-gray-500 mr-2"></i> Website Design &amp; Development
                     </a>
                   </li>
-
+                  <li class="mb-2">
+                    <a href="https://www.alpha.net.bd/Hosting/" target="_blank" class=" hover:text-violet-700">
+                      <i class="fa-solid fa-angles-right text-gray-500 mr-2"></i> Web Hosting
+                    </a>
+                  </li>
                 </ul>
-
               </div>
-
             </div>
-  
+
             <!-- Call to Action -->
-    
             <div class="flex items-center gap-4 min-w-52 mt-6">
-              <a href="https://residentialvps.com" class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more about Residential VPS <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+              <a href="https://alpha.net.bd"
+                class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">Learn more about
+                Alpha Net<i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
             </div>
-
 
           </div>
         </div>
@@ -565,7 +503,9 @@
               </div>
 
               <div class="flex items-center gap-4 min-w-52 mt-6">
-                <a href="https://sms.com.bd" class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">  Learn more about Alpha SMS <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+                <a href="https://sms.com.bd"
+                  class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more
+                  about Alpha SMS <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
               </div>
 
             </div>
@@ -580,25 +520,186 @@
 
   </section>
 
-  <section class="px-4 bg-pattern" >
+  <section class="px-4 "
+    style="background: linear-gradient(286deg, #e1d0ff, rgba(255, 249, 242, 0.4) 60%, rgba(255, 249, 242, 0.2) 100%);">
     <div class="overflow-hidden pb-20 pt-20 relative rounded-[20px] z-10">
       <!-- Background Images -->
       <div class="absolute top-0 z-[-1]">
-        <img alt="process" loading="lazy" width="1312" height="699" decoding="async" class="max-w-full h-auto shape-opacity" style="color: transparent" src="./public/images/shape1.webp">
+        <img alt="process" loading="lazy" width="1312" height="699" decoding="async"
+          class="max-w-full h-auto shape-opacity" style="color: transparent" src="./public/images/shape1.webp">
       </div>
       <div class="process-element absolute top-0 left-0 z-[-1]">
-        <img alt="process" loading="lazy" width="417" height="415" decoding="async" class="object-cover max-w-full h-auto" style="color: transparent" src="./public/images/shape2.webp">
+        <img alt="process" loading="lazy" width="417" height="415" decoding="async"
+          class="object-cover max-w-full h-auto" style="color: transparent" src="./public/images/shape2.webp">
       </div>
-  
+
+      <!-- Content Wrapper -->
+      <div class="flex flex-wrap justify-center lg:justify-between max-w-7xl mx-auto px-6">
+        <!-- Image Section -->
+        <div class="flex lg:justify-start lg:w-1/2 place-self-center">
+          <div class="lg:mb-0 lg:ml-10 mb-10">
+            <img src="./public/images/brands/residential_vps.svg"
+              alt="Empowering Businesses Globally with Next-Gen Cloud &amp; Technology Solutions" loading="lazy"
+              width="400" height="400" class="max-w-full h-auto">
+          </div>
+        </div>
+
+        <!-- Text Content Section -->
+        <div class="grid lg:w-1/2 w-full place-items-center">
+          <div>
+            <h3 class="font-semibold mb-4 text-center lg:text-start text-3xl font-extrabold sm:text-4xl ">
+              Secure Remote Desktop Access with Residential IP
+            </h3>
+            <p class="text-justify sm:text-lg mb-4 ">
+              <a href="https://residentialvps.com/" target="_blank" rel="noopener noreferrer"
+                class="underline">Residential VPS </a> offers a fast, secure, and reliable remote desktop service with
+              a USA residential IP address.
+              It makes you appear as a home user online, ideal for productivity work, bypassing restrictions, and
+              accessing geo-locked content.
+            </p>
+
+            <p class="text-justify sm:text-lg mb-4 ">
+              Our service includes a dedicated IP and a genuine Windows 10 Operating System, ensuring a seamless,
+              high-performance experience.
+              With VPSs connected to high-speed internet from the USA’s top ISPs, you can work more efficiently and
+              securely.
+            </p>
+
+            <!-- Services Section -->
+            <div class="flex flex-wrap justify-between mt-2 sm:text-lg">
+              <div class="sm:w-1/2 w-full mb-4 lg:mb-0">
+                <ul class="list-style">
+                  <li class="mb-2">
+                    <a href="https://residentialvps.com/residential-vps/" target="_blank" class="hover:text-violet-700">
+                      <i class="fa-angles-right fa-solid text-gray-500 text-sm  "></i>
+                      Residential VPS </a>
+                  </li>
+
+                  <li class="mb-2">
+                    <a href="https://residentialvps.com/residential-ip/" target="_blank" class="hover:text-violet-700">
+                      <i class="fa-angles-right fa-solid text-gray-500 text-sm "></i>
+                      Residential IP
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+
+              <div class="sm:w-1/2 w-full">
+
+                <ul class="list-style">
+
+                  <li class="mb-2">
+                    <a href="https://residentialvps.com/fresh-ip/" target="_blank" class="hover:text-violet-700">
+                      <i class="fa-angles-right fa-solid text-gray-500 text-sm "></i> Fresh IP
+                    </a>
+                  </li>
+
+                  <li class="mb-2">
+                    <a href="https://residentialvps.com/RDP/" target="_blank" class="hover:text-violet-700">
+                      <i class="fa-angles-right fa-solid text-gray-500 text-sm"></i> Remote
+                      Desktop
+                    </a>
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+            <!-- Call to Action -->
+
+            <div class="flex items-center gap-4 min-w-52 mt-6">
+              <a href="https://residentialvps.com"
+                class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more
+                about Residential VPS <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 pt-20 pb-20">
+
+    <div class="lg:px-10 px-4 sm:px-24">
+
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-wrap lg:flex-row-reverse  justify-between">
+
+          <div class="grid lg:w-1/2 w-full">
+            <div class="brand-img lg:ml-10 lg:place-self-end place-self-center lg:mb-0 mb-14">
+              <img src="./public/images/brands/godigital.svg"
+                alt=" Your One-Stop Digital Marketing Solution in Bangladesh" loading="lazy" width="400" height="400"
+                class="place-self-center">
+            </div>
+          </div>
+
+          <div class="grid lg:w-1/2 place-items-center w-full">
+            <div>
+              <h3 class="font-semibold mb-4 text-start  text-3xl font-extrabold sm:text-4xl">
+                Complete Digital Marketing Solution in Bangladesh for Online Success
+              </h3>
+
+              <p class="text-justify sm:text-lg mb-3">
+                Go Digital, the ultimate URL shortener and digital marketing agency, is your go-to partner for enhancing
+                your online presence.
+              </p>
+
+              <p class="text-justify sm:text-lg mb-3">
+                We provide a complete range of digital marketing services in Bangladesh and globally, including website
+                design, content creation, social media marketing, video animation, and more.
+                Our mission is to help businesses grow and succeed in the dynamic digital world.
+              </p>
+
+              <p class="text-justify sm:text-lg mb-3">
+                Whether you need a responsive website, engaging content creation, or captivating video marketing, we
+                provide tailored solutions to help you achieve your business goals effectively.
+              </p>
+
+              <div class="flex items-center gap-4 min-w-52 mt-6">
+                <a href="https://godigital.com.bd"
+                  class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more
+                  about godigital.com.bd <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="px-4 bg-pattern">
+    <div class="overflow-hidden pb-20 pt-20 relative rounded-[20px] z-10">
+      <!-- Background Images -->
+      <div class="absolute top-0 z-[-1]">
+        <img alt="process" loading="lazy" width="1312" height="699" decoding="async"
+          class="max-w-full h-auto shape-opacity" style="color: transparent" src="./public/images/shape1.webp">
+      </div>
+      <div class="process-element absolute top-0 left-0 z-[-1]">
+        <img alt="process" loading="lazy" width="417" height="415" decoding="async"
+          class="object-cover max-w-full h-auto" style="color: transparent" src="./public/images/shape2.webp">
+      </div>
+
       <!-- Content Wrapper -->
       <div class="flex flex-wrap justify-center  lg:justify-between max-w-7xl mx-auto px-6">
         <!-- Image Section -->
         <div class="flex lg:justify-start lg:w-1/2 place-self-center">
           <div class="lg:mb-0 lg:ml-10 mb-10">
-            <img src="./public/images/brands/vps.com.bd.svg" alt="Empowering Businesses Globally with Next-Gen Cloud &amp; Technology Solutions" loading="lazy" width="400" height="400" class="max-w-full h-auto">
+            <img src="./public/images/brands/vps.com.bd.svg"
+              alt="Empowering Businesses Globally with Next-Gen Cloud &amp; Technology Solutions" loading="lazy"
+              width="400" height="400" class="max-w-full h-auto">
           </div>
         </div>
-  
+
         <!-- Text Content Section -->
         <div class="grid lg:w-1/2 w-full place-items-center">
           <div>
@@ -608,7 +709,8 @@
             <p class="text-justify sm:text-lg mb-4 ">
               Experience high-performance VPS hosting with Experience High-Performance VPS Hosting in Bangladesh with
               vps.com.bd – Your Leading Provider of Virtual Private Servers (VPS)
-              Whether you're looking for Managed VPS, Unmanaged VPS, or optimized <a href="https://www.vps.com.bd/BDIX_VPS/" target="_blank" rel="noopener noreferrer" class="underline">
+              Whether you're looking for Managed VPS, Unmanaged VPS, or optimized <a
+                href="https://www.vps.com.bd/BDIX_VPS/" target="_blank" rel="noopener noreferrer" class="underline">
                 BDIX
                 VPS</a> for ultra-fast speeds, we offer a wide range of hosting solutions tailored to your needs.
             </p>
@@ -619,7 +721,7 @@
               website and
               applications run smoothly with secure and reliable hosting.
             </p>
-  
+
             <!-- Services Section -->
             <div class="flex flex-wrap justify-between mt-2 sm:text-lg">
               <div class="sm:w-1/2 w-full mb-4 lg:mb-0">
@@ -673,119 +775,13 @@
                 </ul>
               </div>
             </div>
-  
+
             <!-- Call to Action -->
-         
+
             <div class="flex items-center gap-4 min-w-52 mt-6">
-              <a href="https://vps.com.bd" class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">  Learn more about vps.com.bd <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
-            </div>
-
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-gray-50 pt-20 pb-20">
-
-    <div class="lg:px-10 px-4 sm:px-24">
-
-      <div class="mx-auto max-w-7xl">
-        <div class="flex flex-wrap lg:flex-row-reverse  justify-between">
-
-          <div class="grid lg:w-1/2 w-full">
-            <div class="brand-img lg:ml-10 lg:place-self-end place-self-center lg:mb-0 mb-14">
-              <img src="./public/images/brands/godigital.svg"
-                alt=" Your One-Stop Digital Marketing Solution in Bangladesh" loading="lazy" width="400" height="400"
-                class="place-self-center">
-            </div>
-          </div>
-
-          <div class="grid lg:w-1/2 place-items-center w-full">
-            <div>
-              <h3 class="font-semibold mb-4 text-start  text-3xl font-extrabold sm:text-4xl">
-                Complete Digital Marketing Solution in Bangladesh for Online Success
-              </h3>
-
-              <p class="text-justify sm:text-lg mb-3">
-                Go Digital, the ultimate URL shortener and digital marketing agency, is your go-to partner for enhancing
-                your online presence.
-              </p>
-
-              <p class="text-justify sm:text-lg mb-3">
-                We provide a complete range of digital marketing services in Bangladesh and globally, including website
-                design, content creation, social media marketing, video animation, and more.
-                Our mission is to help businesses grow and succeed in the dynamic digital world.
-              </p>
-
-              <p class="text-justify sm:text-lg mb-3">
-                Whether you need a responsive website, engaging content creation, or captivating video marketing, we
-                provide tailored solutions to help you achieve your business goals effectively.
-              </p>
-
-              <div class="flex items-center gap-4 min-w-52 mt-6">
-                <a href="https://godigital.com.bd" class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">    Learn more about godigital.com.bd <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="px-4 bg-pattern" >
-    <div class="overflow-hidden pb-20 pt-20 relative rounded-[20px] z-10">
-      <!-- Background Images -->
-      <div class="absolute top-0 z-[-1]">
-        <img alt="process" loading="lazy" width="1312" height="699" decoding="async" class="max-w-full h-auto shape-opacity" style="color: transparent" src="./public/images/shape1.webp">
-      </div>
-      <div class="process-element absolute top-0 left-0 z-[-1]">
-        <img alt="process" loading="lazy" width="417" height="415" decoding="async" class="object-cover max-w-full h-auto" style="color: transparent" src="./public/images/shape2.webp">
-      </div>
-  
-      <!-- Content Wrapper -->
-      <div class="flex flex-wrap justify-center  lg:justify-between max-w-7xl mx-auto px-6">
-        <!-- Image Section -->
-        <div class="flex lg:justify-start lg:w-1/2 place-self-center">
-          <div class="lg:mb-0 lg:ml-10 mb-10">
-            <img src="./public/images/brands/virtue-work.svg" alt="Empowering Businesses Globally with Next-Gen Cloud &amp; Technology Solutions" loading="lazy" width="400" height="400" class="max-w-full h-auto">
-          </div>
-        </div>
-  
-        <!-- Text Content Section -->
-        <div class="grid lg:w-1/2 w-full place-items-center">
-          <div>
-            <h3 class="font-semibold mb-4 text-center lg:text-start text-3xl font-extrabold sm:text-4xl ">
-              Empowering Non-Profit and Religious Organizations with Effective Solutions
-            </h3>
-            <p class="text-justify sm:text-lg mb-3 "><a href="https://virtue.works/" target="_blank"
-              class="underline">virtue.works</a> Empowering Non-Profit and Religious Organizations with Free,
-            User-Friendly Websites</p>
-          <p class="text-justify sm:text-lg mb-3 ">At Virtue.works, we specialize in providing free websites for
-            non-profit and religious organizations, helping them effectively communicate their message, attract
-            supporters, and foster engagement online.</p>
-
-          <p class="text-justify sm:text-lg ">In today's digital landscape, establishing a strong online presence is
-            crucial for business success and growth.
-            That's why we focus on intuitive web design and seamless functionality, tailoring each website to meet
-            the unique needs and goals of our clients.
-            With <a href="https://virtue.works/" target="_blank" class="underline">virtue.works</a>, your
-            organization can enhance its digital visibility, reach a broader audience, inspire action, and make a
-            meaningful impact.
-          </p>
-  
-      
-            <!-- Call to Action -->
-            <div class="flex items-center gap-4 min-w-52 mt-6">
-              <a href="https://virtue.works" class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more about virtue.works <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+              <a href="https://vps.com.bd"
+                class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more
+                about vps.com.bd <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
             </div>
 
           </div>
@@ -832,7 +828,9 @@
               </p>
 
               <div class="flex items-center gap-4 min-w-52 mt-6">
-                <a href="https://dojos.info" class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">  Learn more about dojos.info <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+                <a href="https://dojos.info"
+                  class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more
+                  about dojos.info <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
               </div>
 
             </div>
@@ -847,47 +845,160 @@
 
   </section>
 
-  <section class="px-4 bg-pattern" >
+  <section class="px-4 bg-pattern">
     <div class="overflow-hidden pb-20 pt-20 relative rounded-[20px] z-10">
       <!-- Background Images -->
       <div class="absolute top-0 z-[-1]">
-        <img alt="process" loading="lazy" width="1312" height="699" decoding="async" class="max-w-full h-auto shape-opacity" style="color: transparent" src="./public/images/shape1.webp">
+        <img alt="process" loading="lazy" width="1312" height="699" decoding="async"
+          class="max-w-full h-auto shape-opacity" style="color: transparent" src="./public/images/shape1.webp">
       </div>
       <div class="process-element absolute top-0 left-0 z-[-1]">
-        <img alt="process" loading="lazy" width="417" height="415" decoding="async" class="object-cover max-w-full h-auto" style="color: transparent" src="./public/images/shape2.webp">
+        <img alt="process" loading="lazy" width="417" height="415" decoding="async"
+          class="object-cover max-w-full h-auto" style="color: transparent" src="./public/images/shape2.webp">
       </div>
-  
+
       <!-- Content Wrapper -->
       <div class="flex flex-wrap justify-center  lg:justify-between max-w-7xl mx-auto px-6">
         <!-- Image Section -->
         <div class="flex lg:justify-start lg:w-1/2 place-self-center">
           <div class="lg:mb-0 lg:ml-10 mb-10">
-            <img src="./public/images/brands/hotel-motels.png" alt="Empowering Businesses Globally with Next-Gen Cloud &amp; Technology Solutions" loading="lazy" width="400" height="400" class="max-w-full h-auto">
+            <img src="./public/images/brands/virtue-work.svg"
+              alt="Empowering Businesses Globally with Next-Gen Cloud &amp; Technology Solutions" loading="lazy"
+              width="400" height="400" class="max-w-full h-auto">
           </div>
         </div>
-  
+
         <!-- Text Content Section -->
         <div class="grid lg:w-1/2 w-full place-items-center">
           <div>
-            <h3 class="font-semibold mb-4 text-center lg:text-start text-3xl font-extrabold sm:text-4xl" >
+            <h3 class="font-semibold mb-4 text-center lg:text-start text-3xl font-extrabold sm:text-4xl ">
+              Empowering Non-Profit and Religious Organizations with Effective Solutions
+            </h3>
+            <p class="text-justify sm:text-lg mb-3 "><a href="https://virtue.works/" target="_blank"
+                class="underline">virtue.works</a> Empowering Non-Profit and Religious Organizations with Free,
+              User-Friendly Websites</p>
+            <p class="text-justify sm:text-lg mb-3 ">At Virtue.works, we specialize in providing free websites for
+              non-profit and religious organizations, helping them effectively communicate their message, attract
+              supporters, and foster engagement online.</p>
+
+            <p class="text-justify sm:text-lg ">In today's digital landscape, establishing a strong online presence is
+              crucial for business success and growth.
+              That's why we focus on intuitive web design and seamless functionality, tailoring each website to meet
+              the unique needs and goals of our clients.
+              With <a href="https://virtue.works/" target="_blank" class="underline">virtue.works</a>, your
+              organization can enhance its digital visibility, reach a broader audience, inspire action, and make a
+              meaningful impact.
+            </p>
+
+            <!-- Call to Action -->
+            <div class="flex items-center gap-4 min-w-52 mt-6">
+              <a href="https://virtue.works"
+                class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more
+                about virtue.works <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 pt-20 pb-20">
+
+    <div class="lg:px-10 px-4 sm:px-24">
+
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-wrap lg:flex-row-reverse  justify-between">
+
+          <div class="grid lg:w-1/2 w-full">
+            <div class="brand-img lg:ml-10 lg:place-self-end place-self-center lg:mb-0 mb-14">
+              <img src="./public/images/brands/pizzashops-info.svg" alt="Discover Hotels &amp; Motels Across the USA"
+                loading="lazy" width="400" height="400" class=" place-self-center">
+            </div>
+          </div>
+
+          <div class="grid lg:w-1/2 place-items-center w-full">
+            <div>
+              <h3 class="font-semibold mb-4 text-start  text-3xl font-extrabold sm:text-4xl">
+                Search, Rate and Share Pizza Shops &amp; Pizza Franchises
+              </h3>
+
+              <p class="text-justify sm:text-lg mb-3"> Welcome to PizzaShops.info, the go-to platform for pizza
+                enthusiasts! With a directory of over 90,000 pizza restaurants nationwide, finding your favorite pizza
+                places has never been easier.</p>
+
+              <p class="text-justify sm:text-lg mb-3">Discover and compare the best pizza franchises, chains, and local
+                pizza joints in any city, county, or state. Our platform provides detailed information, customer
+                reviews, and an interactive map to help you navigate and locate the best pizza establishments near you.
+              </p>
+
+              <p class="text-justify sm:text-lg mb-3">
+                Whether you're craving classic favorites or unique toppings, PizzaShops.info is your trusted resource
+                for all things pizza across the USA.</p>
+
+              <div class="flex items-center gap-4 min-w-52 mt-6">
+                <a href="https://pizzashops.info"
+                  class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more
+                  about pizzashops.info <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="px-4">
+    <div class="overflow-hidden pb-20 pt-20 relative rounded-[20px] z-10">
+      <!-- Background Images -->
+      <div class="absolute top-0 z-[-1]">
+        <img alt="process" loading="lazy" width="1312" height="699" decoding="async"
+          class="max-w-full h-auto shape-opacity" style="color: transparent" src="./public/images/shape1.webp">
+      </div>
+      <div class="process-element absolute top-0 left-0 z-[-1]">
+        <img alt="process" loading="lazy" width="417" height="415" decoding="async"
+          class="object-cover max-w-full h-auto" style="color: transparent" src="./public/images/shape2.webp">
+      </div>
+
+      <!-- Content Wrapper -->
+      <div class="flex flex-wrap justify-center  lg:justify-between max-w-7xl mx-auto px-6">
+        <!-- Image Section -->
+        <div class="flex lg:justify-start lg:w-1/2 place-self-center">
+          <div class="lg:mb-0 lg:ml-10 mb-10">
+            <img src="./public/images/brands/hotel-motels.png"
+              alt="Empowering Businesses Globally with Next-Gen Cloud &amp; Technology Solutions" loading="lazy"
+              width="400" height="400" class="max-w-full h-auto">
+          </div>
+        </div>
+
+        <!-- Text Content Section -->
+        <div class="grid lg:w-1/2 w-full place-items-center">
+          <div>
+            <h3 class="font-semibold mb-4 text-center lg:text-start text-3xl font-extrabold sm:text-4xl">
               Find Luxury Hotels and Motels Across the USA
             </h3>
-            <p class="text-justify sm:text-lg mb-3" > Explore <a href="https://hotelmotels.info/" class="underline"
-              target="_blank">hotelmotels.info</a>, your ultimate resource for finding
-            accommodations across the USA. From luxury resorts and charming bed and breakfasts to affordable motels,
-            our platform offers a wide range of options tailored to every preference and budget.
-          </p>
+            <p class="text-justify sm:text-lg mb-3"> Explore <a href="https://hotelmotels.info/" class="underline"
+                target="_blank">hotelmotels.info</a>, your ultimate resource for finding
+              accommodations across the USA. From luxury resorts and charming bed and breakfasts to affordable motels,
+              our platform offers a wide range of options tailored to every preference and budget.
+            </p>
 
-          <p class="text-justify sm:text-lg mb-3 >
+            <p class="text-justify sm:text-lg mb-3 >
             With over 100,000 listings available, locating your ideal stay has never been easier. Use our advanced
             search features to browse by address, city, county, zip code, or state, ensuring a seamless
             trip-planning experience.
           </p>
 
-          <p class="text-justify sm:text-lg > Plan your next getaway with <a href="https://hotelmotels.info/"
-              class="underline" target="_blank">hotelmotels.info</a> and find the best places
-            to stay, no matter your destination or budget. </p>
-  
+          <p class=" text-justify sm:text-lg> Plan your next getaway with <a href="https://hotelmotels.info/"
+                class="underline" target="_blank">hotelmotels.info</a> and find the best places
+              to stay, no matter your destination or budget. </p>
+
             <!-- Services Section -->
             <div class="flex flex-wrap justify-between mt-2 sm:text-lg">
               <div class="sm:w-1/2 w-full mb-4 lg:mb-0">
@@ -941,11 +1052,13 @@
                 </ul>
               </div>
             </div>
-  
+
             <!-- Call to Action -->
-    
+
             <div class="flex items-center gap-4 min-w-52 mt-6">
-              <a href="https://hotelmotels.info" class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more about hotelmotels.info <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+              <a href="https://hotelmotels.info"
+                class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more
+                about hotelmotels.info <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
             </div>
 
           </div>
@@ -954,166 +1067,120 @@
     </div>
   </section>
 
-  <section class="bg-gray-50 pt-20 pb-20">
 
-    <div class="lg:px-10 px-4 sm:px-24">
-
-      <div class="mx-auto max-w-7xl">
-        <div class="flex flex-wrap lg:flex-row-reverse  justify-between">
-
-          <div class="grid lg:w-1/2 w-full">
-            <div class="brand-img lg:ml-10 lg:place-self-end place-self-center lg:mb-0 mb-14">
-              <img src="./public/images/brands/pizzashops-info.svg" alt="Discover Hotels &amp; Motels Across the USA"
-                loading="lazy" width="400" height="400" class=" place-self-center">
-            </div>
-          </div>
-
-          <div class="grid lg:w-1/2 place-items-center w-full">
-            <div>
-              <h3 class="font-semibold mb-4 text-start  text-3xl font-extrabold sm:text-4xl">
-                Search, Rate and Share Pizza Shops &amp; Pizza Franchises
-              </h3>
-
-              <p class="text-justify sm:text-lg mb-3"> Welcome to PizzaShops.info, the go-to platform for pizza
-                enthusiasts! With a directory of over 90,000 pizza restaurants nationwide, finding your favorite pizza
-                places has never been easier.</p>
-
-              <p class="text-justify sm:text-lg mb-3">Discover and compare the best pizza franchises, chains, and local
-                pizza joints in any city, county, or state. Our platform provides detailed information, customer
-                reviews, and an interactive map to help you navigate and locate the best pizza establishments near you.
-              </p>
-
-              <p class="text-justify sm:text-lg mb-3">
-                Whether you're craving classic favorites or unique toppings, PizzaShops.info is your trusted resource
-                for all things pizza across the USA.</p>
-   
-            <div class="flex items-center gap-4 min-w-52 mt-6">
-              <a href="https://pizzashops.info" class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md"> Learn more about pizzashops.info <i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
-            </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
 
   <!-- CTA Section -->
-    <!-- CTA Section -->
-    <section class="text-center relative">
-      <div class="relative lg:px-8 max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="bg-violet-100 p-12 rounded-2xl -mb-16 relative z-10 shadow-lg">
-          <h2 class="font-bold mb-4 text-3xl">Create Your Perfect QR Code Today!</h2>
-          <p class="lg:text-xl lg:w-[85%] max-w-md md:max-w-3xl md:mt-5 mx-auto sm:text-lg text-base text-gray-600 w-full">
-            Trusted by thousands, our QR code generator makes creating dynamic and customized QR codes effortless.
-            Perfect for businesses, events, and personal use.
+  <section class="text-center relative">
+    <div class="relative lg:px-8 max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="bg-violet-100 p-12 rounded-2xl -mb-16 relative z-10 shadow-lg">
+        <h2 class="font-bold mb-4 text-3xl">Create Your Perfect QR Code Today!</h2>
+        <p class="lg:w-[85%] max-w-md md:max-w-3xl md:mt-5 mx-auto text-base text-gray-600 w-full">
+          Trusted by thousands, our QR code generator makes creating dynamic and customized QR codes effortless.
+          Perfect for businesses, events, and personal use.
+        </p>
+
+        <div class="flex items-center justify-center min-w-52 mt-10">
+          <a href="#qr-generator"
+            class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">Get Started - It's
+            Free<i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer relative bg-center bg-no-repeat">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-wrapper">
+      <div class="gap-20 sm:flex lg:justify-between">
+        <!-- Company Information with Logo -->
+        <div class="mb-6 lg:mb-0 sm:w-1/2">
+          <div class="flex flex-shrink-0 items-center">
+            <a href="index.html" class="flex items-center">
+              <img src="public/images/freeqrcodes.png" fetchpriority="high" alt="Free QR Codes" class="logo"
+                decoding="async">
+            </a>
+          </div>
+          <p class="mt-4 text-gray-600">
+            freeqrcodes.link is your platform for creating high-quality QR codes.
+            Whether it's for business, events, or personal use, our tool simplifies QR code creation with features
+            like color customization, logo embedding, and detailed analytics.
+            Join thousands of satisfied users leveraging FreeQRCodes.link for their QR code needs.
           </p>
-
-          <div class="flex items-center justify-center min-w-52 mt-10">
-            <a href="#qr-generator" class="px-4 py-2 text-white font-semibold bg-violet-600 hover:bg-violet-700 rounded-md">Get Started - It's
-              Free<i class="fa fa-arrow-right ml-1 transform -rotate-45"></i></a>
+          <div class="flex items-center space-x-3 mb-3 w-full md:mb-0 mt-4">
+            <div class="text-gray-600">Share:</div>
+            <a href="http://www.facebook.com/share.php?u=https://freeqrcodes.link" target="_blank"
+              rel="noopener noreferrer" class="hover:text-violet-700 inline-block relative text-gray-600">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/intent/tweet?url=https://freeqrcodes.link" target="_blank"
+              rel="noopener noreferrer" class="hover:text-violet-700 inline-block relative text-gray-600">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="whatsapp://send?text=https://freeqrcodes.link" target="_blank" rel="noopener noreferrer"
+              class="hover:text-violet-700 inline-block relative text-gray-600">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://freeqrcodes.link" target="_blank"
+              rel="noopener noreferrer" class="hover:text-violet-700 inline-block relative text-gray-600">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
           </div>
-
         </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer relative bg-center bg-no-repeat">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-wrapper">
-        <div class="gap-20 sm:flex lg:justify-between">
-          <!-- Company Information with Logo -->
-          <div class="mb-6 lg:mb-0 sm:w-1/2">
-            <div class="flex flex-shrink-0 items-center">
-              <a href="index.html" class="flex items-center">
-                <img src="public/images/freeqrcodes.png" fetchpriority="high" alt="Free QR Codes" class="logo"
-                  decoding="async">
-              </a>
-            </div>
-            <p class="mt-4">
-              freeqrcodes.link is your platform for creating high-quality QR codes.
-              Whether it's for business, events, or personal use, our tool simplifies QR code creation with features
-              like color customization, logo embedding, and detailed analytics.
-              Join thousands of satisfied users leveraging FreeQRCodes.link for their QR code needs.
-            </p>
-            <div class="flex items-center space-x-3 mb-3 w-full md:mb-0 mt-4">
-              <div>Share:</div>
-              <a href="http://www.facebook.com/share.php?u=https://freeqrcodes.link" target="_blank"
-                rel="noopener noreferrer" class="hover:text-violet-700 relative inline-block">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="https://twitter.com/intent/tweet?url=https://freeqrcodes.link" target="_blank"
-                rel="noopener noreferrer" class="hover:text-violet-700 relative inline-block">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-              <a href="whatsapp://send?text=https://freeqrcodes.link" target="_blank" rel="noopener noreferrer"
-                class="hover:text-violet-700 relative inline-block">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://freeqrcodes.link" target="_blank"
-                rel="noopener noreferrer" class="hover:text-violet-700 relative inline-block">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </div>
+        <!-- Navigation Links -->
+        <div class="grid grid-cols-2 lg:grid-cols-3 sm:w-1/2 gap-4">
+          <div>
+            <h3 class="text-lg font-semibold">Products</h3>
+            <ul class="mt-4 space-y-2">
+              <li><a href="https://vmx.link" target="_blank" class="hover:text-violet-700 text-gray-600">URL
+                  Shortener</a></li>
+              <li><a href="https://passgenapp.com" target="_blank" class="hover:text-violet-700 text-gray-600">Password
+                  Generator</a></li>
+              <li><a href="https://freeqrcodes.com" class="hover:text-violet-700 text-gray-600">QR Code Generator</a>
+              </li>
+            </ul>
           </div>
-          <!-- Navigation Links -->
-          <div class="grid grid-cols-2 lg:grid-cols-3 sm:w-1/2 gap-4">
-            <div>
-              <h3 class="text-lg font-semibold">Products</h3>
-              <ul class="mt-4 space-y-2">
-                <li><a href="https://vmx.link" target="_blank" class="hover:text-violet-700">URL Shortener</a></li>
-                <li><a href="https://passgenapp.com" target="_blank" class="hover:text-violet-700">Password
-                    Generator</a></li>
-                <li><a href="https://freeqrcodes.com" class="hover:text-violet-700">QR Code Generator</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold">Our Brands</h3>
-              <ul class="mt-4 space-y-2">
-                <li><a href="https://alpha.net.bd/" target="_blank" class="hover:text-violet-700">Alpha Net</a></li>
-                <li><a href="https://cfl-it.com/" target="_blank" class="hover:text-violet-700">CFL-IT</a></li>
-                <li><a href="https://www.godigital.com.bd/" target="_blank" class="hover:text-violet-700">Go Digital</a>
-                </li>
-                <li><a href="brands.html" class="hover:text-violet-700">All Brands</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold">Quick Links</h3>
-              <ul class="mt-4 space-y-2">
-                <li><a href="index.html" class="hover:text-violet-700">Home</a></li>
-                <li><a href="about.html" class="hover:text-violet-700">About</a></li>
-                <li><a href="contact.html" class="hover:text-violet-700">Contact</a></li>
-                <li><a href="faq.html" class="hover:text-violet-700">FAQ</a></li>
-              </ul>
-            </div>
+          <div>
+            <h3 class="text-lg font-semibold">Our Brands</h3>
+            <ul class="mt-4 space-y-2">
+              <li><a href="https://alpha.net.bd/" target="_blank" class="hover:text-violet-700 text-gray-600">Alpha
+                  Net</a></li>
+              <li><a href="https://cfl-it.com/" target="_blank" class="hover:text-violet-700 text-gray-600">CFL-IT</a>
+              </li>
+              <li><a href="https://www.godigital.com.bd/" target="_blank" class="hover:text-violet-700 text-gray-600">Go
+                  Digital</a>
+              </li>
+              <li><a href="brands.html" class="hover:text-violet-700 text-gray-600">All Brands</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Quick Links</h3>
+            <ul class="mt-4 space-y-2">
+              <li><a href="index.html" class="hover:text-violet-700 text-gray-600">Home</a></li>
+              <li><a href="about.html" class="hover:text-violet-700 text-gray-600">About</a></li>
+              <li><a href="contact.html" class="hover:text-violet-700 text-gray-600">Contact</a></li>
+              <li><a href="faq.html" class="hover:text-violet-700 text-gray-600">FAQ</a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- Copyright Section -->
-      <div class="copyright-wrapper">
-        <div class="border-indigo-600 max-w-7xl mx-auto px-4 sm:px-6 copy-right-border-t">
-          <div class="flex flex-col items-center justify-between md:flex-row  py-5 text-sm">
-            <span class="text-center mb-3 md:mb-0">Copyright © 2024 freeqrcodes.link. All rights reserved.</span>
-            <span>Powered by <a class="font-bold text-black underline" href="https://alpha.net.bd" target="_blank">Alpha
-                Net</a></span>
-          </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="copyright-wrapper">
+      <div class="border-indigo-600 max-w-7xl mx-auto px-4 sm:px-6 copy-right-border-t">
+        <div class="flex flex-col items-center justify-between md:flex-row py-5">
+          <span class="mb-3 md:mb-0 text-center text-gray-600">Copyright © 2024 freeqrcodes.link. All rights
+            reserved.</span>
+          <span class="text-gray-600">Powered by <a class="font-bold underline hover:text-violet-700"
+              href="https://alpha.net.bd" target="_blank">Alpha
+              Net</a></span>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
   <script src="./public/js/script.js"></script>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    }
-  </script>
 
 </body>
 
