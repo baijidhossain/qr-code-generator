@@ -5,6 +5,10 @@ body{
   font-family: "Inter", serif;
 }
 
+p{
+  color: #6b7280;
+}
+
 .collapsing {
   height: 0;
   overflow: hidden;
@@ -45,6 +49,7 @@ body{
 .shape-opacity {
   opacity: 0.2;
 }
+
 .brand-img {
   border-radius: 5px;
   padding: 71px;
