@@ -5,12 +5,16 @@ const links = document.querySelectorAll('a'); // Select all anchor tags
 
 links.forEach(link => {
     if (link.pathname === currentPath) {
-        const parentLi = link.closest('li'); // Find the closest parent <li>
-        if (parentLi) {
-            parentLi.classList.add('active'); // Add 'active' class to the parent <li>
+        const parentHeader = link.closest('header'); // Find the closest parent <header>
+        if (parentHeader) {
+            const parentLi = link.closest('li'); // Find the closest parent <li> inside <header>
+            if (parentLi) {
+                parentLi.classList.add('active'); // Add 'active' class to the <li>
+            }
         }
     }
 });
+
 
 // header sticky Toggle the visibility of the menu
 function toggleMenu(button) {
